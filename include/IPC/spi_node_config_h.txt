@@ -1,0 +1,102 @@
+/*****************************************************************************
+ * Copyright (C) 2010 Yazaki North America
+ *
+ * License: Yazaki License, All Rights Reserved
+ *
+ * This document is protected by the copyright law of the United States and
+ * foreign countries.  The work embodied in this document is confidential and
+ * constitutes a trade secret of Yazaki North America, Inc.  Any copying of
+ * this document and/or any use or disclosure of this document or the work
+ * embodied in it without the written authority of Yazaki North America, Inc.,
+ * will constitute copyright and trade secret infringement and will violate the
+ * rights of Yazaki North America, Inc.
+******************************************************************************/
+/* Standard multi-include avoidance */
+#ifndef __SPI_NODE_CONFIG_H__
+#define __SPI_NODE_CONFIG_H__
+
+
+/******************************************************************************
+ * Title: SPI Library Node Configuration - spi_node_config.h
+ *		This file contains node specific definitions required by the SPI communications 
+ *	    library used on the the VP and GP (VP and GP will have their own instances of 
+ *      this file).  This file should be generated from the template file 
+ *      "spi_node_config_h.txt" that is supplied with each release of the SPI comm 
+ *      library.
+ *
+ *      NOTE: DO NOT CHANGE THE NAMES OF THE PARAMETERS IN THIS FILE, ONLY PARAMETER
+ *      VALUES MAY BE CHANGED.
+ *
+******************************************************************************/
+
+/******************************************************************************/
+/*     I N C L U D E   F I L E S                                              */
+/******************************************************************************/
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/******************************************************************************/
+/*     M A C R O S                                                            */
+/******************************************************************************/
+
+/*
+** YZ_NODE_ID - ID of the node this configuration file is used on. 
+**    Valid values for this parameter as as follows:
+**    "VP_NODE" - specifies VP node. 
+**    "GP_NODE" - specifies GP node. 
+*/
+#define  YZ_NODE_ID  ()
+
+/*
+** YZ_NODE_CONFIG_VERSION - Specifies the version of the node specific configuration 
+**   file this file is compliant with.  The value of this macro is used to confirm 
+**   the version of the this file is compatible with the SPI communication library that 
+**   uses it.  Version numbers start with 1 and increment by 1 for each new version.  
+**   APPLICABLE TO: VP and GP.
+*/
+#define  YZ_NODE_CONFIG_VERSION (1) 
+ 
+
+/*
+** PS_RX_MSG_HANDLER_LIST - Populate this macro with a list of product specific 
+** message handlers.  Each message handler must be a function with the following signature:
+**
+**    void MsgHandlerFunction(int msg_size_bytes, U8 * const msg_data)
+**
+** The list defines the set of "callback" functions that are invoked to process incoming 
+** "regular" (not "status") messages.  Callback functions are invoked when the SL_DispatchMsg 
+** function is called following successful unloading of a regular message via the 
+** SL_UnloadPacketMsg function.  
+**
+** The following is an example of how to format this list (note that the "\" character 
+** MUST be the last character on the line).  It is recommended that handler function names
+** be descriptive to increase usability.
+**
+** void MsgId1Handler(int msg_size_bytes, U8 * const msg_data);
+** void MsgId2Handler(int msg_size_bytes, U8 * const msg_data);
+** void MsgId3Handler(int msg_size_bytes, U8 * const msg_data);
+**
+** #define PS_RX_MSG_HANDLER_LIST \
+**     MsgId1Handler,          \
+**     MsgId2Handler,          \
+**     MsgId3Handler,          
+*/
+
+/******************************************************************************/
+/*     T Y P E S   A N D   E N U M E R A T I O N S                            */
+/******************************************************************************/
+
+
+/******************************************************************************/
+/*     F U N C T I O N   P R O T O T Y P E S                                  */
+/******************************************************************************/
+
+
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* __SPI_NODE_CONFIG_H__ */
