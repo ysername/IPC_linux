@@ -1,0 +1,557 @@
+\hypertarget{spi__common__config_8h}{}\section{spi\+\_\+common\+\_\+config.\+h File Reference}
+\label{spi__common__config_8h}\index{spi\+\_\+common\+\_\+config.\+h@{spi\+\_\+common\+\_\+config.\+h}}
+
+
+S\+PI Library Common Configuration -\/ \mbox{\hyperlink{spi__common__config_8h}{spi\+\_\+common\+\_\+config.\+h}} This file contains common definitions required by the S\+PI communications software residing on both the the VP and GP. It is generated from the template file \char`\"{}spi\+\_\+common\+\_\+config\+\_\+h.\+txt\char`\"{} that is supplied with each release of the S\+PI communications library.  
+
+
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a834e8e031ebc25c4af02ed4c8e58af4c}\label{spi__common__config_8h_a834e8e031ebc25c4af02ed4c8e58af4c}} 
+\#define {\bfseries Y\+Z\+\_\+\+S\+P\+I\+\_\+\+T\+F\+R\+\_\+\+R\+A\+T\+E\+\_\+\+MS}~(10u)
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a9934394cb7fda3e72fec966c14b4a373}\label{spi__common__config_8h_a9934394cb7fda3e72fec966c14b4a373}} 
+\#define {\bfseries Y\+Z\+\_\+\+S\+P\+I\+\_\+\+P\+K\+T\+\_\+\+S\+I\+ZE}~(256u)
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a1a237a3e3bfcb2d32abd9410eca2dcad}\label{spi__common__config_8h_a1a237a3e3bfcb2d32abd9410eca2dcad}} 
+\#define {\bfseries Y\+Z\+\_\+\+S\+P\+I\+\_\+\+C\+L\+O\+C\+K\+\_\+\+F\+R\+E\+Q\+\_\+\+HZ}~(1000000ul)
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a18073b84583d022cdcd92b8d927eb673}\label{spi__common__config_8h_a18073b84583d022cdcd92b8d927eb673}} 
+\#define {\bfseries Y\+Z\+\_\+\+S\+P\+I\+\_\+\+M\+A\+X\+\_\+\+M\+S\+G\+\_\+\+S\+I\+ZE}~(128u)
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a38bceaf33d0b017a25c213afaca40db3}\label{spi__common__config_8h_a38bceaf33d0b017a25c213afaca40db3}} 
+\#define {\bfseries Y\+Z\+\_\+\+S\+P\+I\+\_\+\+P\+K\+T\+\_\+\+M\+A\+X\+\_\+\+M\+S\+G\+\_\+\+S\+I\+ZE}~(128u)
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_af5da67cc00e90821668e5c7d22a72392}\label{spi__common__config_8h_af5da67cc00e90821668e5c7d22a72392}} 
+\#define {\bfseries Y\+Z\+\_\+\+S\+P\+I\+\_\+\+P\+K\+T\+\_\+\+P\+A\+D\+\_\+\+B\+Y\+TE}~(0x5\+Au)
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a179f7a29c5030a5b24f13b133c86e98c}\label{spi__common__config_8h_a179f7a29c5030a5b24f13b133c86e98c}} 
+\#define {\bfseries Y\+Z\+\_\+\+S\+P\+I\+\_\+\+T\+F\+R\+\_\+\+W\+D\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+MS}~(60u)
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a4dd6da910c2534e9dfa9c95d0276a0a5}\label{spi__common__config_8h_a4dd6da910c2534e9dfa9c95d0276a0a5}} 
+\#define {\bfseries Y\+Z\+\_\+\+S\+P\+I\+\_\+\+T\+F\+R\+\_\+\+R\+E\+T\+R\+Y\+\_\+\+L\+I\+M\+IT}~(10)
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a955dbaf5a5fb4d19a61555b67d310469}\label{spi__common__config_8h_a955dbaf5a5fb4d19a61555b67d310469}} 
+\#define {\bfseries Y\+Z\+\_\+\+S\+P\+I\+\_\+\+T\+P\+L\+\_\+\+E\+N\+A\+B\+LE}~(0)
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_afd51bd6b6c86880ce23ac3d0d88440f7}\label{spi__common__config_8h_afd51bd6b6c86880ce23ac3d0d88440f7}} 
+\#define {\bfseries Y\+Z\+\_\+\+S\+P\+I\+\_\+\+T\+P\+L\+\_\+\+M\+A\+X\+\_\+\+M\+S\+G\+\_\+\+S\+I\+ZE}~(0)
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a46b3ea96e0ee5d03180b0b93aa5996f6}\label{spi__common__config_8h_a46b3ea96e0ee5d03180b0b93aa5996f6}} 
+\#define {\bfseries Y\+Z\+\_\+\+S\+P\+I\+\_\+\+B\+O\+O\+T\+\_\+\+W\+D\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+MS}~(300000u)
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a83cdb5158d59e1f7b3372858a28df885}\label{spi__common__config_8h_a83cdb5158d59e1f7b3372858a28df885}} 
+\#define {\bfseries Y\+Z\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+V\+E\+R\+S\+I\+ON}~(1)
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a4a2fafd9554a6c470ce13542216a7ef1}\label{spi__common__config_8h_a4a2fafd9554a6c470ce13542216a7ef1}} 
+\#define {\bfseries Y\+Z\+\_\+\+S\+P\+I\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+R\+E\+T\+R\+Y\+\_\+\+C\+O\+U\+NT}~(50u)
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a40cb399eea76b5f7e97085c345848b02}\label{spi__common__config_8h_a40cb399eea76b5f7e97085c345848b02}} 
+\#define {\bfseries S\+I\+G\+N\+A\+L\+\_\+\+I\+D\+\_\+\+I\+DX}~0
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a856e1bea68357b1e1c402d6acee1b820}\label{spi__common__config_8h_a856e1bea68357b1e1c402d6acee1b820}} 
+\#define {\bfseries S\+I\+G\+N\+A\+L\+\_\+\+I\+D\+\_\+\+SZ}~2
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a891e80855478d21e31395b555bcb189d}\label{spi__common__config_8h_a891e80855478d21e31395b555bcb189d}} 
+\#define {\bfseries S\+I\+G\+N\+A\+L\+\_\+\+D\+A\+T\+A\+\_\+\+I\+DX}~2
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a546655493365a27d90c43bc70cf3783b}\label{spi__common__config_8h_a546655493365a27d90c43bc70cf3783b}} 
+\#define {\bfseries S\+I\+G\+N\+A\+L\+\_\+\+D\+A\+T\+A\+\_\+\+S\+Z\+\_\+\+M\+AX}~4
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_ab2c2a82be2e6f201cc5141a797bf48b1}\label{spi__common__config_8h_ab2c2a82be2e6f201cc5141a797bf48b1}} 
+\#define {\bfseries N\+M\+\_\+\+D\+A\+T\+A\+\_\+\+I\+D\+\_\+\+I\+DX}~0
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_afd739b336facdc8145c5f27c42bd3d92}\label{spi__common__config_8h_afd739b336facdc8145c5f27c42bd3d92}} 
+\#define {\bfseries N\+M\+\_\+\+D\+A\+T\+A\+\_\+\+I\+D\+\_\+\+SZ}~1
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a583f115ff6a77f367486aa339eb448f6}\label{spi__common__config_8h_a583f115ff6a77f367486aa339eb448f6}} 
+\#define {\bfseries N\+M\+\_\+\+D\+A\+T\+A\+\_\+\+I\+DX}~1
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a1c96042cf8b086c24ead00e4d56474a7}\label{spi__common__config_8h_a1c96042cf8b086c24ead00e4d56474a7}} 
+\#define {\bfseries N\+M\+\_\+\+D\+A\+T\+A\+\_\+\+SZ}~4
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a6def358a628a6f4be6a697f69d54b9e0}\label{spi__common__config_8h_a6def358a628a6f4be6a697f69d54b9e0}} 
+\#define {\bfseries N\+M\+\_\+\+D\+E\+F\+\_\+\+M\+S\+G\+\_\+\+SZ}~5
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a9b8474be7d9bd9375ed5640e69601285}\label{spi__common__config_8h_a9b8474be7d9bd9375ed5640e69601285}} 
+\#define {\bfseries N\+M\+\_\+\+D\+E\+F\+\_\+\+N\+U\+M\+\_\+\+P\+A\+R\+A\+MS}~(7u)
+\item 
+\#define \mbox{\hyperlink{spi__common__config_8h_abe3fb7e3e101767751208d5b4c65b3aa}{N\+M\+\_\+\+T\+I\+M\+E\+O\+UT}}~0x01
+\item 
+\#define \mbox{\hyperlink{spi__common__config_8h_adc2c60273c7cf96fb47e5c9fdd5761a6}{N\+M\+\_\+\+R\+E\+M\+O\+T\+E\+\_\+\+T\+I\+M\+E\+O\+UT}}~0x02
+\item 
+\#define \mbox{\hyperlink{spi__common__config_8h_a4d52ad0a0bc8a857fc6719ff1d89925f}{N\+M\+\_\+\+W\+A\+I\+T\+B\+U\+S\+T\+I\+M\+E\+O\+UT}}~0x03
+\item 
+\#define \mbox{\hyperlink{spi__common__config_8h_ac39f39e41cffb621c9369e900c435cea}{N\+M\+\_\+\+P\+A\+R\+T\+I\+A\+L\+\_\+\+N\+E\+T\+\_\+\+E\+N\+A\+B\+LE}}~0x04
+\item 
+\#define \mbox{\hyperlink{spi__common__config_8h_a34e2b7d92aed9e12ed2488aa16633b41}{N\+M\+\_\+\+C\+H\+A\+N\+N\+EL}}~0x06
+\item 
+\#define \mbox{\hyperlink{spi__common__config_8h_aafa9b78d9ba8f150cbc9be5cf1e30017}{N\+M\+\_\+\+N\+U\+M\+\_\+\+M\+S\+G\+\_\+\+D\+E\+FS}}~0x07
+\item 
+\#define \mbox{\hyperlink{spi__common__config_8h_ac4df43c4cd3609827bdb90e58578766d}{N\+M\+\_\+\+N\+U\+M\+\_\+\+S\+I\+G\+\_\+\+D\+E\+FS}}~0x08
+\item 
+\#define \mbox{\hyperlink{spi__common__config_8h_a493459cc3cf4f051374ca7f2646346dd}{C\+A\+N\+\_\+\+D\+E\+F\+\_\+\+V\+ER}}~0x01
+\item 
+\#define \mbox{\hyperlink{spi__common__config_8h_a9da4f32198f7c2805f769da3fc18d986}{C\+A\+N\+\_\+\+M\+S\+G\+\_\+\+D\+E\+FN}}~0x02
+\item 
+\#define \mbox{\hyperlink{spi__common__config_8h_a9a77c86b3397688162666d13c14b0337}{C\+A\+N\+\_\+\+M\+S\+G\+\_\+\+S\+I\+G\+N\+AL}}~0x03
+\item 
+\#define \mbox{\hyperlink{spi__common__config_8h_aa7a226cc6d56bfec4e1383119a0848e6}{C\+A\+N\+\_\+\+S\+I\+G\+\_\+\+C\+O\+NV}}~0x04
+\item 
+\#define \mbox{\hyperlink{spi__common__config_8h_a5f1d4e5906a542e02c6d41c8fca46f3a}{C\+A\+N\+\_\+\+M\+S\+G\+\_\+\+R\+AW}}~0x05
+\item 
+\#define \mbox{\hyperlink{spi__common__config_8h_a0b0e96763f8f10fc29763f4a068b9234}{C\+A\+N\+\_\+\+M\+S\+G\+\_\+\+D\+E\+F\+N\+\_\+\+E\+XT}}~0x06
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_ad9dc70976022fe92b53945805a7231ff}\label{spi__common__config_8h_ad9dc70976022fe92b53945805a7231ff}} 
+\#define {\bfseries C\+A\+N\+M\+S\+G\+I\+D\+\_\+\+I\+DX}~0
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_ae6530ed44d7daddb4dc808a393c6d29a}\label{spi__common__config_8h_ae6530ed44d7daddb4dc808a393c6d29a}} 
+\#define {\bfseries C\+A\+N\+M\+S\+G\+I\+D\+\_\+\+SZ}~4
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a13ee70e53e75a1e8635bd7f0dabf3776}\label{spi__common__config_8h_a13ee70e53e75a1e8635bd7f0dabf3776}} 
+\#define {\bfseries C\+A\+N\+M\+S\+G\+D\+L\+C\+\_\+\+I\+DX}~4
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_ad3f102865ec79c85bac7833d77f89adb}\label{spi__common__config_8h_ad3f102865ec79c85bac7833d77f89adb}} 
+\#define {\bfseries C\+A\+N\+M\+S\+G\+D\+L\+C\+\_\+\+SZ}~1
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a4ef70c934f0c88accf509f448c01cd77}\label{spi__common__config_8h_a4ef70c934f0c88accf509f448c01cd77}} 
+\#define {\bfseries C\+A\+N\+M\+S\+G\+T\+Y\+P\+E\+\_\+\+I\+DX}~5
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_ac9e348ede7993dec45d845baf99e2aa6}\label{spi__common__config_8h_ac9e348ede7993dec45d845baf99e2aa6}} 
+\#define {\bfseries C\+A\+N\+M\+S\+G\+T\+Y\+P\+E\+\_\+\+SZ}~1
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a10724989d5c728775ca8ff7bb73e5009}\label{spi__common__config_8h_a10724989d5c728775ca8ff7bb73e5009}} 
+\#define {\bfseries C\+A\+N\+M\+S\+G\+B\+U\+S\+\_\+\+I\+DX}~6
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_ad26dc6ee919149530f1a0dac1ca1e9ee}\label{spi__common__config_8h_ad26dc6ee919149530f1a0dac1ca1e9ee}} 
+\#define {\bfseries C\+A\+N\+M\+S\+G\+B\+U\+S\+\_\+\+SZ}~1
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a2fbcd17bf049d747c28b84f28e99b07a}\label{spi__common__config_8h_a2fbcd17bf049d747c28b84f28e99b07a}} 
+\#define {\bfseries C\+A\+N\+M\+S\+G\+R\+A\+T\+E\+\_\+\+I\+DX}~7
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_abfc8a36a26f9cdb3004afb6d035e36db}\label{spi__common__config_8h_abfc8a36a26f9cdb3004afb6d035e36db}} 
+\#define {\bfseries C\+A\+N\+M\+S\+G\+R\+A\+T\+E\+\_\+\+SZ}~2
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a9f54fa907818699b2adb063e68546d12}\label{spi__common__config_8h_a9f54fa907818699b2adb063e68546d12}} 
+\#define {\bfseries C\+A\+N\+M\+S\+G\+T\+I\+M\+E\+O\+U\+T\+\_\+\+I\+DX}~9
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_abc790cdd96e8574edd6679bf346b7754}\label{spi__common__config_8h_abc790cdd96e8574edd6679bf346b7754}} 
+\#define {\bfseries C\+A\+N\+M\+S\+G\+T\+I\+M\+E\+O\+U\+T\+\_\+\+SZ}~1
+\item 
+\#define {\bfseries C\+A\+N\+M\+S\+G\+\_\+\+D\+E\+F\+\_\+\+M\+S\+G\+\_\+\+SZ}
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a40d9587a3601d7b22c12dec033c95f61}\label{spi__common__config_8h_a40d9587a3601d7b22c12dec033c95f61}} 
+\#define {\bfseries C\+A\+N\+S\+I\+G\+I\+D\+\_\+\+I\+DX}~0
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_abf82395dcc1e98f4feec13ec5242c111}\label{spi__common__config_8h_abf82395dcc1e98f4feec13ec5242c111}} 
+\#define {\bfseries C\+A\+N\+S\+I\+G\+I\+D\+\_\+\+SZ}~2
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a9d48a53370b48214d3eeb3ce2fde71e3}\label{spi__common__config_8h_a9d48a53370b48214d3eeb3ce2fde71e3}} 
+\#define {\bfseries C\+A\+N\+S\+I\+G\+S\+T\+A\+R\+T\+B\+I\+T\+\_\+\+I\+DX}~2
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_af048db0aef62eaa23067cd2d6fa99dd8}\label{spi__common__config_8h_af048db0aef62eaa23067cd2d6fa99dd8}} 
+\#define {\bfseries C\+A\+N\+S\+I\+G\+S\+T\+A\+R\+T\+B\+I\+T\+\_\+\+SZ}~1
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a5f3a6c441f0f2c09b06509214ae107ee}\label{spi__common__config_8h_a5f3a6c441f0f2c09b06509214ae107ee}} 
+\#define {\bfseries C\+A\+N\+S\+I\+G\+D\+L\+C\+\_\+\+I\+DX}~3
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a99f31950cfa62be4fb03bc5ba1f56d49}\label{spi__common__config_8h_a99f31950cfa62be4fb03bc5ba1f56d49}} 
+\#define {\bfseries C\+A\+N\+S\+I\+G\+D\+L\+C\+\_\+\+SZ}~1
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a3f7717d4a14702282f78f8dcc311a704}\label{spi__common__config_8h_a3f7717d4a14702282f78f8dcc311a704}} 
+\#define {\bfseries C\+A\+N\+M\+S\+G\+S\+I\+G\+I\+D\+\_\+\+I\+DX}~4
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a059bfea053dfd2f3d26e336622ac7d65}\label{spi__common__config_8h_a059bfea053dfd2f3d26e336622ac7d65}} 
+\#define {\bfseries C\+A\+N\+M\+S\+G\+S\+I\+G\+I\+D\+\_\+\+SZ}~4
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_abafb70c2bb6f19df4bc44a204766dd81}\label{spi__common__config_8h_abafb70c2bb6f19df4bc44a204766dd81}} 
+\#define {\bfseries C\+A\+N\+S\+I\+G\+B\+U\+S\+I\+D\+\_\+\+I\+DX}~8
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a0bf273ba9fc8f27bd3cb66a81cbb0998}\label{spi__common__config_8h_a0bf273ba9fc8f27bd3cb66a81cbb0998}} 
+\#define {\bfseries C\+A\+N\+S\+I\+G\+B\+U\+S\+I\+D\+\_\+\+SZ}~1
+\item 
+\#define {\bfseries C\+A\+N\+S\+I\+G\+\_\+\+D\+E\+F\+\_\+\+M\+S\+G\+\_\+\+SZ}
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a22daff3b3508d66aa23ee4b371d8908a}\label{spi__common__config_8h_a22daff3b3508d66aa23ee4b371d8908a}} 
+\#define {\bfseries V\+P\+\_\+\+S\+W\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+I\+DX}~0
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a3bdf10a13e2d003b11b0727893c46f1e}\label{spi__common__config_8h_a3bdf10a13e2d003b11b0727893c46f1e}} 
+\#define {\bfseries V\+P\+\_\+\+S\+W\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+SZ}~16
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_ace53e19d0982420b939671ef4633f4c7}\label{spi__common__config_8h_ace53e19d0982420b939671ef4633f4c7}} 
+\#define {\bfseries V\+P\+\_\+\+S\+W\+\_\+\+P\+A\+R\+T\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+I\+DX}~16
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a94150109f654ac444faebda796e5e990}\label{spi__common__config_8h_a94150109f654ac444faebda796e5e990}} 
+\#define {\bfseries V\+P\+\_\+\+S\+W\+\_\+\+P\+A\+R\+T\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+SZ}~8
+\item 
+\#define {\bfseries S\+W\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+M\+S\+G\+\_\+\+SZ}
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a925b6b748070e1dfa2c9b4334cb2c0b7}\label{spi__common__config_8h_a925b6b748070e1dfa2c9b4334cb2c0b7}} 
+\#define {\bfseries U\+N\+I\+T\+\_\+\+S\+T\+A\+T\+E\+\_\+\+SZ}~1
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_ad0be231f1b63db8d102ed4be8e7f7a88}\label{spi__common__config_8h_ad0be231f1b63db8d102ed4be8e7f7a88}} 
+\#define {\bfseries U\+N\+I\+T\+\_\+\+S\+T\+A\+T\+E\+\_\+\+N\+O\+R\+M\+AL}~2
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_aee9df4a3004b56dd12bbee8e53d1ba79}\label{spi__common__config_8h_aee9df4a3004b56dd12bbee8e53d1ba79}} 
+\#define {\bfseries U\+N\+I\+T\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+H\+U\+T\+T\+I\+N\+G\+\_\+\+D\+O\+WN}~10
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a8e309e4348acde2c897336ad72714411}\label{spi__common__config_8h_a8e309e4348acde2c897336ad72714411}} 
+\#define {\bfseries U\+N\+I\+T\+\_\+\+S\+T\+A\+T\+E\+\_\+\+S\+H\+U\+T\+D\+O\+W\+N\+\_\+\+C\+O\+M\+P\+L\+E\+TE}~11
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a0f03ac96e0ed8ddce0cc71f3801e08aa}\label{spi__common__config_8h_a0f03ac96e0ed8ddce0cc71f3801e08aa}} 
+\#define {\bfseries S\+O\+H\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+SZ}~1
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a669fff7aa30c5a48d1388948e8f26673}\label{spi__common__config_8h_a669fff7aa30c5a48d1388948e8f26673}} 
+\#define {\bfseries S\+O\+H\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+N\+O\+\_\+\+F\+A\+I\+L\+U\+R\+ES}~0
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_aacc137143b0c3f58216d2f9d29640448}\label{spi__common__config_8h_aacc137143b0c3f58216d2f9d29640448}} 
+\#define {\bfseries S\+O\+H\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+O\+M\+P\+\_\+\+C\+R\+A\+S\+H\+ED}~1
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a5f746002be729d87ea0364ad59bc07cb}\label{spi__common__config_8h_a5f746002be729d87ea0364ad59bc07cb}} 
+\#define {\bfseries S\+O\+H\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+O\+M\+P\+\_\+\+F\+A\+I\+L\+E\+D\+\_\+\+T\+O\+\_\+\+R\+E\+SP}~2
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a63e1c126b889b1d7e63e78489e360b40}\label{spi__common__config_8h_a63e1c126b889b1d7e63e78489e360b40}} 
+\#define {\bfseries S\+O\+H\+\_\+\+F\+C\+\_\+\+I\+D\+\_\+\+SZ}~4
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_af80d1741736f6bb18f87ff208d482f4e}\label{spi__common__config_8h_af80d1741736f6bb18f87ff208d482f4e}} 
+\#define {\bfseries R\+S\+T\+\_\+\+R\+E\+Q\+\_\+\+SZ}~1
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_aac17543c5fb2efebe6f5ccff59ba844e}\label{spi__common__config_8h_aac17543c5fb2efebe6f5ccff59ba844e}} 
+\#define {\bfseries R\+S\+T\+\_\+\+R\+E\+Q\+\_\+\+N\+O\+NE}~0
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_af3ca5ca34e717af1ad724508cb6da35e}\label{spi__common__config_8h_af3ca5ca34e717af1ad724508cb6da35e}} 
+\#define {\bfseries R\+S\+T\+\_\+\+R\+EQ}~1
+\item 
+\#define {\bfseries G\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+S\+G\+\_\+\+SZ}
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a97c6f639825577cb016636ad2943f8f6}\label{spi__common__config_8h_a97c6f639825577cb016636ad2943f8f6}} 
+\#define {\bfseries M\+I\+R\+R\+O\+R\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+S\+G\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+DX}~0
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a277029feed131b8fe21a50f8542f02c2}\label{spi__common__config_8h_a277029feed131b8fe21a50f8542f02c2}} 
+\#define {\bfseries M\+I\+R\+R\+O\+R\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+S\+G\+\_\+\+D\+A\+T\+A\+\_\+\+I\+DX}~1
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a20fee32a8b28d89fc42cc9cf95d9cf44}\label{spi__common__config_8h_a20fee32a8b28d89fc42cc9cf95d9cf44}} 
+\#define {\bfseries M\+I\+R\+R\+O\+R\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+S\+G\+\_\+\+P\+O\+S\+I\+T\+I\+ON}~0x01
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_abb55e3b67c92fdabf7fc257a48f6602f}\label{spi__common__config_8h_abb55e3b67c92fdabf7fc257a48f6602f}} 
+\#define {\bfseries M\+I\+R\+R\+O\+R\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+S\+G\+\_\+\+E\+R\+R\+OR}~0x02
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a226467a838be9d8c7e6862f5ef4bbdf1}\label{spi__common__config_8h_a226467a838be9d8c7e6862f5ef4bbdf1}} 
+\#define {\bfseries M\+I\+R\+R\+O\+R\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+L\+I\+M\+I\+T\+\_\+\+S\+W\+I\+T\+C\+H\+\_\+\+E\+R\+R\+OR}~0x01
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a8b4ab6846205cbe967a8844d4c54347f}\label{spi__common__config_8h_a8b4ab6846205cbe967a8844d4c54347f}} 
+\#define {\bfseries M\+I\+R\+R\+O\+R\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+O\+T\+H\+ER}~0x02
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a675e8db41ca5e8aecb500b4993129661}\label{spi__common__config_8h_a675e8db41ca5e8aecb500b4993129661}} 
+\#define {\bfseries M\+I\+R\+R\+O\+R\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+S\+G\+\_\+\+SZ}~3
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_aa9a0bececfaef0bff657aca8f1438422}\label{spi__common__config_8h_aa9a0bececfaef0bff657aca8f1438422}} 
+\#define {\bfseries C\+A\+N\+\_\+\+M\+S\+G\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+SZ}~6
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_aec8fed5ba3f97adf567fb39c0f53e913}\label{spi__common__config_8h_aec8fed5ba3f97adf567fb39c0f53e913}} 
+\#define {\bfseries C\+A\+N\+\_\+\+M\+S\+G\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+C\+H\+A\+N\+\_\+\+I\+DX}~0
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a125331f32042a0667ce48a48df834201}\label{spi__common__config_8h_a125331f32042a0667ce48a48df834201}} 
+\#define {\bfseries C\+A\+N\+\_\+\+M\+S\+G\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+C\+H\+A\+N\+\_\+\+C\+H\+A\+S\+S\+IS}~1
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a2a207c6e7ac401e6f9f7419cde6c47da}\label{spi__common__config_8h_a2a207c6e7ac401e6f9f7419cde6c47da}} 
+\#define {\bfseries C\+A\+N\+\_\+\+M\+S\+G\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+C\+H\+A\+N\+\_\+\+B\+O\+DY}~2
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a7fc751a8fb060133163e33c8d642c511}\label{spi__common__config_8h_a7fc751a8fb060133163e33c8d642c511}} 
+\#define {\bfseries C\+A\+N\+\_\+\+M\+S\+G\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+I\+D\+\_\+\+I\+DX}~1
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_ae710222f4d17edd0c36b99f5bcf7b3db}\label{spi__common__config_8h_ae710222f4d17edd0c36b99f5bcf7b3db}} 
+\#define {\bfseries C\+A\+N\+\_\+\+M\+S\+G\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+I\+D\+\_\+\+SZ}~4
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_aa5d9edc48fda010ba2fc59a2a81b43ed}\label{spi__common__config_8h_aa5d9edc48fda010ba2fc59a2a81b43ed}} 
+\#define {\bfseries C\+A\+N\+\_\+\+M\+S\+G\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+DX}~5
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a96f25883c52c6fa1d414b0283bc824d7}\label{spi__common__config_8h_a96f25883c52c6fa1d414b0283bc824d7}} 
+\#define {\bfseries C\+A\+N\+\_\+\+M\+S\+G\+\_\+\+T\+I\+M\+E\+O\+UT}~1
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_abdadb5a9955fc1eeca6289fdb828b87e}\label{spi__common__config_8h_abdadb5a9955fc1eeca6289fdb828b87e}} 
+\#define {\bfseries C\+A\+N\+\_\+\+M\+S\+G\+\_\+\+N\+O\+R\+M\+AL}~2
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a5ed6709996bf0518e49cf1a45abf05b5}\label{spi__common__config_8h_a5ed6709996bf0518e49cf1a45abf05b5}} 
+\#define {\bfseries C\+A\+N\+\_\+\+S\+I\+G\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+SZ}~4
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a78acc93f4b265d48d3d47d1d0e20f783}\label{spi__common__config_8h_a78acc93f4b265d48d3d47d1d0e20f783}} 
+\#define {\bfseries C\+A\+N\+\_\+\+S\+I\+G\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+C\+H\+A\+N\+\_\+\+I\+DX}~0
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_ae22e65edce709193549c95bca5c5732a}\label{spi__common__config_8h_ae22e65edce709193549c95bca5c5732a}} 
+\#define {\bfseries C\+A\+N\+\_\+\+S\+I\+G\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+C\+H\+A\+N\+\_\+\+C\+H\+A\+S\+S\+IS}~1
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a8f22452fd87562a100ee0c58301b448d}\label{spi__common__config_8h_a8f22452fd87562a100ee0c58301b448d}} 
+\#define {\bfseries C\+A\+N\+\_\+\+S\+I\+G\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+C\+H\+A\+N\+\_\+\+B\+O\+DY}~2
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a43eccc2b5e86ffe2b3346a9df2bb1f6f}\label{spi__common__config_8h_a43eccc2b5e86ffe2b3346a9df2bb1f6f}} 
+\#define {\bfseries C\+A\+N\+\_\+\+S\+I\+G\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+I\+D\+\_\+\+I\+DX}~1
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a54c9606f747b8be2e0439a1ca8f5e376}\label{spi__common__config_8h_a54c9606f747b8be2e0439a1ca8f5e376}} 
+\#define {\bfseries C\+A\+N\+\_\+\+S\+I\+G\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+I\+D\+\_\+\+SZ}~2
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a3488923bdb90fdb271ef30b11d61a5ad}\label{spi__common__config_8h_a3488923bdb90fdb271ef30b11d61a5ad}} 
+\#define {\bfseries C\+A\+N\+\_\+\+S\+I\+G\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+DX}~3
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_ad904cdf3691ea82f1604a401e8c0b991}\label{spi__common__config_8h_ad904cdf3691ea82f1604a401e8c0b991}} 
+\#define {\bfseries C\+A\+N\+\_\+\+S\+I\+G\+\_\+\+T\+I\+M\+E\+O\+UT}~1
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_ae6a64def7ecf3597a7c77cc41a455ce6}\label{spi__common__config_8h_ae6a64def7ecf3597a7c77cc41a455ce6}} 
+\#define {\bfseries C\+A\+N\+\_\+\+S\+I\+G\+\_\+\+N\+O\+R\+M\+AL}~2
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a38ae3f972a98a830fda1f79264ff075e}\label{spi__common__config_8h_a38ae3f972a98a830fda1f79264ff075e}} 
+\#define {\bfseries S\+L\+E\+E\+P\+\_\+\+R\+E\+Q\+\_\+\+M\+S\+G\+\_\+\+SZ}~1
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_ac0c88e607622bfc9a60b49d4bcb6f21e}\label{spi__common__config_8h_ac0c88e607622bfc9a60b49d4bcb6f21e}} 
+\#define {\bfseries S\+L\+E\+E\+P\+\_\+\+R\+E\+Q\+\_\+\+M\+S\+G\+\_\+\+I\+DX}~2
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_acd492be34f5c0e2810dc983a159d8ba0}\label{spi__common__config_8h_acd492be34f5c0e2810dc983a159d8ba0}} 
+\#define {\bfseries S\+L\+E\+E\+P\+\_\+\+M\+O\+D\+E\+\_\+1}~1
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a3888d054fdb682ffa61af3ea0ba80a04}\label{spi__common__config_8h_a3888d054fdb682ffa61af3ea0ba80a04}} 
+\#define {\bfseries S\+L\+E\+E\+P\+\_\+\+M\+O\+D\+E\+\_\+2}~2
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_aaef78284f32743e26ecbaff39627840d}\label{spi__common__config_8h_aaef78284f32743e26ecbaff39627840d}} 
+\#define {\bfseries D\+B\+\_\+\+G\+P\+\_\+\+C\+C\+A\+N\+V\+E\+R\+\_\+\+M\+S\+G\+\_\+\+I\+DX}~0
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a6487e3d7077ae6e684267590f5ac6ac2}\label{spi__common__config_8h_a6487e3d7077ae6e684267590f5ac6ac2}} 
+\#define {\bfseries D\+B\+\_\+\+G\+P\+\_\+\+B\+C\+A\+N\+V\+E\+R\+\_\+\+M\+S\+G\+\_\+\+I\+DX}~2
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a35264ee8d3c80d34512d5838a5f9920e}\label{spi__common__config_8h_a35264ee8d3c80d34512d5838a5f9920e}} 
+\#define {\bfseries D\+B\+\_\+\+G\+P\+\_\+\+V\+E\+R\+\_\+\+M\+S\+G\+\_\+\+SZ}~4
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_ab2a35f9f061898dd97be49e46fe0ad43}\label{spi__common__config_8h_ab2a35f9f061898dd97be49e46fe0ad43}} 
+\#define {\bfseries D\+B\+\_\+\+V\+P\+\_\+\+C\+C\+A\+N\+V\+E\+R\+\_\+\+M\+S\+G\+\_\+\+I\+DX}~0
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a98a334c7989617338171cbe1dd598ac5}\label{spi__common__config_8h_a98a334c7989617338171cbe1dd598ac5}} 
+\#define {\bfseries D\+B\+\_\+\+V\+P\+\_\+\+B\+C\+A\+N\+V\+E\+R\+\_\+\+M\+S\+G\+\_\+\+I\+DX}~2
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_abe7d28c6384df3f369ed7db66747b598}\label{spi__common__config_8h_abe7d28c6384df3f369ed7db66747b598}} 
+\#define {\bfseries D\+B\+\_\+\+V\+P\+\_\+\+M\+A\+X\+\_\+\+M\+S\+G\+N\+U\+M\+\_\+\+M\+S\+G\+\_\+\+I\+DX}~4
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a017fb5704b295e881c16d40b7bffd7c2}\label{spi__common__config_8h_a017fb5704b295e881c16d40b7bffd7c2}} 
+\#define {\bfseries D\+B\+\_\+\+V\+P\+\_\+\+M\+A\+X\+\_\+\+S\+I\+G\+M\+S\+G\+\_\+\+M\+S\+G\+\_\+\+I\+DX}~5
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_aebb38dab4abef100681b3dbedb58fa79}\label{spi__common__config_8h_aebb38dab4abef100681b3dbedb58fa79}} 
+\#define {\bfseries D\+B\+\_\+\+V\+P\+\_\+\+M\+A\+X\+\_\+\+S\+I\+G\+\_\+\+M\+S\+G\+\_\+\+I\+DX}~6
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a6a5f7f232e96f690bcc285b41014f14f}\label{spi__common__config_8h_a6a5f7f232e96f690bcc285b41014f14f}} 
+\#define {\bfseries D\+B\+\_\+\+V\+P\+\_\+\+V\+E\+R\+\_\+\+M\+S\+G\+\_\+\+SZ}~7
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a2fded4d0b2ff9bf6e34ac087209c7087}\label{spi__common__config_8h_a2fded4d0b2ff9bf6e34ac087209c7087}} 
+typedef enum V\+P\+\_\+\+S\+P\+I\+\_\+\+T\+X\+\_\+\+M\+E\+S\+S\+A\+G\+ES {\bfseries V\+P\+\_\+\+S\+P\+I\+\_\+\+T\+X\+\_\+\+M\+E\+S\+S\+A\+G\+ES}
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a2acc3f1375631e192b4f1ed6237914bc}\label{spi__common__config_8h_a2acc3f1375631e192b4f1ed6237914bc}} 
+typedef enum G\+P\+\_\+\+S\+P\+I\+\_\+\+T\+X\+\_\+\+M\+E\+S\+S\+A\+G\+ES {\bfseries G\+P\+\_\+\+S\+P\+I\+\_\+\+T\+X\+\_\+\+M\+E\+S\+S\+A\+G\+ES}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_a1ebfbe422235901c7a28bce866e94018}\label{spi__common__config_8h_a1ebfbe422235901c7a28bce866e94018}} 
+enum {\bfseries V\+P\+\_\+\+S\+P\+I\+\_\+\+T\+X\+\_\+\+M\+E\+S\+S\+A\+G\+ES} \{ \newline
+{\bfseries V\+P\+\_\+\+T\+X\+\_\+\+M\+I\+N\+\_\+\+M\+S\+G\+\_\+\+I\+D\+\_\+\+M\+I\+N\+U\+S\+\_\+1} = 0, 
+{\bfseries V\+P\+\_\+\+System\+Status\+Msg} = 0x0001, 
+{\bfseries V\+P\+\_\+\+Can\+Defn\+Ver\+Msg} = 0x0002, 
+{\bfseries V\+P\+\_\+\+B\+Can\+Sig\+Data\+Msg} = 0x0003, 
+\newline
+{\bfseries V\+P\+\_\+\+C\+Can\+Sig\+Data\+Msg} = 0x0004, 
+{\bfseries V\+P\+\_\+\+C\+Can\+Mirror\+Status\+Msg} = 0x0005, 
+{\bfseries V\+P\+\_\+\+Sw\+Version\+Info} = 0x0006, 
+{\bfseries V\+P\+\_\+\+Can\+Msg\+Timeout\+Status} = 0x0007, 
+\newline
+{\bfseries V\+P\+\_\+\+Can\+Signal\+Timeout\+Status} = 0x0008, 
+{\bfseries V\+P\+\_\+\+Printf} = 0x0009, 
+{\bfseries V\+P\+\_\+\+Uds\+Response\+Msg} = 0x000A, 
+{\bfseries V\+P\+\_\+\+Sleep\+Reques\+Msg} = 0x000B, 
+\newline
+{\bfseries V\+P\+\_\+\+T\+X\+\_\+\+M\+A\+X\+\_\+\+M\+S\+G\+\_\+\+I\+D\+\_\+\+P\+L\+U\+S\+\_\+1}
+ \}
+\item 
+\mbox{\Hypertarget{spi__common__config_8h_ab07e0b496a56154eea23876183d399cc}\label{spi__common__config_8h_ab07e0b496a56154eea23876183d399cc}} 
+enum {\bfseries G\+P\+\_\+\+S\+P\+I\+\_\+\+T\+X\+\_\+\+M\+E\+S\+S\+A\+G\+ES} \{ \newline
+{\bfseries G\+P\+\_\+\+T\+X\+\_\+\+M\+I\+N\+\_\+\+M\+S\+G\+\_\+\+I\+D\+\_\+\+M\+I\+N\+U\+S\+\_\+1} = 0, 
+{\bfseries G\+P\+\_\+\+Unit\+Status\+Msg} = 0x0001, 
+{\bfseries G\+P\+\_\+\+Can\+Net\+Defn\+Msg} = 0x0002, 
+{\bfseries G\+P\+\_\+\+Can\+Msg\+Defn\+Msg} = 0x0003, 
+\newline
+{\bfseries G\+P\+\_\+\+Can\+Defn\+Ver\+Msg} = 0x0004, 
+{\bfseries G\+P\+\_\+\+Video\+Ready\+Msg} = 0x0005, 
+{\bfseries G\+P\+\_\+\+Uds\+Request\+Msg} = 0x0006, 
+{\bfseries G\+P\+\_\+\+T\+X\+\_\+\+M\+A\+X\+\_\+\+M\+S\+G\+\_\+\+I\+D\+\_\+\+P\+L\+U\+S\+\_\+1}
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+PI Library Common Configuration -\/ \mbox{\hyperlink{spi__common__config_8h}{spi\+\_\+common\+\_\+config.\+h}} This file contains common definitions required by the S\+PI communications software residing on both the the VP and GP. It is generated from the template file \char`\"{}spi\+\_\+common\+\_\+config\+\_\+h.\+txt\char`\"{} that is supplied with each release of the S\+PI communications library. 
+
+\begin{DoxyCopyright}{Copyright}
+(c) 2013 -\/ 2016 Yazaki North America
+\end{DoxyCopyright}
+N\+O\+TE\+: T\+HE S\+A\+ME V\+E\+R\+S\+I\+ON OF T\+H\+IS F\+I\+LE {\bfseries M\+U\+ST} BE U\+S\+ED ON B\+O\+TH T\+HE VP A\+ND GP. W\+H\+EN A C\+H\+A\+N\+GE IS M\+A\+DE IN T\+H\+IS F\+I\+LE T\+HE S\+PI C\+O\+M\+M\+U\+N\+I\+C\+A\+T\+I\+ON S\+U\+B\+S\+Y\+S\+T\+E\+MS ON B\+O\+TH N\+O\+D\+ES, I\+N\+C\+L\+U\+D\+I\+NG T\+HE S\+PI C\+O\+M\+M\+U\+N\+I\+C\+A\+T\+I\+O\+NS L\+I\+B\+R\+A\+RY, M\+U\+ST BE RE-\/C\+O\+M\+P\+I\+L\+ED TO E\+N\+S\+U\+RE E\+A\+CH N\+O\+DE IS C\+O\+N\+F\+I\+G\+U\+R\+ED C\+O\+R\+R\+E\+C\+T\+L\+Y!!!
+
+N\+O\+TE\+: DO N\+OT C\+H\+A\+N\+GE T\+HE N\+A\+M\+ES OF T\+HE P\+A\+R\+A\+M\+E\+T\+E\+RS IN T\+H\+IS F\+I\+LE, O\+N\+LY P\+A\+R\+A\+M\+E\+T\+ER V\+A\+L\+U\+ES M\+AY BE C\+H\+A\+N\+G\+ED.
+
+\begin{DoxyAuthor}{Author}
+G. Palarski, D. Kageff
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+1.\+16 
+\end{DoxyParagraph}
+~\newline
+ \begin{DoxyParagraph}{Log}
+\mbox{\hyperlink{spi__common__config_8h}{spi\+\_\+common\+\_\+config.\+h}} 
+\end{DoxyParagraph}
+Revision 1.\+16 2017/05/16 16\+:42\+:15C\+DT Carlos Serrato Moreno (10013229)
+\begin{DoxyItemize}
+\item Add more I\+PC messages definitions Revision 1.\+15 2017/03/30 07\+:12\+:15C\+ST Eudora Gunarta (10031829) Changes for adding sleep request message that is sent from VP to GP. Revision 1.\+14 2017/03/22 15\+:57\+:28E\+DT Sergio Espinoza Lopez (10012599) type fiels was missing from spi signal timeout message Revision 1.\+13 2017/03/21 15\+:31\+:07C\+ST Eudora Gunarta (10031829) Added definitions for G\+P\+\_\+\+Unit\+Status\+Msg. Revision 1.\+12 2017/03/21 10\+:56\+:40E\+DT Isaias Acosta Martinez (10014447) Added definitions for U\+DS manager I\+PC messages Revision 1.\+11 2017/03/20 20\+:23\+:13C\+ST Sergio Espinoza Lopez (10012599)
+\item C\+AN signal timeout reporting infrastructure
+\item Update to use common definitions for I\+PC messages Revision 1.\+10 2017/03/17 15\+:30\+:51C\+ST Eudora Gunarta (10031829) Added macros for G\+P\+\_\+\+Unit\+Status\+Msg message, correction for a V\+P\+\_\+\+Sw\+Version\+Info macro. Revision 1.\+9 2017/02/15 18\+:31\+:03E\+ST Daniel Kageff (10011932) Added comments to C\+AN def message offsets
+\end{DoxyItemize}
+
+\begin{DoxyCopyright}{Copyright}
+(C) 2016 Yazaki North America
+\end{DoxyCopyright}
+License\+: Yazaki License, All Rights Reserved
+
+This document is protected by the copyright law of the United States and foreign countries. The work embodied in this document is confidential and constitutes a trade secret of Yazaki North America, Inc. Any copying of this document and/or any use or disclosure of this document or the work embodied in it without the written authority of Yazaki North America, Inc., will constitute copyright and trade secret infringement and will violate the rights of Yazaki North America, Inc. 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{spi__common__config_8h_a493459cc3cf4f051374ca7f2646346dd}\label{spi__common__config_8h_a493459cc3cf4f051374ca7f2646346dd}} 
+\index{spi\+\_\+common\+\_\+config.\+h@{spi\+\_\+common\+\_\+config.\+h}!C\+A\+N\+\_\+\+D\+E\+F\+\_\+\+V\+ER@{C\+A\+N\+\_\+\+D\+E\+F\+\_\+\+V\+ER}}
+\index{C\+A\+N\+\_\+\+D\+E\+F\+\_\+\+V\+ER@{C\+A\+N\+\_\+\+D\+E\+F\+\_\+\+V\+ER}!spi\+\_\+common\+\_\+config.\+h@{spi\+\_\+common\+\_\+config.\+h}}
+\subsubsection{\texorpdfstring{C\+A\+N\+\_\+\+D\+E\+F\+\_\+\+V\+ER}{CAN\_DEF\_VER}}
+{\footnotesize\ttfamily \#define C\+A\+N\+\_\+\+D\+E\+F\+\_\+\+V\+ER~0x01}
+
+C\+AN definitions version \mbox{\Hypertarget{spi__common__config_8h_a9da4f32198f7c2805f769da3fc18d986}\label{spi__common__config_8h_a9da4f32198f7c2805f769da3fc18d986}} 
+\index{spi\+\_\+common\+\_\+config.\+h@{spi\+\_\+common\+\_\+config.\+h}!C\+A\+N\+\_\+\+M\+S\+G\+\_\+\+D\+E\+FN@{C\+A\+N\+\_\+\+M\+S\+G\+\_\+\+D\+E\+FN}}
+\index{C\+A\+N\+\_\+\+M\+S\+G\+\_\+\+D\+E\+FN@{C\+A\+N\+\_\+\+M\+S\+G\+\_\+\+D\+E\+FN}!spi\+\_\+common\+\_\+config.\+h@{spi\+\_\+common\+\_\+config.\+h}}
+\subsubsection{\texorpdfstring{C\+A\+N\+\_\+\+M\+S\+G\+\_\+\+D\+E\+FN}{CAN\_MSG\_DEFN}}
+{\footnotesize\ttfamily \#define C\+A\+N\+\_\+\+M\+S\+G\+\_\+\+D\+E\+FN~0x02}
+
+Base C\+AN message definition \mbox{\Hypertarget{spi__common__config_8h_a0b0e96763f8f10fc29763f4a068b9234}\label{spi__common__config_8h_a0b0e96763f8f10fc29763f4a068b9234}} 
+\index{spi\+\_\+common\+\_\+config.\+h@{spi\+\_\+common\+\_\+config.\+h}!C\+A\+N\+\_\+\+M\+S\+G\+\_\+\+D\+E\+F\+N\+\_\+\+E\+XT@{C\+A\+N\+\_\+\+M\+S\+G\+\_\+\+D\+E\+F\+N\+\_\+\+E\+XT}}
+\index{C\+A\+N\+\_\+\+M\+S\+G\+\_\+\+D\+E\+F\+N\+\_\+\+E\+XT@{C\+A\+N\+\_\+\+M\+S\+G\+\_\+\+D\+E\+F\+N\+\_\+\+E\+XT}!spi\+\_\+common\+\_\+config.\+h@{spi\+\_\+common\+\_\+config.\+h}}
+\subsubsection{\texorpdfstring{C\+A\+N\+\_\+\+M\+S\+G\+\_\+\+D\+E\+F\+N\+\_\+\+E\+XT}{CAN\_MSG\_DEFN\_EXT}}
+{\footnotesize\ttfamily \#define C\+A\+N\+\_\+\+M\+S\+G\+\_\+\+D\+E\+F\+N\+\_\+\+E\+XT~0x06}
+
+Extended C\+AN message definition. This P\+ID includes N number of signal definitions. \mbox{\Hypertarget{spi__common__config_8h_a5f1d4e5906a542e02c6d41c8fca46f3a}\label{spi__common__config_8h_a5f1d4e5906a542e02c6d41c8fca46f3a}} 
+\index{spi\+\_\+common\+\_\+config.\+h@{spi\+\_\+common\+\_\+config.\+h}!C\+A\+N\+\_\+\+M\+S\+G\+\_\+\+R\+AW@{C\+A\+N\+\_\+\+M\+S\+G\+\_\+\+R\+AW}}
+\index{C\+A\+N\+\_\+\+M\+S\+G\+\_\+\+R\+AW@{C\+A\+N\+\_\+\+M\+S\+G\+\_\+\+R\+AW}!spi\+\_\+common\+\_\+config.\+h@{spi\+\_\+common\+\_\+config.\+h}}
+\subsubsection{\texorpdfstring{C\+A\+N\+\_\+\+M\+S\+G\+\_\+\+R\+AW}{CAN\_MSG\_RAW}}
+{\footnotesize\ttfamily \#define C\+A\+N\+\_\+\+M\+S\+G\+\_\+\+R\+AW~0x05}
+
+Always send the \textquotesingle{}raw\textquotesingle{} message data for the indicated message ID \mbox{\Hypertarget{spi__common__config_8h_a9a77c86b3397688162666d13c14b0337}\label{spi__common__config_8h_a9a77c86b3397688162666d13c14b0337}} 
+\index{spi\+\_\+common\+\_\+config.\+h@{spi\+\_\+common\+\_\+config.\+h}!C\+A\+N\+\_\+\+M\+S\+G\+\_\+\+S\+I\+G\+N\+AL@{C\+A\+N\+\_\+\+M\+S\+G\+\_\+\+S\+I\+G\+N\+AL}}
+\index{C\+A\+N\+\_\+\+M\+S\+G\+\_\+\+S\+I\+G\+N\+AL@{C\+A\+N\+\_\+\+M\+S\+G\+\_\+\+S\+I\+G\+N\+AL}!spi\+\_\+common\+\_\+config.\+h@{spi\+\_\+common\+\_\+config.\+h}}
+\subsubsection{\texorpdfstring{C\+A\+N\+\_\+\+M\+S\+G\+\_\+\+S\+I\+G\+N\+AL}{CAN\_MSG\_SIGNAL}}
+{\footnotesize\ttfamily \#define C\+A\+N\+\_\+\+M\+S\+G\+\_\+\+S\+I\+G\+N\+AL~0x03}
+
+C\+AN message signal basic definition \mbox{\Hypertarget{spi__common__config_8h_aa7a226cc6d56bfec4e1383119a0848e6}\label{spi__common__config_8h_aa7a226cc6d56bfec4e1383119a0848e6}} 
+\index{spi\+\_\+common\+\_\+config.\+h@{spi\+\_\+common\+\_\+config.\+h}!C\+A\+N\+\_\+\+S\+I\+G\+\_\+\+C\+O\+NV@{C\+A\+N\+\_\+\+S\+I\+G\+\_\+\+C\+O\+NV}}
+\index{C\+A\+N\+\_\+\+S\+I\+G\+\_\+\+C\+O\+NV@{C\+A\+N\+\_\+\+S\+I\+G\+\_\+\+C\+O\+NV}!spi\+\_\+common\+\_\+config.\+h@{spi\+\_\+common\+\_\+config.\+h}}
+\subsubsection{\texorpdfstring{C\+A\+N\+\_\+\+S\+I\+G\+\_\+\+C\+O\+NV}{CAN\_SIG\_CONV}}
+{\footnotesize\ttfamily \#define C\+A\+N\+\_\+\+S\+I\+G\+\_\+\+C\+O\+NV~0x04}
+
+C\+AN message signal conversion factor definition \mbox{\Hypertarget{spi__common__config_8h_a90664c79e46932ebe7c12cb940674352}\label{spi__common__config_8h_a90664c79e46932ebe7c12cb940674352}} 
+\index{spi\+\_\+common\+\_\+config.\+h@{spi\+\_\+common\+\_\+config.\+h}!C\+A\+N\+M\+S\+G\+\_\+\+D\+E\+F\+\_\+\+M\+S\+G\+\_\+\+SZ@{C\+A\+N\+M\+S\+G\+\_\+\+D\+E\+F\+\_\+\+M\+S\+G\+\_\+\+SZ}}
+\index{C\+A\+N\+M\+S\+G\+\_\+\+D\+E\+F\+\_\+\+M\+S\+G\+\_\+\+SZ@{C\+A\+N\+M\+S\+G\+\_\+\+D\+E\+F\+\_\+\+M\+S\+G\+\_\+\+SZ}!spi\+\_\+common\+\_\+config.\+h@{spi\+\_\+common\+\_\+config.\+h}}
+\subsubsection{\texorpdfstring{C\+A\+N\+M\+S\+G\+\_\+\+D\+E\+F\+\_\+\+M\+S\+G\+\_\+\+SZ}{CANMSG\_DEF\_MSG\_SZ}}
+{\footnotesize\ttfamily \#define C\+A\+N\+M\+S\+G\+\_\+\+D\+E\+F\+\_\+\+M\+S\+G\+\_\+\+SZ}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{( CANMSGID\_SZ \(\backslash\)}
+\DoxyCodeLine{                            + CANMSGDLC\_SZ \(\backslash\)}
+\DoxyCodeLine{                            + CANMSGTYPE\_SZ \(\backslash\)}
+\DoxyCodeLine{                            + CANMSGBUS\_SZ \(\backslash\)}
+\DoxyCodeLine{                            + CANMSGRATE\_SZ \(\backslash\)}
+\DoxyCodeLine{                            + CANMSGTIMEOUT\_SZ )}
+\end{DoxyCode}
+\mbox{\Hypertarget{spi__common__config_8h_a76885e77943e04cdfad781c8d1c0e40c}\label{spi__common__config_8h_a76885e77943e04cdfad781c8d1c0e40c}} 
+\index{spi\+\_\+common\+\_\+config.\+h@{spi\+\_\+common\+\_\+config.\+h}!C\+A\+N\+S\+I\+G\+\_\+\+D\+E\+F\+\_\+\+M\+S\+G\+\_\+\+SZ@{C\+A\+N\+S\+I\+G\+\_\+\+D\+E\+F\+\_\+\+M\+S\+G\+\_\+\+SZ}}
+\index{C\+A\+N\+S\+I\+G\+\_\+\+D\+E\+F\+\_\+\+M\+S\+G\+\_\+\+SZ@{C\+A\+N\+S\+I\+G\+\_\+\+D\+E\+F\+\_\+\+M\+S\+G\+\_\+\+SZ}!spi\+\_\+common\+\_\+config.\+h@{spi\+\_\+common\+\_\+config.\+h}}
+\subsubsection{\texorpdfstring{C\+A\+N\+S\+I\+G\+\_\+\+D\+E\+F\+\_\+\+M\+S\+G\+\_\+\+SZ}{CANSIG\_DEF\_MSG\_SZ}}
+{\footnotesize\ttfamily \#define C\+A\+N\+S\+I\+G\+\_\+\+D\+E\+F\+\_\+\+M\+S\+G\+\_\+\+SZ}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{( CANSIGID\_SZ \(\backslash\)}
+\DoxyCodeLine{                             + CANMSGSIGID\_SZ \(\backslash\)}
+\DoxyCodeLine{                             + CANSIGSTARTBIT\_SZ \(\backslash\)}
+\DoxyCodeLine{                             + CANSIGDLC\_SZ \(\backslash\)}
+\DoxyCodeLine{                             + CANSIGBUSID\_SZ)}
+\end{DoxyCode}
+\mbox{\Hypertarget{spi__common__config_8h_abba744257a923a92588446634edcaf55}\label{spi__common__config_8h_abba744257a923a92588446634edcaf55}} 
+\index{spi\+\_\+common\+\_\+config.\+h@{spi\+\_\+common\+\_\+config.\+h}!G\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+S\+G\+\_\+\+SZ@{G\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+S\+G\+\_\+\+SZ}}
+\index{G\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+S\+G\+\_\+\+SZ@{G\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+S\+G\+\_\+\+SZ}!spi\+\_\+common\+\_\+config.\+h@{spi\+\_\+common\+\_\+config.\+h}}
+\subsubsection{\texorpdfstring{G\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+S\+G\+\_\+\+SZ}{GP\_STATUS\_MSG\_SZ}}
+{\footnotesize\ttfamily \#define G\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+S\+G\+\_\+\+SZ}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{( UNIT\_STATE\_SZ \(\backslash\)}
+\DoxyCodeLine{                             + SOH\_STATUS\_SZ \(\backslash\)}
+\DoxyCodeLine{                             + SOH\_FC\_ID\_SZ \(\backslash\)}
+\DoxyCodeLine{                             + RST\_REQ\_SZ )}
+\end{DoxyCode}
+\mbox{\Hypertarget{spi__common__config_8h_a34e2b7d92aed9e12ed2488aa16633b41}\label{spi__common__config_8h_a34e2b7d92aed9e12ed2488aa16633b41}} 
+\index{spi\+\_\+common\+\_\+config.\+h@{spi\+\_\+common\+\_\+config.\+h}!N\+M\+\_\+\+C\+H\+A\+N\+N\+EL@{N\+M\+\_\+\+C\+H\+A\+N\+N\+EL}}
+\index{N\+M\+\_\+\+C\+H\+A\+N\+N\+EL@{N\+M\+\_\+\+C\+H\+A\+N\+N\+EL}!spi\+\_\+common\+\_\+config.\+h@{spi\+\_\+common\+\_\+config.\+h}}
+\subsubsection{\texorpdfstring{N\+M\+\_\+\+C\+H\+A\+N\+N\+EL}{NM\_CHANNEL}}
+{\footnotesize\ttfamily \#define N\+M\+\_\+\+C\+H\+A\+N\+N\+EL~0x06}
+
+Network channel? \mbox{\Hypertarget{spi__common__config_8h_aafa9b78d9ba8f150cbc9be5cf1e30017}\label{spi__common__config_8h_aafa9b78d9ba8f150cbc9be5cf1e30017}} 
+\index{spi\+\_\+common\+\_\+config.\+h@{spi\+\_\+common\+\_\+config.\+h}!N\+M\+\_\+\+N\+U\+M\+\_\+\+M\+S\+G\+\_\+\+D\+E\+FS@{N\+M\+\_\+\+N\+U\+M\+\_\+\+M\+S\+G\+\_\+\+D\+E\+FS}}
+\index{N\+M\+\_\+\+N\+U\+M\+\_\+\+M\+S\+G\+\_\+\+D\+E\+FS@{N\+M\+\_\+\+N\+U\+M\+\_\+\+M\+S\+G\+\_\+\+D\+E\+FS}!spi\+\_\+common\+\_\+config.\+h@{spi\+\_\+common\+\_\+config.\+h}}
+\subsubsection{\texorpdfstring{N\+M\+\_\+\+N\+U\+M\+\_\+\+M\+S\+G\+\_\+\+D\+E\+FS}{NM\_NUM\_MSG\_DEFS}}
+{\footnotesize\ttfamily \#define N\+M\+\_\+\+N\+U\+M\+\_\+\+M\+S\+G\+\_\+\+D\+E\+FS~0x07}
+
+Number of messages defined (supported) for this network. \mbox{\Hypertarget{spi__common__config_8h_ac4df43c4cd3609827bdb90e58578766d}\label{spi__common__config_8h_ac4df43c4cd3609827bdb90e58578766d}} 
+\index{spi\+\_\+common\+\_\+config.\+h@{spi\+\_\+common\+\_\+config.\+h}!N\+M\+\_\+\+N\+U\+M\+\_\+\+S\+I\+G\+\_\+\+D\+E\+FS@{N\+M\+\_\+\+N\+U\+M\+\_\+\+S\+I\+G\+\_\+\+D\+E\+FS}}
+\index{N\+M\+\_\+\+N\+U\+M\+\_\+\+S\+I\+G\+\_\+\+D\+E\+FS@{N\+M\+\_\+\+N\+U\+M\+\_\+\+S\+I\+G\+\_\+\+D\+E\+FS}!spi\+\_\+common\+\_\+config.\+h@{spi\+\_\+common\+\_\+config.\+h}}
+\subsubsection{\texorpdfstring{N\+M\+\_\+\+N\+U\+M\+\_\+\+S\+I\+G\+\_\+\+D\+E\+FS}{NM\_NUM\_SIG\_DEFS}}
+{\footnotesize\ttfamily \#define N\+M\+\_\+\+N\+U\+M\+\_\+\+S\+I\+G\+\_\+\+D\+E\+FS~0x08}
+
+Number of message signals defined (supported) for this network. \mbox{\Hypertarget{spi__common__config_8h_ac39f39e41cffb621c9369e900c435cea}\label{spi__common__config_8h_ac39f39e41cffb621c9369e900c435cea}} 
+\index{spi\+\_\+common\+\_\+config.\+h@{spi\+\_\+common\+\_\+config.\+h}!N\+M\+\_\+\+P\+A\+R\+T\+I\+A\+L\+\_\+\+N\+E\+T\+\_\+\+E\+N\+A\+B\+LE@{N\+M\+\_\+\+P\+A\+R\+T\+I\+A\+L\+\_\+\+N\+E\+T\+\_\+\+E\+N\+A\+B\+LE}}
+\index{N\+M\+\_\+\+P\+A\+R\+T\+I\+A\+L\+\_\+\+N\+E\+T\+\_\+\+E\+N\+A\+B\+LE@{N\+M\+\_\+\+P\+A\+R\+T\+I\+A\+L\+\_\+\+N\+E\+T\+\_\+\+E\+N\+A\+B\+LE}!spi\+\_\+common\+\_\+config.\+h@{spi\+\_\+common\+\_\+config.\+h}}
+\subsubsection{\texorpdfstring{N\+M\+\_\+\+P\+A\+R\+T\+I\+A\+L\+\_\+\+N\+E\+T\+\_\+\+E\+N\+A\+B\+LE}{NM\_PARTIAL\_NET\_ENABLE}}
+{\footnotesize\ttfamily \#define N\+M\+\_\+\+P\+A\+R\+T\+I\+A\+L\+\_\+\+N\+E\+T\+\_\+\+E\+N\+A\+B\+LE~0x04}
+
+Network partial network support? enable \mbox{\Hypertarget{spi__common__config_8h_adc2c60273c7cf96fb47e5c9fdd5761a6}\label{spi__common__config_8h_adc2c60273c7cf96fb47e5c9fdd5761a6}} 
+\index{spi\+\_\+common\+\_\+config.\+h@{spi\+\_\+common\+\_\+config.\+h}!N\+M\+\_\+\+R\+E\+M\+O\+T\+E\+\_\+\+T\+I\+M\+E\+O\+UT@{N\+M\+\_\+\+R\+E\+M\+O\+T\+E\+\_\+\+T\+I\+M\+E\+O\+UT}}
+\index{N\+M\+\_\+\+R\+E\+M\+O\+T\+E\+\_\+\+T\+I\+M\+E\+O\+UT@{N\+M\+\_\+\+R\+E\+M\+O\+T\+E\+\_\+\+T\+I\+M\+E\+O\+UT}!spi\+\_\+common\+\_\+config.\+h@{spi\+\_\+common\+\_\+config.\+h}}
+\subsubsection{\texorpdfstring{N\+M\+\_\+\+R\+E\+M\+O\+T\+E\+\_\+\+T\+I\+M\+E\+O\+UT}{NM\_REMOTE\_TIMEOUT}}
+{\footnotesize\ttfamily \#define N\+M\+\_\+\+R\+E\+M\+O\+T\+E\+\_\+\+T\+I\+M\+E\+O\+UT~0x02}
+
+Network remote timeout parameter ID \mbox{\Hypertarget{spi__common__config_8h_abe3fb7e3e101767751208d5b4c65b3aa}\label{spi__common__config_8h_abe3fb7e3e101767751208d5b4c65b3aa}} 
+\index{spi\+\_\+common\+\_\+config.\+h@{spi\+\_\+common\+\_\+config.\+h}!N\+M\+\_\+\+T\+I\+M\+E\+O\+UT@{N\+M\+\_\+\+T\+I\+M\+E\+O\+UT}}
+\index{N\+M\+\_\+\+T\+I\+M\+E\+O\+UT@{N\+M\+\_\+\+T\+I\+M\+E\+O\+UT}!spi\+\_\+common\+\_\+config.\+h@{spi\+\_\+common\+\_\+config.\+h}}
+\subsubsection{\texorpdfstring{N\+M\+\_\+\+T\+I\+M\+E\+O\+UT}{NM\_TIMEOUT}}
+{\footnotesize\ttfamily \#define N\+M\+\_\+\+T\+I\+M\+E\+O\+UT~0x01}
+
+Network timeout parameter ID \mbox{\Hypertarget{spi__common__config_8h_a4d52ad0a0bc8a857fc6719ff1d89925f}\label{spi__common__config_8h_a4d52ad0a0bc8a857fc6719ff1d89925f}} 
+\index{spi\+\_\+common\+\_\+config.\+h@{spi\+\_\+common\+\_\+config.\+h}!N\+M\+\_\+\+W\+A\+I\+T\+B\+U\+S\+T\+I\+M\+E\+O\+UT@{N\+M\+\_\+\+W\+A\+I\+T\+B\+U\+S\+T\+I\+M\+E\+O\+UT}}
+\index{N\+M\+\_\+\+W\+A\+I\+T\+B\+U\+S\+T\+I\+M\+E\+O\+UT@{N\+M\+\_\+\+W\+A\+I\+T\+B\+U\+S\+T\+I\+M\+E\+O\+UT}!spi\+\_\+common\+\_\+config.\+h@{spi\+\_\+common\+\_\+config.\+h}}
+\subsubsection{\texorpdfstring{N\+M\+\_\+\+W\+A\+I\+T\+B\+U\+S\+T\+I\+M\+E\+O\+UT}{NM\_WAITBUSTIMEOUT}}
+{\footnotesize\ttfamily \#define N\+M\+\_\+\+W\+A\+I\+T\+B\+U\+S\+T\+I\+M\+E\+O\+UT~0x03}
+
+Network bus timeout parameter ID \mbox{\Hypertarget{spi__common__config_8h_a9ab5654f9131678b25a10ad23d45156a}\label{spi__common__config_8h_a9ab5654f9131678b25a10ad23d45156a}} 
+\index{spi\+\_\+common\+\_\+config.\+h@{spi\+\_\+common\+\_\+config.\+h}!S\+W\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+M\+S\+G\+\_\+\+SZ@{S\+W\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+M\+S\+G\+\_\+\+SZ}}
+\index{S\+W\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+M\+S\+G\+\_\+\+SZ@{S\+W\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+M\+S\+G\+\_\+\+SZ}!spi\+\_\+common\+\_\+config.\+h@{spi\+\_\+common\+\_\+config.\+h}}
+\subsubsection{\texorpdfstring{S\+W\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+M\+S\+G\+\_\+\+SZ}{SW\_VERSION\_MSG\_SZ}}
+{\footnotesize\ttfamily \#define S\+W\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+M\+S\+G\+\_\+\+SZ}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(VP\_SW\_VERSION\_SZ \(\backslash\)}
+\DoxyCodeLine{                               +  VP\_SW\_PART\_NUMBER\_SZ )}
+\end{DoxyCode}

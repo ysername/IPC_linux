@@ -1,0 +1,351 @@
+\hypertarget{gp__cfg_8h}{}\section{gp\+\_\+cfg.\+h File Reference}
+\label{gp__cfg_8h}\index{gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}}
+
+
+Common GP bootloader and application configuration settings and definitions.  
+
+
+{\ttfamily \#include \char`\"{}gp\+\_\+utils.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{gp__cfg_8h_a62b075ec29b7b301c68f539d8aafd029}{R\+O\+O\+T\+\_\+\+D\+IR}}~\char`\"{}/mydisk\char`\"{}
+\begin{DoxyCompactList}\small\item\em R\+E\+L\+E\+A\+S\+E\+\_\+\+B\+U\+I\+LD -\/ Debug/release build macro definition. If defined, disables any debug related code in the project. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{gp__cfg_8h_a2d3783c8ec84a6a4634ca001b5da9432}\label{gp__cfg_8h_a2d3783c8ec84a6a4634ca001b5da9432}} 
+\#define {\bfseries C\+F\+G\+\_\+\+D\+IR}~\char`\"{}/mydisk\char`\"{}
+\item 
+\mbox{\Hypertarget{gp__cfg_8h_af27637de3c1044f48e2292ea76b40707}\label{gp__cfg_8h_af27637de3c1044f48e2292ea76b40707}} 
+\#define {\bfseries C\+A\+N\+D\+E\+F\+\_\+\+D\+IR}~\char`\"{}/mydisk\char`\"{}
+\item 
+\mbox{\Hypertarget{gp__cfg_8h_a685beb7c88ef4099afbecf7dba38adbe}\label{gp__cfg_8h_a685beb7c88ef4099afbecf7dba38adbe}} 
+\#define {\bfseries A\+P\+P\+\_\+\+D\+IR}~\char`\"{}/mydisk\char`\"{}
+\item 
+\#define \mbox{\hyperlink{gp__cfg_8h_a339e7faab3138b9f7e1ac2f130948716}{U\+P\+D\+A\+T\+E\+\_\+\+D\+IR}}~\char`\"{}/mydisk\char`\"{}
+\item 
+\#define \mbox{\hyperlink{gp__cfg_8h_afb434d26dcb45a14badf5156e9d0e9b9}{H\+M\+I\+\_\+\+B\+A\+S\+E\+\_\+\+D\+IR}}~\char`\"{}/mydisk\char`\"{}
+\item 
+\#define \mbox{\hyperlink{gp__cfg_8h_a2fe6571ac8e31df8596bdca3b81918cd}{G\+R\+A\+P\+H\+I\+C\+S\+\_\+\+D\+IR}}~\char`\"{}Graphics\char`\"{}
+\item 
+\#define \mbox{\hyperlink{gp__cfg_8h_abdd33f362ae3bbdacb5de76473aa8a2f}{M\+A\+X\+\_\+\+P\+A\+T\+H\+\_\+\+L\+EN}}~40
+\item 
+\#define \mbox{\hyperlink{gp__cfg_8h_a8787fcfd7d33484bca1dd9c90772a729}{M\+A\+X\+\_\+\+U\+P\+D\+\_\+\+F\+N\+A\+M\+E\+\_\+\+L\+EN}}~80
+\item 
+\#define \mbox{\hyperlink{gp__cfg_8h_a8ebb42e5df4685156005041e44b36443}{B\+A\+S\+E\+\_\+\+D\+IR}}~\char`\"{}/mydisk\char`\"{}
+\item 
+\#define \mbox{\hyperlink{gp__cfg_8h_afcdbd028cf346f30c237edd89925192c}{H\+M\+I\+\_\+\+D\+E\+M\+O\+\_\+\+D\+IR}}~\char`\"{}Demo\char`\"{}
+\item 
+\#define \mbox{\hyperlink{gp__cfg_8h_a2fe6571ac8e31df8596bdca3b81918cd}{G\+R\+A\+P\+H\+I\+C\+S\+\_\+\+D\+IR}}~\char`\"{}Graphics\char`\"{}
+\item 
+\#define \mbox{\hyperlink{gp__cfg_8h_ada951becb053baf861ef5c70dec47605}{T\+S\+K\+\_\+\+OK}}~(0x5\+Au)
+\item 
+\#define \mbox{\hyperlink{gp__cfg_8h_ac3707d27c4ba333e4b8023ec2c3a379b}{B\+T\+\_\+\+C\+F\+G\+\_\+\+F\+N\+A\+ME}}~\char`\"{}app\+\_\+start.\+ini\char`\"{}
+\item 
+\#define \mbox{\hyperlink{gp__cfg_8h_af32696824347275b4a31b4defa4d5306}{S\+Y\+S\+\_\+\+C\+F\+G\+\_\+\+F\+N\+A\+ME}}~\char`\"{}hud\+\_\+cfg.\+ini\char`\"{}
+\item 
+\#define \mbox{\hyperlink{gp__cfg_8h_a1f8d496b8c007e6a4f722f137cb08c84}{M\+A\+X\+\_\+\+F\+N\+A\+M\+E\+\_\+\+L\+EN}}~40
+\item 
+\#define \mbox{\hyperlink{gp__cfg_8h_a852cdfd928432170a47d51715aa6e44b}{M\+A\+X\+\_\+\+F\+E\+X\+T\+\_\+\+L\+EN}}~6
+\item 
+\#define \mbox{\hyperlink{gp__cfg_8h_ac1222c7ffe881356a4624fb8650b1438}{M\+A\+X\+\_\+\+P\+G\+M\+F\+I\+L\+E\+\_\+\+L\+EN}}~(\mbox{\hyperlink{gp__cfg_8h_abdd33f362ae3bbdacb5de76473aa8a2f}{M\+A\+X\+\_\+\+P\+A\+T\+H\+\_\+\+L\+EN}}+\mbox{\hyperlink{gp__cfg_8h_a1f8d496b8c007e6a4f722f137cb08c84}{M\+A\+X\+\_\+\+F\+N\+A\+M\+E\+\_\+\+L\+EN}})
+\item 
+\#define \mbox{\hyperlink{gp__cfg_8h_aecb48224c68f629a5b4a3ec2731da91b}{D\+F\+L\+T\+\_\+\+D\+D\+\_\+\+E\+XT}}~\char`\"{}.elf\char`\"{}
+\item 
+\#define \mbox{\hyperlink{gp__cfg_8h_a915f05deae5771ba6a32e133a0fd84a5}{H\+M\+I\+\_\+\+A\+P\+P\+\_\+\+N\+A\+ME}}~\char`\"{}hmi\char`\"{}
+\item 
+\#define \mbox{\hyperlink{gp__cfg_8h_abcbe0a49c5dfa2ad41e8588669fc7b10}{I\+P\+C\+\_\+\+G\+E\+N\+\_\+\+T\+I\+M\+E\+O\+UT}}~(1000)
+\item 
+\#define \mbox{\hyperlink{gp__cfg_8h_aa4e1ea4798a6c08a0f3b26a055285751}{I\+P\+C\+\_\+\+H\+B\+T\+\_\+\+T\+I\+M\+E\+O\+UT}}~(1000)
+\item 
+\#define \mbox{\hyperlink{gp__cfg_8h_a4889d31c8fc985a6720f4d7a99e32e36}{I\+P\+C\+\_\+\+D\+P\+\_\+\+H\+M\+I\+\_\+\+T\+I\+M\+E\+O\+UT}}~(1000)
+\item 
+\#define \mbox{\hyperlink{gp__cfg_8h_a403d698b1352698e0abaea5366a4796d}{U\+M\+\_\+\+H\+M\+I\+\_\+\+T\+A\+S\+K\+\_\+\+C\+ON}}~\char`\"{}Um\+Hm\+Int\+Tsk\+Con\char`\"{}
+\item 
+\#define \mbox{\hyperlink{gp__cfg_8h_a002c2e333117b1c7767f0596311ab684}{U\+M\+\_\+\+H\+M\+I\+\_\+\+D\+P\+L\+T\+A\+S\+K\+\_\+\+C\+ON}}~\char`\"{}Um\+Hm\+Dpl\+Tsk\+Con\char`\"{}
+\item 
+\#define \mbox{\hyperlink{gp__cfg_8h_a28773cf605eb7b6e08619f10ee7e79b2}{P\+M\+\_\+\+H\+M\+I\+\_\+\+T\+A\+S\+K\+\_\+\+C\+ON}}~\char`\"{}Pm\+Hm\+Int\+Tsk\+Con\char`\"{}
+\item 
+\#define \mbox{\hyperlink{gp__cfg_8h_a960730a5b8c84249e551d01743777801}{I\+M\+\_\+\+H\+M\+I\+\_\+\+T\+A\+S\+K\+\_\+\+C\+ON}}~\char`\"{}Im\+Hm\+Int\+Tsk\+Con\char`\"{}
+\item 
+\#define \mbox{\hyperlink{gp__cfg_8h_a9263f463bdae0335726be1b0f901eed0}{D\+I\+A\+G\+\_\+\+B\+T\+L\+D\+R\+\_\+\+C\+N\+A\+M\+E\+\_\+\+L\+OC}}~\char`\"{}Diag\+Btldr\+Loc\+Conn\char`\"{}
+\item 
+\#define \mbox{\hyperlink{gp__cfg_8h_a549eda05551a7c2f5a330addc48e07cf}{D\+I\+A\+G\+\_\+\+B\+T\+L\+D\+R\+\_\+\+C\+N\+A\+M\+E\+\_\+\+R\+EM}}~\char`\"{}Diag\+Btldr\+Rem\+Conn\char`\"{}
+\item 
+\#define \mbox{\hyperlink{gp__cfg_8h_a893b95bb29dbf4b5cf4ca4aeddfdb68e}{D\+I\+A\+G\+\_\+\+A\+P\+P\+\_\+\+C\+N\+A\+M\+E\+\_\+\+L\+OC}}~\char`\"{}Diag\+App\+Loc\+Conn\char`\"{}
+\item 
+\#define \mbox{\hyperlink{gp__cfg_8h_a0590a647a68425bfe3d7e91c649e294b}{D\+I\+A\+G\+\_\+\+A\+P\+P\+\_\+\+C\+N\+A\+M\+E\+\_\+\+R\+EM}}~\char`\"{}Diag\+App\+Rem\+Conn\char`\"{}
+\item 
+\#define \mbox{\hyperlink{gp__cfg_8h_a8c544f82ff60c7b2f72f09e962e8e9c8}{O\+P\+C\+M\+D\+\_\+\+B\+U\+F\+\_\+\+L\+EN}}~(128)
+\item 
+\#define \mbox{\hyperlink{gp__cfg_8h_aa0edf404c44099b871de2377dd4970bf}{D\+F\+L\+T\+\_\+\+C\+A\+N\+D\+E\+F\+\_\+\+X\+M\+L1}}~\char`\"{}out\+\_\+\+Chassis.\+xml\char`\"{}
+\item 
+\#define \mbox{\hyperlink{gp__cfg_8h_ad65fb71aa41f6f422a3e54074c5d6823}{D\+F\+L\+T\+\_\+\+C\+A\+N\+D\+E\+F\+\_\+\+X\+M\+L2}}~\char`\"{}out\+\_\+body.\+xml\char`\"{}
+\item 
+\#define \mbox{\hyperlink{gp__cfg_8h_ae4a6cd47f661b2af96090edd848a41bb}{M\+A\+X\+\_\+\+I\+P\+C\+\_\+\+M\+S\+G\+L\+EN}}~128
+\item 
+\#define \mbox{\hyperlink{gp__cfg_8h_a1c33977ae3e755f4277eb4aebda97aee}{O\+P\+C\+M\+D\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+S\+EC}}~2
+\item 
+\#define \mbox{\hyperlink{gp__cfg_8h_a2d0d560b1e6edca69a392bfa5d74235b}{O\+P\+C\+M\+D\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+F\+R\+AC}}~0
+\item 
+\#define \mbox{\hyperlink{gp__cfg_8h_af47ca5954e7eb2930181ad22558b1b85}{D\+F\+L\+T\+\_\+\+D\+L\+P\+R\+O\+C\+\_\+\+P\+R\+I\+O\+R\+I\+TY}}~155
+\item 
+\#define \mbox{\hyperlink{gp__cfg_8h_a155242acf67dbc73325e0503f26f66b2}{V\+S\+I\+M\+\_\+\+C\+F\+G\+\_\+\+F\+N\+A\+ME}}~\char`\"{}/Vsim\+Profile\+Config.\+txt\char`\"{}
+\item 
+\#define \mbox{\hyperlink{gp__cfg_8h_a2e5999ae2ee446325b06d5b2655996e6}{D\+F\+L\+T\+\_\+\+D\+B\+G\+\_\+\+P\+R\+N\+T\+L\+VL}}~\mbox{\hyperlink{gp__utils_8h_ac276e33ef767b50e932a21293d3bd18eac842e5fcd9be549b3dd4ea140ea909fb}{V\+R\+B\+\_\+\+D\+E\+B\+U\+G1}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Common GP bootloader and application configuration settings and definitions. 
+
+\begin{DoxyCopyright}{Copyright}
+Yazaki 2016-\/17
+\end{DoxyCopyright}
+\begin{DoxyAuthor}{Author}
+D. Kageff
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+1.\+32 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Log}
+\mbox{\hyperlink{gp__cfg_8h}{gp\+\_\+cfg.\+h}} 
+\end{DoxyParagraph}
+Revision 1.\+32 2017/07/20 12\+:13\+:25C\+DT Daniel Kageff (10011932) Added M\+A\+X\+\_\+\+U\+P\+D\+\_\+\+F\+N\+A\+ME defintion Revision 1.\+31 2017/06/27 18\+:08\+:22E\+DT Daniel Kageff (10011932) Set download processing task priority higher (D\+F\+L\+T\+\_\+\+D\+L\+P\+R\+O\+C\+\_\+\+P\+R\+I\+O\+R\+I\+TY) Revision 1.\+30 2017/06/21 17\+:28\+:26E\+DT Daniel Kageff (10011932) Added default download processing task priority constant Revision 1.\+29 2017/06/02 11\+:04\+:35E\+DT Daniel Kageff (10011932) Updated file path defintions Revision 1.\+28 2017/04/24 19\+:09\+:25E\+DT Daniel Kageff (10011932) Added B\+A\+S\+E\+\_\+\+D\+IR definition Revision 1.\+27 2017/03/24 11\+:09\+:17E\+DT Daniel Kageff (10011932) Added system configuration filename definition Revision 1.\+26 2017/03/21 16\+:35\+:57E\+DT Daniel Kageff (10011932) Moved VP S\+Wver and part\# element length definitions to \mbox{\hyperlink{pool__def_8h}{pool\+\_\+def.\+h}} Revision 1.\+25 2017/03/20 15\+:20\+:24E\+DT Eudora Gunarta (10031829) Added macros used for handling V\+P\+\_\+\+Sw\+Version\+Info S\+PI message. Revision 1.\+24 2017/03/16 12\+:34\+:42E\+DT Daniel Kageff (10011932) Added connection names for runtime command connections. Revision 1.\+23 2017/02/22 18\+:17\+:44E\+ST Daniel Kageff (10011932) 1) Update debug print verbosity level definition 2) Added comments Revision 1.\+22 2017/02/17 17\+:49\+:17E\+ST Daniel Kageff (10011932) Added I\+PC communication timeout value constants Revision 1.\+21 2017/02/16 17\+:31\+:59E\+ST Daniel Kageff (10011932) 1) Changed G\+R\+A\+P\+H\+I\+C\+S\+\_\+\+D\+IR definition 2) Added H\+M\+I\+\_\+\+D\+E\+M\+O\+\_\+\+D\+IR definition 3) Added I\+PC message O\+P\+C\+M\+D\+\_\+\+B\+U\+F\+\_\+\+L\+EN definition Revision 1.\+20 2017/02/09 14\+:28\+:35E\+ST Daniel Kageff (10011932) Added M\+A\+X\+\_\+\+F\+E\+X\+T\+\_\+\+L\+EN, max file extension string length
+
+\begin{DoxyVerb}\end{DoxyVerb}
+ 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{gp__cfg_8h_a8ebb42e5df4685156005041e44b36443}\label{gp__cfg_8h_a8ebb42e5df4685156005041e44b36443}} 
+\index{gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}!B\+A\+S\+E\+\_\+\+D\+IR@{B\+A\+S\+E\+\_\+\+D\+IR}}
+\index{B\+A\+S\+E\+\_\+\+D\+IR@{B\+A\+S\+E\+\_\+\+D\+IR}!gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{B\+A\+S\+E\+\_\+\+D\+IR}{BASE\_DIR}}
+{\footnotesize\ttfamily \#define B\+A\+S\+E\+\_\+\+D\+IR~\char`\"{}/mydisk\char`\"{}}
+
+Base download directory used by diagnostic file or image transfers \mbox{\Hypertarget{gp__cfg_8h_ac3707d27c4ba333e4b8023ec2c3a379b}\label{gp__cfg_8h_ac3707d27c4ba333e4b8023ec2c3a379b}} 
+\index{gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}!B\+T\+\_\+\+C\+F\+G\+\_\+\+F\+N\+A\+ME@{B\+T\+\_\+\+C\+F\+G\+\_\+\+F\+N\+A\+ME}}
+\index{B\+T\+\_\+\+C\+F\+G\+\_\+\+F\+N\+A\+ME@{B\+T\+\_\+\+C\+F\+G\+\_\+\+F\+N\+A\+ME}!gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{B\+T\+\_\+\+C\+F\+G\+\_\+\+F\+N\+A\+ME}{BT\_CFG\_FNAME}}
+{\footnotesize\ttfamily \#define B\+T\+\_\+\+C\+F\+G\+\_\+\+F\+N\+A\+ME~\char`\"{}app\+\_\+start.\+ini\char`\"{}}
+
+Default bootloader, GP app boot time configuration filename \mbox{\Hypertarget{gp__cfg_8h_aa0edf404c44099b871de2377dd4970bf}\label{gp__cfg_8h_aa0edf404c44099b871de2377dd4970bf}} 
+\index{gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}!D\+F\+L\+T\+\_\+\+C\+A\+N\+D\+E\+F\+\_\+\+X\+M\+L1@{D\+F\+L\+T\+\_\+\+C\+A\+N\+D\+E\+F\+\_\+\+X\+M\+L1}}
+\index{D\+F\+L\+T\+\_\+\+C\+A\+N\+D\+E\+F\+\_\+\+X\+M\+L1@{D\+F\+L\+T\+\_\+\+C\+A\+N\+D\+E\+F\+\_\+\+X\+M\+L1}!gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{D\+F\+L\+T\+\_\+\+C\+A\+N\+D\+E\+F\+\_\+\+X\+M\+L1}{DFLT\_CANDEF\_XML1}}
+{\footnotesize\ttfamily \#define D\+F\+L\+T\+\_\+\+C\+A\+N\+D\+E\+F\+\_\+\+X\+M\+L1~\char`\"{}out\+\_\+\+Chassis.\+xml\char`\"{}}
+
+Chassis C\+AN (C\+C\+AN) message definitions. \mbox{\Hypertarget{gp__cfg_8h_ad65fb71aa41f6f422a3e54074c5d6823}\label{gp__cfg_8h_ad65fb71aa41f6f422a3e54074c5d6823}} 
+\index{gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}!D\+F\+L\+T\+\_\+\+C\+A\+N\+D\+E\+F\+\_\+\+X\+M\+L2@{D\+F\+L\+T\+\_\+\+C\+A\+N\+D\+E\+F\+\_\+\+X\+M\+L2}}
+\index{D\+F\+L\+T\+\_\+\+C\+A\+N\+D\+E\+F\+\_\+\+X\+M\+L2@{D\+F\+L\+T\+\_\+\+C\+A\+N\+D\+E\+F\+\_\+\+X\+M\+L2}!gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{D\+F\+L\+T\+\_\+\+C\+A\+N\+D\+E\+F\+\_\+\+X\+M\+L2}{DFLT\_CANDEF\_XML2}}
+{\footnotesize\ttfamily \#define D\+F\+L\+T\+\_\+\+C\+A\+N\+D\+E\+F\+\_\+\+X\+M\+L2~\char`\"{}out\+\_\+body.\+xml\char`\"{}}
+
+Body C\+AN (B\+C\+AN) message definitions. \mbox{\Hypertarget{gp__cfg_8h_a2e5999ae2ee446325b06d5b2655996e6}\label{gp__cfg_8h_a2e5999ae2ee446325b06d5b2655996e6}} 
+\index{gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}!D\+F\+L\+T\+\_\+\+D\+B\+G\+\_\+\+P\+R\+N\+T\+L\+VL@{D\+F\+L\+T\+\_\+\+D\+B\+G\+\_\+\+P\+R\+N\+T\+L\+VL}}
+\index{D\+F\+L\+T\+\_\+\+D\+B\+G\+\_\+\+P\+R\+N\+T\+L\+VL@{D\+F\+L\+T\+\_\+\+D\+B\+G\+\_\+\+P\+R\+N\+T\+L\+VL}!gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{D\+F\+L\+T\+\_\+\+D\+B\+G\+\_\+\+P\+R\+N\+T\+L\+VL}{DFLT\_DBG\_PRNTLVL}}
+{\footnotesize\ttfamily \#define D\+F\+L\+T\+\_\+\+D\+B\+G\+\_\+\+P\+R\+N\+T\+L\+VL~\mbox{\hyperlink{gp__utils_8h_ac276e33ef767b50e932a21293d3bd18eac842e5fcd9be549b3dd4ea140ea909fb}{V\+R\+B\+\_\+\+D\+E\+B\+U\+G1}}}
+
+Assign gp\+\_\+\+Printf output verbosity based on \mbox{\hyperlink{gp__utils_8h_ac276e33ef767b50e932a21293d3bd18e}{Dbg\+Verbosity\+\_\+t}} in \mbox{\hyperlink{gp__utils_8h}{gp\+\_\+utils.\+h}} \mbox{\Hypertarget{gp__cfg_8h_aecb48224c68f629a5b4a3ec2731da91b}\label{gp__cfg_8h_aecb48224c68f629a5b4a3ec2731da91b}} 
+\index{gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}!D\+F\+L\+T\+\_\+\+D\+D\+\_\+\+E\+XT@{D\+F\+L\+T\+\_\+\+D\+D\+\_\+\+E\+XT}}
+\index{D\+F\+L\+T\+\_\+\+D\+D\+\_\+\+E\+XT@{D\+F\+L\+T\+\_\+\+D\+D\+\_\+\+E\+XT}!gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{D\+F\+L\+T\+\_\+\+D\+D\+\_\+\+E\+XT}{DFLT\_DD\_EXT}}
+{\footnotesize\ttfamily \#define D\+F\+L\+T\+\_\+\+D\+D\+\_\+\+E\+XT~\char`\"{}.elf\char`\"{}}
+
+Default DD executable file extension \mbox{\Hypertarget{gp__cfg_8h_af47ca5954e7eb2930181ad22558b1b85}\label{gp__cfg_8h_af47ca5954e7eb2930181ad22558b1b85}} 
+\index{gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}!D\+F\+L\+T\+\_\+\+D\+L\+P\+R\+O\+C\+\_\+\+P\+R\+I\+O\+R\+I\+TY@{D\+F\+L\+T\+\_\+\+D\+L\+P\+R\+O\+C\+\_\+\+P\+R\+I\+O\+R\+I\+TY}}
+\index{D\+F\+L\+T\+\_\+\+D\+L\+P\+R\+O\+C\+\_\+\+P\+R\+I\+O\+R\+I\+TY@{D\+F\+L\+T\+\_\+\+D\+L\+P\+R\+O\+C\+\_\+\+P\+R\+I\+O\+R\+I\+TY}!gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{D\+F\+L\+T\+\_\+\+D\+L\+P\+R\+O\+C\+\_\+\+P\+R\+I\+O\+R\+I\+TY}{DFLT\_DLPROC\_PRIORITY}}
+{\footnotesize\ttfamily \#define D\+F\+L\+T\+\_\+\+D\+L\+P\+R\+O\+C\+\_\+\+P\+R\+I\+O\+R\+I\+TY~155}
+
+Default download processing task priority. Same priority as Do\+IP tasks, B\+A\+S\+E\+\_\+\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+TY, set in basic\+\_\+thread.\+cpp \mbox{\Hypertarget{gp__cfg_8h_a893b95bb29dbf4b5cf4ca4aeddfdb68e}\label{gp__cfg_8h_a893b95bb29dbf4b5cf4ca4aeddfdb68e}} 
+\index{gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}!D\+I\+A\+G\+\_\+\+A\+P\+P\+\_\+\+C\+N\+A\+M\+E\+\_\+\+L\+OC@{D\+I\+A\+G\+\_\+\+A\+P\+P\+\_\+\+C\+N\+A\+M\+E\+\_\+\+L\+OC}}
+\index{D\+I\+A\+G\+\_\+\+A\+P\+P\+\_\+\+C\+N\+A\+M\+E\+\_\+\+L\+OC@{D\+I\+A\+G\+\_\+\+A\+P\+P\+\_\+\+C\+N\+A\+M\+E\+\_\+\+L\+OC}!gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{D\+I\+A\+G\+\_\+\+A\+P\+P\+\_\+\+C\+N\+A\+M\+E\+\_\+\+L\+OC}{DIAG\_APP\_CNAME\_LOC}}
+{\footnotesize\ttfamily \#define D\+I\+A\+G\+\_\+\+A\+P\+P\+\_\+\+C\+N\+A\+M\+E\+\_\+\+L\+OC~\char`\"{}Diag\+App\+Loc\+Conn\char`\"{}}
+
+Name of local connection for the GP application Diagnostic Manager \mbox{\Hypertarget{gp__cfg_8h_a0590a647a68425bfe3d7e91c649e294b}\label{gp__cfg_8h_a0590a647a68425bfe3d7e91c649e294b}} 
+\index{gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}!D\+I\+A\+G\+\_\+\+A\+P\+P\+\_\+\+C\+N\+A\+M\+E\+\_\+\+R\+EM@{D\+I\+A\+G\+\_\+\+A\+P\+P\+\_\+\+C\+N\+A\+M\+E\+\_\+\+R\+EM}}
+\index{D\+I\+A\+G\+\_\+\+A\+P\+P\+\_\+\+C\+N\+A\+M\+E\+\_\+\+R\+EM@{D\+I\+A\+G\+\_\+\+A\+P\+P\+\_\+\+C\+N\+A\+M\+E\+\_\+\+R\+EM}!gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{D\+I\+A\+G\+\_\+\+A\+P\+P\+\_\+\+C\+N\+A\+M\+E\+\_\+\+R\+EM}{DIAG\_APP\_CNAME\_REM}}
+{\footnotesize\ttfamily \#define D\+I\+A\+G\+\_\+\+A\+P\+P\+\_\+\+C\+N\+A\+M\+E\+\_\+\+R\+EM~\char`\"{}Diag\+App\+Rem\+Conn\char`\"{}}
+
+Name of remote connection for the GP application Diagnostic Manager \mbox{\Hypertarget{gp__cfg_8h_a9263f463bdae0335726be1b0f901eed0}\label{gp__cfg_8h_a9263f463bdae0335726be1b0f901eed0}} 
+\index{gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}!D\+I\+A\+G\+\_\+\+B\+T\+L\+D\+R\+\_\+\+C\+N\+A\+M\+E\+\_\+\+L\+OC@{D\+I\+A\+G\+\_\+\+B\+T\+L\+D\+R\+\_\+\+C\+N\+A\+M\+E\+\_\+\+L\+OC}}
+\index{D\+I\+A\+G\+\_\+\+B\+T\+L\+D\+R\+\_\+\+C\+N\+A\+M\+E\+\_\+\+L\+OC@{D\+I\+A\+G\+\_\+\+B\+T\+L\+D\+R\+\_\+\+C\+N\+A\+M\+E\+\_\+\+L\+OC}!gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{D\+I\+A\+G\+\_\+\+B\+T\+L\+D\+R\+\_\+\+C\+N\+A\+M\+E\+\_\+\+L\+OC}{DIAG\_BTLDR\_CNAME\_LOC}}
+{\footnotesize\ttfamily \#define D\+I\+A\+G\+\_\+\+B\+T\+L\+D\+R\+\_\+\+C\+N\+A\+M\+E\+\_\+\+L\+OC~\char`\"{}Diag\+Btldr\+Loc\+Conn\char`\"{}}
+
+Name of local connection for the GP bootloader main \mbox{\Hypertarget{gp__cfg_8h_a549eda05551a7c2f5a330addc48e07cf}\label{gp__cfg_8h_a549eda05551a7c2f5a330addc48e07cf}} 
+\index{gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}!D\+I\+A\+G\+\_\+\+B\+T\+L\+D\+R\+\_\+\+C\+N\+A\+M\+E\+\_\+\+R\+EM@{D\+I\+A\+G\+\_\+\+B\+T\+L\+D\+R\+\_\+\+C\+N\+A\+M\+E\+\_\+\+R\+EM}}
+\index{D\+I\+A\+G\+\_\+\+B\+T\+L\+D\+R\+\_\+\+C\+N\+A\+M\+E\+\_\+\+R\+EM@{D\+I\+A\+G\+\_\+\+B\+T\+L\+D\+R\+\_\+\+C\+N\+A\+M\+E\+\_\+\+R\+EM}!gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{D\+I\+A\+G\+\_\+\+B\+T\+L\+D\+R\+\_\+\+C\+N\+A\+M\+E\+\_\+\+R\+EM}{DIAG\_BTLDR\_CNAME\_REM}}
+{\footnotesize\ttfamily \#define D\+I\+A\+G\+\_\+\+B\+T\+L\+D\+R\+\_\+\+C\+N\+A\+M\+E\+\_\+\+R\+EM~\char`\"{}Diag\+Btldr\+Rem\+Conn\char`\"{}}
+
+Name of remote connection for the GP bootloader main \mbox{\Hypertarget{gp__cfg_8h_a2fe6571ac8e31df8596bdca3b81918cd}\label{gp__cfg_8h_a2fe6571ac8e31df8596bdca3b81918cd}} 
+\index{gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}!G\+R\+A\+P\+H\+I\+C\+S\+\_\+\+D\+IR@{G\+R\+A\+P\+H\+I\+C\+S\+\_\+\+D\+IR}}
+\index{G\+R\+A\+P\+H\+I\+C\+S\+\_\+\+D\+IR@{G\+R\+A\+P\+H\+I\+C\+S\+\_\+\+D\+IR}!gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{G\+R\+A\+P\+H\+I\+C\+S\+\_\+\+D\+IR}{GRAPHICS\_DIR}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define G\+R\+A\+P\+H\+I\+C\+S\+\_\+\+D\+IR~\char`\"{}Graphics\char`\"{}}
+
+Assumes the C\+WD to /mydisk has been done
+
+Assumes the C\+WD to A\+P\+P\+\_\+\+D\+IR has been done \mbox{\Hypertarget{gp__cfg_8h_a2fe6571ac8e31df8596bdca3b81918cd}\label{gp__cfg_8h_a2fe6571ac8e31df8596bdca3b81918cd}} 
+\index{gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}!G\+R\+A\+P\+H\+I\+C\+S\+\_\+\+D\+IR@{G\+R\+A\+P\+H\+I\+C\+S\+\_\+\+D\+IR}}
+\index{G\+R\+A\+P\+H\+I\+C\+S\+\_\+\+D\+IR@{G\+R\+A\+P\+H\+I\+C\+S\+\_\+\+D\+IR}!gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{G\+R\+A\+P\+H\+I\+C\+S\+\_\+\+D\+IR}{GRAPHICS\_DIR}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define G\+R\+A\+P\+H\+I\+C\+S\+\_\+\+D\+IR~\char`\"{}Graphics\char`\"{}}
+
+Assumes the C\+WD to /mydisk has been done
+
+Assumes the C\+WD to A\+P\+P\+\_\+\+D\+IR has been done \mbox{\Hypertarget{gp__cfg_8h_a915f05deae5771ba6a32e133a0fd84a5}\label{gp__cfg_8h_a915f05deae5771ba6a32e133a0fd84a5}} 
+\index{gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}!H\+M\+I\+\_\+\+A\+P\+P\+\_\+\+N\+A\+ME@{H\+M\+I\+\_\+\+A\+P\+P\+\_\+\+N\+A\+ME}}
+\index{H\+M\+I\+\_\+\+A\+P\+P\+\_\+\+N\+A\+ME@{H\+M\+I\+\_\+\+A\+P\+P\+\_\+\+N\+A\+ME}!gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{H\+M\+I\+\_\+\+A\+P\+P\+\_\+\+N\+A\+ME}{HMI\_APP\_NAME}}
+{\footnotesize\ttfamily \#define H\+M\+I\+\_\+\+A\+P\+P\+\_\+\+N\+A\+ME~\char`\"{}hmi\char`\"{}}
+
+Base H\+MI application executable name \mbox{\Hypertarget{gp__cfg_8h_afb434d26dcb45a14badf5156e9d0e9b9}\label{gp__cfg_8h_afb434d26dcb45a14badf5156e9d0e9b9}} 
+\index{gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}!H\+M\+I\+\_\+\+B\+A\+S\+E\+\_\+\+D\+IR@{H\+M\+I\+\_\+\+B\+A\+S\+E\+\_\+\+D\+IR}}
+\index{H\+M\+I\+\_\+\+B\+A\+S\+E\+\_\+\+D\+IR@{H\+M\+I\+\_\+\+B\+A\+S\+E\+\_\+\+D\+IR}!gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{H\+M\+I\+\_\+\+B\+A\+S\+E\+\_\+\+D\+IR}{HMI\_BASE\_DIR}}
+{\footnotesize\ttfamily \#define H\+M\+I\+\_\+\+B\+A\+S\+E\+\_\+\+D\+IR~\char`\"{}/mydisk\char`\"{}}
+
+Base directory for H\+MI application. Does not use a Host I/O path on the development PC. \mbox{\Hypertarget{gp__cfg_8h_afcdbd028cf346f30c237edd89925192c}\label{gp__cfg_8h_afcdbd028cf346f30c237edd89925192c}} 
+\index{gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}!H\+M\+I\+\_\+\+D\+E\+M\+O\+\_\+\+D\+IR@{H\+M\+I\+\_\+\+D\+E\+M\+O\+\_\+\+D\+IR}}
+\index{H\+M\+I\+\_\+\+D\+E\+M\+O\+\_\+\+D\+IR@{H\+M\+I\+\_\+\+D\+E\+M\+O\+\_\+\+D\+IR}!gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{H\+M\+I\+\_\+\+D\+E\+M\+O\+\_\+\+D\+IR}{HMI\_DEMO\_DIR}}
+{\footnotesize\ttfamily \#define H\+M\+I\+\_\+\+D\+E\+M\+O\+\_\+\+D\+IR~\char`\"{}Demo\char`\"{}}
+
+Demo graphics files directory. Assumes the C\+WD to A\+P\+P\+\_\+\+D\+IR has been done \mbox{\Hypertarget{gp__cfg_8h_a960730a5b8c84249e551d01743777801}\label{gp__cfg_8h_a960730a5b8c84249e551d01743777801}} 
+\index{gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}!I\+M\+\_\+\+H\+M\+I\+\_\+\+T\+A\+S\+K\+\_\+\+C\+ON@{I\+M\+\_\+\+H\+M\+I\+\_\+\+T\+A\+S\+K\+\_\+\+C\+ON}}
+\index{I\+M\+\_\+\+H\+M\+I\+\_\+\+T\+A\+S\+K\+\_\+\+C\+ON@{I\+M\+\_\+\+H\+M\+I\+\_\+\+T\+A\+S\+K\+\_\+\+C\+ON}!gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{I\+M\+\_\+\+H\+M\+I\+\_\+\+T\+A\+S\+K\+\_\+\+C\+ON}{IM\_HMI\_TASK\_CON}}
+{\footnotesize\ttfamily \#define I\+M\+\_\+\+H\+M\+I\+\_\+\+T\+A\+S\+K\+\_\+\+C\+ON~\char`\"{}Im\+Hm\+Int\+Tsk\+Con\char`\"{}}
+
+Name for connection between I\+PC mgr and H\+MI subsystem. It is the remote end (Hm\+\_\+\+Im\+As\+Con1) of the IM-\/H\+MI connection \mbox{\Hypertarget{gp__cfg_8h_a4889d31c8fc985a6720f4d7a99e32e36}\label{gp__cfg_8h_a4889d31c8fc985a6720f4d7a99e32e36}} 
+\index{gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}!I\+P\+C\+\_\+\+D\+P\+\_\+\+H\+M\+I\+\_\+\+T\+I\+M\+E\+O\+UT@{I\+P\+C\+\_\+\+D\+P\+\_\+\+H\+M\+I\+\_\+\+T\+I\+M\+E\+O\+UT}}
+\index{I\+P\+C\+\_\+\+D\+P\+\_\+\+H\+M\+I\+\_\+\+T\+I\+M\+E\+O\+UT@{I\+P\+C\+\_\+\+D\+P\+\_\+\+H\+M\+I\+\_\+\+T\+I\+M\+E\+O\+UT}!gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{I\+P\+C\+\_\+\+D\+P\+\_\+\+H\+M\+I\+\_\+\+T\+I\+M\+E\+O\+UT}{IPC\_DP\_HMI\_TIMEOUT}}
+{\footnotesize\ttfamily \#define I\+P\+C\+\_\+\+D\+P\+\_\+\+H\+M\+I\+\_\+\+T\+I\+M\+E\+O\+UT~(1000)}
+
+DP-\/H\+MI I\+PC communication timeout, in msec \mbox{\Hypertarget{gp__cfg_8h_abcbe0a49c5dfa2ad41e8588669fc7b10}\label{gp__cfg_8h_abcbe0a49c5dfa2ad41e8588669fc7b10}} 
+\index{gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}!I\+P\+C\+\_\+\+G\+E\+N\+\_\+\+T\+I\+M\+E\+O\+UT@{I\+P\+C\+\_\+\+G\+E\+N\+\_\+\+T\+I\+M\+E\+O\+UT}}
+\index{I\+P\+C\+\_\+\+G\+E\+N\+\_\+\+T\+I\+M\+E\+O\+UT@{I\+P\+C\+\_\+\+G\+E\+N\+\_\+\+T\+I\+M\+E\+O\+UT}!gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{I\+P\+C\+\_\+\+G\+E\+N\+\_\+\+T\+I\+M\+E\+O\+UT}{IPC\_GEN\_TIMEOUT}}
+{\footnotesize\ttfamily \#define I\+P\+C\+\_\+\+G\+E\+N\+\_\+\+T\+I\+M\+E\+O\+UT~(1000)}
+
+General (default) I\+PC communication timeout \mbox{\Hypertarget{gp__cfg_8h_aa4e1ea4798a6c08a0f3b26a055285751}\label{gp__cfg_8h_aa4e1ea4798a6c08a0f3b26a055285751}} 
+\index{gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}!I\+P\+C\+\_\+\+H\+B\+T\+\_\+\+T\+I\+M\+E\+O\+UT@{I\+P\+C\+\_\+\+H\+B\+T\+\_\+\+T\+I\+M\+E\+O\+UT}}
+\index{I\+P\+C\+\_\+\+H\+B\+T\+\_\+\+T\+I\+M\+E\+O\+UT@{I\+P\+C\+\_\+\+H\+B\+T\+\_\+\+T\+I\+M\+E\+O\+UT}!gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{I\+P\+C\+\_\+\+H\+B\+T\+\_\+\+T\+I\+M\+E\+O\+UT}{IPC\_HBT\_TIMEOUT}}
+{\footnotesize\ttfamily \#define I\+P\+C\+\_\+\+H\+B\+T\+\_\+\+T\+I\+M\+E\+O\+UT~(1000)}
+
+Unit Manager heartbeat message I\+PC comm timeout \mbox{\Hypertarget{gp__cfg_8h_a852cdfd928432170a47d51715aa6e44b}\label{gp__cfg_8h_a852cdfd928432170a47d51715aa6e44b}} 
+\index{gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}!M\+A\+X\+\_\+\+F\+E\+X\+T\+\_\+\+L\+EN@{M\+A\+X\+\_\+\+F\+E\+X\+T\+\_\+\+L\+EN}}
+\index{M\+A\+X\+\_\+\+F\+E\+X\+T\+\_\+\+L\+EN@{M\+A\+X\+\_\+\+F\+E\+X\+T\+\_\+\+L\+EN}!gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+X\+\_\+\+F\+E\+X\+T\+\_\+\+L\+EN}{MAX\_FEXT\_LEN}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+F\+E\+X\+T\+\_\+\+L\+EN~6}
+
+Max file extension string length \mbox{\Hypertarget{gp__cfg_8h_a1f8d496b8c007e6a4f722f137cb08c84}\label{gp__cfg_8h_a1f8d496b8c007e6a4f722f137cb08c84}} 
+\index{gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}!M\+A\+X\+\_\+\+F\+N\+A\+M\+E\+\_\+\+L\+EN@{M\+A\+X\+\_\+\+F\+N\+A\+M\+E\+\_\+\+L\+EN}}
+\index{M\+A\+X\+\_\+\+F\+N\+A\+M\+E\+\_\+\+L\+EN@{M\+A\+X\+\_\+\+F\+N\+A\+M\+E\+\_\+\+L\+EN}!gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+X\+\_\+\+F\+N\+A\+M\+E\+\_\+\+L\+EN}{MAX\_FNAME\_LEN}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+F\+N\+A\+M\+E\+\_\+\+L\+EN~40}
+
+Max program filename length \mbox{\Hypertarget{gp__cfg_8h_ae4a6cd47f661b2af96090edd848a41bb}\label{gp__cfg_8h_ae4a6cd47f661b2af96090edd848a41bb}} 
+\index{gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}!M\+A\+X\+\_\+\+I\+P\+C\+\_\+\+M\+S\+G\+L\+EN@{M\+A\+X\+\_\+\+I\+P\+C\+\_\+\+M\+S\+G\+L\+EN}}
+\index{M\+A\+X\+\_\+\+I\+P\+C\+\_\+\+M\+S\+G\+L\+EN@{M\+A\+X\+\_\+\+I\+P\+C\+\_\+\+M\+S\+G\+L\+EN}!gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+X\+\_\+\+I\+P\+C\+\_\+\+M\+S\+G\+L\+EN}{MAX\_IPC\_MSGLEN}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+I\+P\+C\+\_\+\+M\+S\+G\+L\+EN~128}
+
+Maximum length of an I\+PC message, in bytes \mbox{\Hypertarget{gp__cfg_8h_abdd33f362ae3bbdacb5de76473aa8a2f}\label{gp__cfg_8h_abdd33f362ae3bbdacb5de76473aa8a2f}} 
+\index{gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}!M\+A\+X\+\_\+\+P\+A\+T\+H\+\_\+\+L\+EN@{M\+A\+X\+\_\+\+P\+A\+T\+H\+\_\+\+L\+EN}}
+\index{M\+A\+X\+\_\+\+P\+A\+T\+H\+\_\+\+L\+EN@{M\+A\+X\+\_\+\+P\+A\+T\+H\+\_\+\+L\+EN}!gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+X\+\_\+\+P\+A\+T\+H\+\_\+\+L\+EN}{MAX\_PATH\_LEN}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+P\+A\+T\+H\+\_\+\+L\+EN~40}
+
+Maximum file path string buffer length. \mbox{\Hypertarget{gp__cfg_8h_ac1222c7ffe881356a4624fb8650b1438}\label{gp__cfg_8h_ac1222c7ffe881356a4624fb8650b1438}} 
+\index{gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}!M\+A\+X\+\_\+\+P\+G\+M\+F\+I\+L\+E\+\_\+\+L\+EN@{M\+A\+X\+\_\+\+P\+G\+M\+F\+I\+L\+E\+\_\+\+L\+EN}}
+\index{M\+A\+X\+\_\+\+P\+G\+M\+F\+I\+L\+E\+\_\+\+L\+EN@{M\+A\+X\+\_\+\+P\+G\+M\+F\+I\+L\+E\+\_\+\+L\+EN}!gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+X\+\_\+\+P\+G\+M\+F\+I\+L\+E\+\_\+\+L\+EN}{MAX\_PGMFILE\_LEN}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+P\+G\+M\+F\+I\+L\+E\+\_\+\+L\+EN~(\mbox{\hyperlink{gp__cfg_8h_abdd33f362ae3bbdacb5de76473aa8a2f}{M\+A\+X\+\_\+\+P\+A\+T\+H\+\_\+\+L\+EN}}+\mbox{\hyperlink{gp__cfg_8h_a1f8d496b8c007e6a4f722f137cb08c84}{M\+A\+X\+\_\+\+F\+N\+A\+M\+E\+\_\+\+L\+EN}})}
+
+Max filename/path string length. \mbox{\Hypertarget{gp__cfg_8h_a8787fcfd7d33484bca1dd9c90772a729}\label{gp__cfg_8h_a8787fcfd7d33484bca1dd9c90772a729}} 
+\index{gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}!M\+A\+X\+\_\+\+U\+P\+D\+\_\+\+F\+N\+A\+M\+E\+\_\+\+L\+EN@{M\+A\+X\+\_\+\+U\+P\+D\+\_\+\+F\+N\+A\+M\+E\+\_\+\+L\+EN}}
+\index{M\+A\+X\+\_\+\+U\+P\+D\+\_\+\+F\+N\+A\+M\+E\+\_\+\+L\+EN@{M\+A\+X\+\_\+\+U\+P\+D\+\_\+\+F\+N\+A\+M\+E\+\_\+\+L\+EN}!gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+X\+\_\+\+U\+P\+D\+\_\+\+F\+N\+A\+M\+E\+\_\+\+L\+EN}{MAX\_UPD\_FNAME\_LEN}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+U\+P\+D\+\_\+\+F\+N\+A\+M\+E\+\_\+\+L\+EN~80}
+
+Maximum update filename length \mbox{\Hypertarget{gp__cfg_8h_a8c544f82ff60c7b2f72f09e962e8e9c8}\label{gp__cfg_8h_a8c544f82ff60c7b2f72f09e962e8e9c8}} 
+\index{gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}!O\+P\+C\+M\+D\+\_\+\+B\+U\+F\+\_\+\+L\+EN@{O\+P\+C\+M\+D\+\_\+\+B\+U\+F\+\_\+\+L\+EN}}
+\index{O\+P\+C\+M\+D\+\_\+\+B\+U\+F\+\_\+\+L\+EN@{O\+P\+C\+M\+D\+\_\+\+B\+U\+F\+\_\+\+L\+EN}!gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{O\+P\+C\+M\+D\+\_\+\+B\+U\+F\+\_\+\+L\+EN}{OPCMD\_BUF\_LEN}}
+{\footnotesize\ttfamily \#define O\+P\+C\+M\+D\+\_\+\+B\+U\+F\+\_\+\+L\+EN~(128)}
+
+Maximum size of Op\+Cmd I\+PC message buffer. Limit is currently 128 bytes. \mbox{\Hypertarget{gp__cfg_8h_a2d0d560b1e6edca69a392bfa5d74235b}\label{gp__cfg_8h_a2d0d560b1e6edca69a392bfa5d74235b}} 
+\index{gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}!O\+P\+C\+M\+D\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+F\+R\+AC@{O\+P\+C\+M\+D\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+F\+R\+AC}}
+\index{O\+P\+C\+M\+D\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+F\+R\+AC@{O\+P\+C\+M\+D\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+F\+R\+AC}!gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{O\+P\+C\+M\+D\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+F\+R\+AC}{OPCMD\_TIMEOUT\_FRAC}}
+{\footnotesize\ttfamily \#define O\+P\+C\+M\+D\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+F\+R\+AC~0}
+
+Default operation command fraction timeout for debug builds \mbox{\Hypertarget{gp__cfg_8h_a1c33977ae3e755f4277eb4aebda97aee}\label{gp__cfg_8h_a1c33977ae3e755f4277eb4aebda97aee}} 
+\index{gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}!O\+P\+C\+M\+D\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+S\+EC@{O\+P\+C\+M\+D\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+S\+EC}}
+\index{O\+P\+C\+M\+D\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+S\+EC@{O\+P\+C\+M\+D\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+S\+EC}!gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{O\+P\+C\+M\+D\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+S\+EC}{OPCMD\_TIMEOUT\_SEC}}
+{\footnotesize\ttfamily \#define O\+P\+C\+M\+D\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+S\+EC~2}
+
+Default operation command seconds timeout for release builds \mbox{\Hypertarget{gp__cfg_8h_a28773cf605eb7b6e08619f10ee7e79b2}\label{gp__cfg_8h_a28773cf605eb7b6e08619f10ee7e79b2}} 
+\index{gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}!P\+M\+\_\+\+H\+M\+I\+\_\+\+T\+A\+S\+K\+\_\+\+C\+ON@{P\+M\+\_\+\+H\+M\+I\+\_\+\+T\+A\+S\+K\+\_\+\+C\+ON}}
+\index{P\+M\+\_\+\+H\+M\+I\+\_\+\+T\+A\+S\+K\+\_\+\+C\+ON@{P\+M\+\_\+\+H\+M\+I\+\_\+\+T\+A\+S\+K\+\_\+\+C\+ON}!gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{P\+M\+\_\+\+H\+M\+I\+\_\+\+T\+A\+S\+K\+\_\+\+C\+ON}{PM\_HMI\_TASK\_CON}}
+{\footnotesize\ttfamily \#define P\+M\+\_\+\+H\+M\+I\+\_\+\+T\+A\+S\+K\+\_\+\+C\+ON~\char`\"{}Pm\+Hm\+Int\+Tsk\+Con\char`\"{}}
+
+Name for connection between Datapool mgr and H\+MI subsystem. It is the remote end (Hm\+\_\+\+Pm\+As\+Con1) of the PM-\/H\+MI connection \mbox{\Hypertarget{gp__cfg_8h_a62b075ec29b7b301c68f539d8aafd029}\label{gp__cfg_8h_a62b075ec29b7b301c68f539d8aafd029}} 
+\index{gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}!R\+O\+O\+T\+\_\+\+D\+IR@{R\+O\+O\+T\+\_\+\+D\+IR}}
+\index{R\+O\+O\+T\+\_\+\+D\+IR@{R\+O\+O\+T\+\_\+\+D\+IR}!gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{R\+O\+O\+T\+\_\+\+D\+IR}{ROOT\_DIR}}
+{\footnotesize\ttfamily \#define R\+O\+O\+T\+\_\+\+D\+IR~\char`\"{}/mydisk\char`\"{}}
+
+
+
+R\+E\+L\+E\+A\+S\+E\+\_\+\+B\+U\+I\+LD -\/ Debug/release build macro definition. If defined, disables any debug related code in the project. 
+
+Root file directory \mbox{\Hypertarget{gp__cfg_8h_af32696824347275b4a31b4defa4d5306}\label{gp__cfg_8h_af32696824347275b4a31b4defa4d5306}} 
+\index{gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}!S\+Y\+S\+\_\+\+C\+F\+G\+\_\+\+F\+N\+A\+ME@{S\+Y\+S\+\_\+\+C\+F\+G\+\_\+\+F\+N\+A\+ME}}
+\index{S\+Y\+S\+\_\+\+C\+F\+G\+\_\+\+F\+N\+A\+ME@{S\+Y\+S\+\_\+\+C\+F\+G\+\_\+\+F\+N\+A\+ME}!gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{S\+Y\+S\+\_\+\+C\+F\+G\+\_\+\+F\+N\+A\+ME}{SYS\_CFG\_FNAME}}
+{\footnotesize\ttfamily \#define S\+Y\+S\+\_\+\+C\+F\+G\+\_\+\+F\+N\+A\+ME~\char`\"{}hud\+\_\+cfg.\+ini\char`\"{}}
+
+Default H\+UD system configuration filename \mbox{\Hypertarget{gp__cfg_8h_ada951becb053baf861ef5c70dec47605}\label{gp__cfg_8h_ada951becb053baf861ef5c70dec47605}} 
+\index{gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}!T\+S\+K\+\_\+\+OK@{T\+S\+K\+\_\+\+OK}}
+\index{T\+S\+K\+\_\+\+OK@{T\+S\+K\+\_\+\+OK}!gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{T\+S\+K\+\_\+\+OK}{TSK\_OK}}
+{\footnotesize\ttfamily \#define T\+S\+K\+\_\+\+OK~(0x5\+Au)}
+
+Used for I\+PC communication \mbox{\Hypertarget{gp__cfg_8h_a002c2e333117b1c7767f0596311ab684}\label{gp__cfg_8h_a002c2e333117b1c7767f0596311ab684}} 
+\index{gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}!U\+M\+\_\+\+H\+M\+I\+\_\+\+D\+P\+L\+T\+A\+S\+K\+\_\+\+C\+ON@{U\+M\+\_\+\+H\+M\+I\+\_\+\+D\+P\+L\+T\+A\+S\+K\+\_\+\+C\+ON}}
+\index{U\+M\+\_\+\+H\+M\+I\+\_\+\+D\+P\+L\+T\+A\+S\+K\+\_\+\+C\+ON@{U\+M\+\_\+\+H\+M\+I\+\_\+\+D\+P\+L\+T\+A\+S\+K\+\_\+\+C\+ON}!gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{U\+M\+\_\+\+H\+M\+I\+\_\+\+D\+P\+L\+T\+A\+S\+K\+\_\+\+C\+ON}{UM\_HMI\_DPLTASK\_CON}}
+{\footnotesize\ttfamily \#define U\+M\+\_\+\+H\+M\+I\+\_\+\+D\+P\+L\+T\+A\+S\+K\+\_\+\+C\+ON~\char`\"{}Um\+Hm\+Dpl\+Tsk\+Con\char`\"{}}
+
+Name for connection between Unit mgr and H\+MI subsystem datapool task. It is the remote end (Hm\+\_\+\+Um\+As\+Con1) of the UM-\/H\+MI connection \mbox{\Hypertarget{gp__cfg_8h_a403d698b1352698e0abaea5366a4796d}\label{gp__cfg_8h_a403d698b1352698e0abaea5366a4796d}} 
+\index{gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}!U\+M\+\_\+\+H\+M\+I\+\_\+\+T\+A\+S\+K\+\_\+\+C\+ON@{U\+M\+\_\+\+H\+M\+I\+\_\+\+T\+A\+S\+K\+\_\+\+C\+ON}}
+\index{U\+M\+\_\+\+H\+M\+I\+\_\+\+T\+A\+S\+K\+\_\+\+C\+ON@{U\+M\+\_\+\+H\+M\+I\+\_\+\+T\+A\+S\+K\+\_\+\+C\+ON}!gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{U\+M\+\_\+\+H\+M\+I\+\_\+\+T\+A\+S\+K\+\_\+\+C\+ON}{UM\_HMI\_TASK\_CON}}
+{\footnotesize\ttfamily \#define U\+M\+\_\+\+H\+M\+I\+\_\+\+T\+A\+S\+K\+\_\+\+C\+ON~\char`\"{}Um\+Hm\+Int\+Tsk\+Con\char`\"{}}
+
+Name for connection between Unit mgr and H\+MI subsystem initial task. It is the remote end (Hm\+\_\+\+Um\+As\+Con1) of the UM-\/H\+MI connection \mbox{\Hypertarget{gp__cfg_8h_a339e7faab3138b9f7e1ac2f130948716}\label{gp__cfg_8h_a339e7faab3138b9f7e1ac2f130948716}} 
+\index{gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}!U\+P\+D\+A\+T\+E\+\_\+\+D\+IR@{U\+P\+D\+A\+T\+E\+\_\+\+D\+IR}}
+\index{U\+P\+D\+A\+T\+E\+\_\+\+D\+IR@{U\+P\+D\+A\+T\+E\+\_\+\+D\+IR}!gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{U\+P\+D\+A\+T\+E\+\_\+\+D\+IR}{UPDATE\_DIR}}
+{\footnotesize\ttfamily \#define U\+P\+D\+A\+T\+E\+\_\+\+D\+IR~\char`\"{}/mydisk\char`\"{}}
+
+directory where update files are located. Used by N\+O\+R\+\_\+\+Update \mbox{\Hypertarget{gp__cfg_8h_a155242acf67dbc73325e0503f26f66b2}\label{gp__cfg_8h_a155242acf67dbc73325e0503f26f66b2}} 
+\index{gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}!V\+S\+I\+M\+\_\+\+C\+F\+G\+\_\+\+F\+N\+A\+ME@{V\+S\+I\+M\+\_\+\+C\+F\+G\+\_\+\+F\+N\+A\+ME}}
+\index{V\+S\+I\+M\+\_\+\+C\+F\+G\+\_\+\+F\+N\+A\+ME@{V\+S\+I\+M\+\_\+\+C\+F\+G\+\_\+\+F\+N\+A\+ME}!gp\+\_\+cfg.\+h@{gp\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{V\+S\+I\+M\+\_\+\+C\+F\+G\+\_\+\+F\+N\+A\+ME}{VSIM\_CFG\_FNAME}}
+{\footnotesize\ttfamily \#define V\+S\+I\+M\+\_\+\+C\+F\+G\+\_\+\+F\+N\+A\+ME~\char`\"{}/Vsim\+Profile\+Config.\+txt\char`\"{}}
+
+Vsim profile configuration filename 

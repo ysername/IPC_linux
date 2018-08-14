@@ -1,0 +1,119 @@
+\hypertarget{App__cfg_8h}{}\section{App\+\_\+cfg.\+h File Reference}
+\label{App__cfg_8h}\index{App\+\_\+cfg.\+h@{App\+\_\+cfg.\+h}}
+
+
+Header file containing the public interfaces and data for the application configuration processing functions.  
+
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structKEY__PROC__ENTRY}{K\+E\+Y\+\_\+\+P\+R\+O\+C\+\_\+\+E\+N\+T\+RY}}
+\item 
+struct \mbox{\hyperlink{structAPP__CFG__CTRL__T}{A\+P\+P\+\_\+\+C\+F\+G\+\_\+\+C\+T\+R\+L\+\_\+T}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{App__cfg_8h_addb07cdbee6530c76ccbb9a847885b33}{M\+A\+X\+\_\+\+K\+E\+Y\+N\+A\+M\+E\+\_\+\+L\+EN}}~30
+\item 
+\mbox{\Hypertarget{App__cfg_8h_a585391732c5a62642d9a8bf96b726d99}\label{App__cfg_8h_a585391732c5a62642d9a8bf96b726d99}} 
+\#define {\bfseries A\+P\+P\+\_\+\+C\+F\+G\+\_\+\+D\+A\+T\+A\+\_\+\+SZ}~sizeof(\mbox{\hyperlink{structAPP__CFG__CTRL__T}{A\+P\+P\+\_\+\+C\+F\+G\+\_\+\+C\+T\+R\+L\+\_\+T}})
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \mbox{\hyperlink{App__cfg_8h_a91ac6ca504feea17f06592604958620b}{Keyval\+Handler\+\_\+t}}) (const struct \mbox{\hyperlink{structKEY__PROC__ENTRY}{K\+E\+Y\+\_\+\+P\+R\+O\+C\+\_\+\+E\+N\+T\+RY}} $\ast$p\+\_\+entry, const char $\ast$value)
+\item 
+\mbox{\Hypertarget{App__cfg_8h_a1cd3a141e3e05050a01daeb6d49d21c2}\label{App__cfg_8h_a1cd3a141e3e05050a01daeb6d49d21c2}} 
+typedef struct \mbox{\hyperlink{structKEY__PROC__ENTRY}{K\+E\+Y\+\_\+\+P\+R\+O\+C\+\_\+\+E\+N\+T\+RY}} {\bfseries Key\+Proc\+Entry\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{App__cfg_8h_ab3c97f52b18fa128bfa087ec632205ad}\label{App__cfg_8h_ab3c97f52b18fa128bfa087ec632205ad}} 
+\mbox{\hyperlink{gp__types_8h_aaa258aa061f854af66447b7fb1423654}{gp\+\_\+retcode\+\_\+t}} {\bfseries App\+Cfg\+Read} (\mbox{\hyperlink{structAPP__CFG__CTRL__T}{A\+P\+P\+\_\+\+C\+F\+G\+\_\+\+C\+T\+R\+L\+\_\+T}} $\ast$p\+\_\+cfg)
+\item 
+void \mbox{\hyperlink{App__cfg_8h_aa11dba425bc47bc1c751cbcd846022d2}{App\+Cfg\+Store\+Int}} (const \mbox{\hyperlink{structKEY__PROC__ENTRY}{Key\+Proc\+Entry\+\_\+t}} $\ast$p\+\_\+entry, const char $\ast$value)
+\item 
+void \mbox{\hyperlink{App__cfg_8h_ab0e2b99688d61e13990d179738dd8554}{App\+Cfg\+Store\+Str}} (const \mbox{\hyperlink{structKEY__PROC__ENTRY}{Key\+Proc\+Entry\+\_\+t}} $\ast$p\+\_\+entry, const char $\ast$value)
+\item 
+void \mbox{\hyperlink{App__cfg_8h_a32af0b9fa8ab6db2b68a4921ee713d5e}{App\+Cfg\+Store\+Bool}} (const \mbox{\hyperlink{structKEY__PROC__ENTRY}{Key\+Proc\+Entry\+\_\+t}} $\ast$p\+\_\+entry, const char $\ast$value)
+\item 
+void \mbox{\hyperlink{App__cfg_8h_a86b91d2635570398d7ff5a6341339141}{App\+Cfg\+Store\+Hex}} (const \mbox{\hyperlink{structKEY__PROC__ENTRY}{Key\+Proc\+Entry\+\_\+t}} $\ast$p\+\_\+entry, const char $\ast$value)
+\item 
+void \mbox{\hyperlink{App__cfg_8h_acb31d50cf9eac8905b2dadfa626dc882}{App\+Cfg\+Store\+Float}} (const \mbox{\hyperlink{structKEY__PROC__ENTRY}{Key\+Proc\+Entry\+\_\+t}} $\ast$p\+\_\+entry, const char $\ast$value)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Header file containing the public interfaces and data for the application configuration processing functions. 
+
+\begin{DoxyCopyright}{Copyright}
+2016-\/17
+\end{DoxyCopyright}
+\begin{DoxyAuthor}{Author}
+D. Kageff
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+1.\+8 
+\end{DoxyParagraph}
+~\newline
+ \begin{DoxyParagraph}{Log}
+\mbox{\hyperlink{App__cfg_8h}{App\+\_\+cfg.\+h}} 
+\end{DoxyParagraph}
+Revision 1.\+8 2017/07/27 17\+:12\+:25C\+DT Daniel Kageff (10011932) Added single precision float key value handler Revision 1.\+7 2017/04/24 19\+:08\+:08E\+DT Daniel Kageff (10011932) Added key value size/length field to key table entry structure Revision 1.\+6 2017/03/24 11\+:07\+:25E\+DT Daniel Kageff (10011932) Changes to make the configuration file processor more reusable Revision 1.\+5 2017/02/15 19\+:01\+:10E\+ST Daniel Kageff (10011932) Added support for new H\+MI config option parameters Revision 1.\+4 2017/02/09 13\+:46\+:44E\+ST Daniel Kageff (10011932) Changed config file processing to table-\/driven architecture 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{App__cfg_8h_addb07cdbee6530c76ccbb9a847885b33}\label{App__cfg_8h_addb07cdbee6530c76ccbb9a847885b33}} 
+\index{App\+\_\+cfg.\+h@{App\+\_\+cfg.\+h}!M\+A\+X\+\_\+\+K\+E\+Y\+N\+A\+M\+E\+\_\+\+L\+EN@{M\+A\+X\+\_\+\+K\+E\+Y\+N\+A\+M\+E\+\_\+\+L\+EN}}
+\index{M\+A\+X\+\_\+\+K\+E\+Y\+N\+A\+M\+E\+\_\+\+L\+EN@{M\+A\+X\+\_\+\+K\+E\+Y\+N\+A\+M\+E\+\_\+\+L\+EN}!App\+\_\+cfg.\+h@{App\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+X\+\_\+\+K\+E\+Y\+N\+A\+M\+E\+\_\+\+L\+EN}{MAX\_KEYNAME\_LEN}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+K\+E\+Y\+N\+A\+M\+E\+\_\+\+L\+EN~30}
+
+Maximum key name string length 
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{App__cfg_8h_a91ac6ca504feea17f06592604958620b}\label{App__cfg_8h_a91ac6ca504feea17f06592604958620b}} 
+\index{App\+\_\+cfg.\+h@{App\+\_\+cfg.\+h}!Keyval\+Handler\+\_\+t@{Keyval\+Handler\+\_\+t}}
+\index{Keyval\+Handler\+\_\+t@{Keyval\+Handler\+\_\+t}!App\+\_\+cfg.\+h@{App\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{Keyval\+Handler\+\_\+t}{KeyvalHandler\_t}}
+{\footnotesize\ttfamily typedef void($\ast$ Keyval\+Handler\+\_\+t) (const struct \mbox{\hyperlink{structKEY__PROC__ENTRY}{K\+E\+Y\+\_\+\+P\+R\+O\+C\+\_\+\+E\+N\+T\+RY}} $\ast$p\+\_\+entry, const char $\ast$value)}
+
+Config file key processing handler prototype definition. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{App__cfg_8h_a32af0b9fa8ab6db2b68a4921ee713d5e}\label{App__cfg_8h_a32af0b9fa8ab6db2b68a4921ee713d5e}} 
+\index{App\+\_\+cfg.\+h@{App\+\_\+cfg.\+h}!App\+Cfg\+Store\+Bool@{App\+Cfg\+Store\+Bool}}
+\index{App\+Cfg\+Store\+Bool@{App\+Cfg\+Store\+Bool}!App\+\_\+cfg.\+h@{App\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{App\+Cfg\+Store\+Bool()}{AppCfgStoreBool()}}
+{\footnotesize\ttfamily void App\+Cfg\+Store\+Bool (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structKEY__PROC__ENTRY}{Key\+Proc\+Entry\+\_\+t}} $\ast$}]{p\+\_\+entry,  }\item[{const char $\ast$}]{value }\end{DoxyParamCaption})}
+
+Store key value as true/false boolean \mbox{\Hypertarget{App__cfg_8h_acb31d50cf9eac8905b2dadfa626dc882}\label{App__cfg_8h_acb31d50cf9eac8905b2dadfa626dc882}} 
+\index{App\+\_\+cfg.\+h@{App\+\_\+cfg.\+h}!App\+Cfg\+Store\+Float@{App\+Cfg\+Store\+Float}}
+\index{App\+Cfg\+Store\+Float@{App\+Cfg\+Store\+Float}!App\+\_\+cfg.\+h@{App\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{App\+Cfg\+Store\+Float()}{AppCfgStoreFloat()}}
+{\footnotesize\ttfamily void App\+Cfg\+Store\+Float (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structKEY__PROC__ENTRY}{Key\+Proc\+Entry\+\_\+t}} $\ast$}]{p\+\_\+entry,  }\item[{const char $\ast$}]{value }\end{DoxyParamCaption})}
+
+Store key value as single precision float value \mbox{\Hypertarget{App__cfg_8h_a86b91d2635570398d7ff5a6341339141}\label{App__cfg_8h_a86b91d2635570398d7ff5a6341339141}} 
+\index{App\+\_\+cfg.\+h@{App\+\_\+cfg.\+h}!App\+Cfg\+Store\+Hex@{App\+Cfg\+Store\+Hex}}
+\index{App\+Cfg\+Store\+Hex@{App\+Cfg\+Store\+Hex}!App\+\_\+cfg.\+h@{App\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{App\+Cfg\+Store\+Hex()}{AppCfgStoreHex()}}
+{\footnotesize\ttfamily void App\+Cfg\+Store\+Hex (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structKEY__PROC__ENTRY}{Key\+Proc\+Entry\+\_\+t}} $\ast$}]{p\+\_\+entry,  }\item[{const char $\ast$}]{value }\end{DoxyParamCaption})}
+
+Store key value as hex value \mbox{\Hypertarget{App__cfg_8h_aa11dba425bc47bc1c751cbcd846022d2}\label{App__cfg_8h_aa11dba425bc47bc1c751cbcd846022d2}} 
+\index{App\+\_\+cfg.\+h@{App\+\_\+cfg.\+h}!App\+Cfg\+Store\+Int@{App\+Cfg\+Store\+Int}}
+\index{App\+Cfg\+Store\+Int@{App\+Cfg\+Store\+Int}!App\+\_\+cfg.\+h@{App\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{App\+Cfg\+Store\+Int()}{AppCfgStoreInt()}}
+{\footnotesize\ttfamily void App\+Cfg\+Store\+Int (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structKEY__PROC__ENTRY}{Key\+Proc\+Entry\+\_\+t}} $\ast$}]{p\+\_\+entry,  }\item[{const char $\ast$}]{value }\end{DoxyParamCaption})}
+
+Store key value as integer \mbox{\Hypertarget{App__cfg_8h_ab0e2b99688d61e13990d179738dd8554}\label{App__cfg_8h_ab0e2b99688d61e13990d179738dd8554}} 
+\index{App\+\_\+cfg.\+h@{App\+\_\+cfg.\+h}!App\+Cfg\+Store\+Str@{App\+Cfg\+Store\+Str}}
+\index{App\+Cfg\+Store\+Str@{App\+Cfg\+Store\+Str}!App\+\_\+cfg.\+h@{App\+\_\+cfg.\+h}}
+\subsubsection{\texorpdfstring{App\+Cfg\+Store\+Str()}{AppCfgStoreStr()}}
+{\footnotesize\ttfamily void App\+Cfg\+Store\+Str (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structKEY__PROC__ENTRY}{Key\+Proc\+Entry\+\_\+t}} $\ast$}]{p\+\_\+entry,  }\item[{const char $\ast$}]{value }\end{DoxyParamCaption})}
+
+Store key value as string 

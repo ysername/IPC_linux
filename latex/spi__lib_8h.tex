@@ -1,0 +1,199 @@
+\hypertarget{spi__lib_8h}{}\section{spi\+\_\+lib.\+h File Reference}
+\label{spi__lib_8h}\index{spi\+\_\+lib.\+h@{spi\+\_\+lib.\+h}}
+
+
+Public interface for VP-\/GP S\+PI communication library. License\+: Yazaki License, All Rights Reserved.  
+
+
+{\ttfamily \#include \char`\"{}spi\+\_\+lib\+\_\+types.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}spi\+\_\+common\+\_\+config.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}spi\+\_\+node\+\_\+config.\+h\char`\"{}}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structSL__STATS__RECORD}{S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{spi__lib_8h_aaabf34fcc78849ea886328d3bda60933}{S\+L\+\_\+\+S\+U\+C\+C\+E\+SS}}~(1)
+\item 
+\#define \mbox{\hyperlink{spi__lib_8h_a5b0fe06b9ca85dff9abba11fd647b0ff}{S\+L\+\_\+\+S\+U\+C\+C\+E\+S\+S\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+SG}}~(0)
+\item 
+\#define \mbox{\hyperlink{spi__lib_8h_a5c164e2247f9725b7a202d364dd397c9}{S\+L\+\_\+\+S\+E\+Q\+\_\+\+E\+R\+R\+OR}}~(-\/1)
+\item 
+\#define \mbox{\hyperlink{spi__lib_8h_a855f5402a98805845d72e8f75360fb02}{S\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+ID}}~(-\/2)
+\item 
+\#define \mbox{\hyperlink{spi__lib_8h_a690f36896ae89ef3b07ffaa5c0648fae}{S\+L\+\_\+\+M\+S\+G\+\_\+\+T\+O\+O\+\_\+\+L\+O\+NG}}~(-\/3)
+\item 
+\#define \mbox{\hyperlink{spi__lib_8h_a127e207b70048bf369a9aeaac77fd7ba}{S\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+AD}}~(-\/4)
+\item 
+\#define \mbox{\hyperlink{spi__lib_8h_abbaaa94bdefb9d884bb6b3d3986dc4e8}{S\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+C\+RC}}~(-\/5)
+\item 
+\#define \mbox{\hyperlink{spi__lib_8h_ad5bdd3eb7aff96791e9a9c538e7b1a6d}{S\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+SN}}~(-\/6)
+\item 
+\#define \mbox{\hyperlink{spi__lib_8h_a2bb3e8a3c5ad22873c1a422fffb755e0}{S\+L\+\_\+\+N\+O\+\_\+\+M\+O\+R\+E\+\_\+\+M\+S\+GS}}~(-\/7)
+\item 
+\#define \mbox{\hyperlink{spi__lib_8h_af0ffdd371e4876fe2eae1bcc55bc2776}{S\+L\+\_\+\+E\+O\+P\+\_\+\+E\+R\+R\+OR}}~(-\/8)
+\item 
+\#define \mbox{\hyperlink{spi__lib_8h_a7ef1898a64d8d585943e2d41017c0804}{S\+L\+\_\+\+T\+P\+L\+\_\+\+X\+F\+E\+R\+\_\+\+L\+I\+M\+IT}}~(-\/9)
+\item 
+\#define \mbox{\hyperlink{spi__lib_8h_a93a4c15d3f9e2000085f92afdbde0faf}{V\+P\+\_\+\+N\+O\+DE}}~(0x2011)
+\item 
+\#define \mbox{\hyperlink{spi__lib_8h_ad4dcf5c96d693b94af3b5d2b50c5692a}{G\+P\+\_\+\+N\+O\+DE}}~(0x2012)
+\item 
+\#define \mbox{\hyperlink{spi__lib_8h_a2917de6459b5f26539335ee551daa907}{R\+F\+I\+\_\+\+C\+P\+U\+\_\+\+R\+E\+S\+ET}}~(0x60)
+\item 
+\#define \mbox{\hyperlink{spi__lib_8h_ade31f52201f5235b9196214772bcf706}{R\+F\+I\+\_\+\+W\+D\+\_\+\+T\+I\+M\+E\+O\+UT}}~(0x61)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{spi__lib_8h_a9f1c2ef888cf63464658cf0cfc0edd49}\label{spi__lib_8h_a9f1c2ef888cf63464658cf0cfc0edd49}} 
+void {\bfseries S\+L\+\_\+\+Initialize} (U8 $\ast$buffer1\+\_\+ptr, U8 $\ast$buffer2\+\_\+ptri, U8 reason\+\_\+for\+\_\+init)
+\item 
+\mbox{\Hypertarget{spi__lib_8h_a0bb4b8ad25bdb8394ee22c4947e224e0}\label{spi__lib_8h_a0bb4b8ad25bdb8394ee22c4947e224e0}} 
+int {\bfseries S\+L\+\_\+\+Get\+Packet\+To\+Tx} (U8 $\ast$$\ast$packet\+\_\+ptr)
+\item 
+\mbox{\Hypertarget{spi__lib_8h_abf02a96391a6ad8b61f6a74d8168b155}\label{spi__lib_8h_abf02a96391a6ad8b61f6a74d8168b155}} 
+int {\bfseries S\+L\+\_\+\+Load\+Packet\+Start} (int $\ast$bytes\+\_\+left)
+\item 
+\mbox{\Hypertarget{spi__lib_8h_abd605499ea1ca1228f411e68ccae05a1}\label{spi__lib_8h_abd605499ea1ca1228f411e68ccae05a1}} 
+int {\bfseries S\+L\+\_\+\+Load\+Packet\+Msg} (int msg\+\_\+id, int msg\+\_\+size\+\_\+bytes, U8 $\ast$msg\+\_\+data, int $\ast$bytes\+\_\+left)
+\item 
+\mbox{\Hypertarget{spi__lib_8h_a84ad3cd04ad1650cf8db9571ae7e941e}\label{spi__lib_8h_a84ad3cd04ad1650cf8db9571ae7e941e}} 
+int {\bfseries S\+L\+\_\+\+Load\+Packet\+Status\+Msg} (int status\+\_\+msg\+\_\+id, int status\+\_\+msg\+\_\+size\+\_\+bytes, U8 $\ast$msg\+\_\+data, int $\ast$bytes\+\_\+left)
+\item 
+\mbox{\Hypertarget{spi__lib_8h_af961f400195e29021a9b793a98b87bd7}\label{spi__lib_8h_af961f400195e29021a9b793a98b87bd7}} 
+int {\bfseries S\+L\+\_\+\+Load\+Packet\+Finish} (void)
+\item 
+\mbox{\Hypertarget{spi__lib_8h_a047f587789df312de0c539d40d5a4ab7}\label{spi__lib_8h_a047f587789df312de0c539d40d5a4ab7}} 
+int {\bfseries S\+L\+\_\+\+Unload\+Packet\+Start} (U8 $\ast$packet\+\_\+ptr)
+\item 
+\mbox{\Hypertarget{spi__lib_8h_a07e6f2971e5ff50fbf6ae50321caa43f}\label{spi__lib_8h_a07e6f2971e5ff50fbf6ae50321caa43f}} 
+int {\bfseries S\+L\+\_\+\+Unload\+Packet\+Msg} (int $\ast$msg\+\_\+id, int $\ast$msg\+\_\+size\+\_\+bytes, U8 $\ast$$\ast$buff\+\_\+ptr)
+\item 
+\mbox{\Hypertarget{spi__lib_8h_aa28573d61d5f1b67af51bba218caa9c7}\label{spi__lib_8h_aa28573d61d5f1b67af51bba218caa9c7}} 
+int {\bfseries S\+L\+\_\+\+Tx\+T\+P\+L\+Msg} (int id, int msg\+\_\+sz\+\_\+bytes, U8 $\ast$msg\+\_\+data, int min\+\_\+bytes\+\_\+packet)
+\item 
+\mbox{\Hypertarget{spi__lib_8h_af1ff1793f5f29e8c720a69cffeecb108}\label{spi__lib_8h_af1ff1793f5f29e8c720a69cffeecb108}} 
+void {\bfseries S\+L\+\_\+\+Dispatch\+Msg} (int msg\+\_\+id, int msg\+\_\+size\+\_\+bytes, U8 $\ast$const msg\+\_\+data)
+\item 
+\mbox{\Hypertarget{spi__lib_8h_a55a90e5c73f2ae16a3f255401e93f18f}\label{spi__lib_8h_a55a90e5c73f2ae16a3f255401e93f18f}} 
+int {\bfseries S\+L\+\_\+\+Get\+Protocol\+Version} (void)
+\item 
+\mbox{\Hypertarget{spi__lib_8h_a2d3153a723ef6b74f3ca7e5a7921e612}\label{spi__lib_8h_a2d3153a723ef6b74f3ca7e5a7921e612}} 
+void {\bfseries S\+L\+\_\+\+Get\+Statistics} (\mbox{\hyperlink{structSL__STATS__RECORD}{S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD}} $\ast$stats\+\_\+buff)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Public interface for VP-\/GP S\+PI communication library. License\+: Yazaki License, All Rights Reserved. 
+
+\begin{DoxyCopyright}{Copyright}
+(C) 2010 Yazaki North America This document is protected by the copyright law of the United States and foreign countries. The work embodied in this document is confidential and constitutes a trade secret of Yazaki North America, Inc. Any copying of this document and/or any use or disclosure of this document or the work embodied in it without the written authority of Yazaki North America, Inc., will constitute copyright and trade secret infringement and will violate the rights of Yazaki North America, Inc.
+\end{DoxyCopyright}
+\begin{DoxyAuthor}{Author}
+G. Palarski
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+1.\+1 
+\end{DoxyParagraph}
+\$\+Log \$ 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{spi__lib_8h_ad4dcf5c96d693b94af3b5d2b50c5692a}\label{spi__lib_8h_ad4dcf5c96d693b94af3b5d2b50c5692a}} 
+\index{spi\+\_\+lib.\+h@{spi\+\_\+lib.\+h}!G\+P\+\_\+\+N\+O\+DE@{G\+P\+\_\+\+N\+O\+DE}}
+\index{G\+P\+\_\+\+N\+O\+DE@{G\+P\+\_\+\+N\+O\+DE}!spi\+\_\+lib.\+h@{spi\+\_\+lib.\+h}}
+\subsubsection{\texorpdfstring{G\+P\+\_\+\+N\+O\+DE}{GP\_NODE}}
+{\footnotesize\ttfamily \#define G\+P\+\_\+\+N\+O\+DE~(0x2012)}
+
+Used for identifying the GP node. \mbox{\Hypertarget{spi__lib_8h_a2917de6459b5f26539335ee551daa907}\label{spi__lib_8h_a2917de6459b5f26539335ee551daa907}} 
+\index{spi\+\_\+lib.\+h@{spi\+\_\+lib.\+h}!R\+F\+I\+\_\+\+C\+P\+U\+\_\+\+R\+E\+S\+ET@{R\+F\+I\+\_\+\+C\+P\+U\+\_\+\+R\+E\+S\+ET}}
+\index{R\+F\+I\+\_\+\+C\+P\+U\+\_\+\+R\+E\+S\+ET@{R\+F\+I\+\_\+\+C\+P\+U\+\_\+\+R\+E\+S\+ET}!spi\+\_\+lib.\+h@{spi\+\_\+lib.\+h}}
+\subsubsection{\texorpdfstring{R\+F\+I\+\_\+\+C\+P\+U\+\_\+\+R\+E\+S\+ET}{RFI\_CPU\_RESET}}
+{\footnotesize\ttfamily \#define R\+F\+I\+\_\+\+C\+P\+U\+\_\+\+R\+E\+S\+ET~(0x60)}
+
+Initialization codes. These values are used for the \char`\"{}reason\+\_\+for\+\_\+init\char`\"{} parameter when calling the S\+L\+\_\+\+Initialize function. Other values may be defined specific to a product as long as the values are different from these. R\+F\+I\+\_\+\+C\+P\+U\+\_\+\+R\+E\+S\+ET -\/ R\+F\+I\+\_\+\+W\+D\+\_\+\+T\+I\+M\+E\+O\+UT -\/ ~\newline
+ use this value following startup following reset \mbox{\Hypertarget{spi__lib_8h_ade31f52201f5235b9196214772bcf706}\label{spi__lib_8h_ade31f52201f5235b9196214772bcf706}} 
+\index{spi\+\_\+lib.\+h@{spi\+\_\+lib.\+h}!R\+F\+I\+\_\+\+W\+D\+\_\+\+T\+I\+M\+E\+O\+UT@{R\+F\+I\+\_\+\+W\+D\+\_\+\+T\+I\+M\+E\+O\+UT}}
+\index{R\+F\+I\+\_\+\+W\+D\+\_\+\+T\+I\+M\+E\+O\+UT@{R\+F\+I\+\_\+\+W\+D\+\_\+\+T\+I\+M\+E\+O\+UT}!spi\+\_\+lib.\+h@{spi\+\_\+lib.\+h}}
+\subsubsection{\texorpdfstring{R\+F\+I\+\_\+\+W\+D\+\_\+\+T\+I\+M\+E\+O\+UT}{RFI\_WD\_TIMEOUT}}
+{\footnotesize\ttfamily \#define R\+F\+I\+\_\+\+W\+D\+\_\+\+T\+I\+M\+E\+O\+UT~(0x61)}
+
+the VP uses this value when a watchdog timeout occurs waiting for the GP to do a S\+PI transfer). \mbox{\Hypertarget{spi__lib_8h_af0ffdd371e4876fe2eae1bcc55bc2776}\label{spi__lib_8h_af0ffdd371e4876fe2eae1bcc55bc2776}} 
+\index{spi\+\_\+lib.\+h@{spi\+\_\+lib.\+h}!S\+L\+\_\+\+E\+O\+P\+\_\+\+E\+R\+R\+OR@{S\+L\+\_\+\+E\+O\+P\+\_\+\+E\+R\+R\+OR}}
+\index{S\+L\+\_\+\+E\+O\+P\+\_\+\+E\+R\+R\+OR@{S\+L\+\_\+\+E\+O\+P\+\_\+\+E\+R\+R\+OR}!spi\+\_\+lib.\+h@{spi\+\_\+lib.\+h}}
+\subsubsection{\texorpdfstring{S\+L\+\_\+\+E\+O\+P\+\_\+\+E\+R\+R\+OR}{SL\_EOP\_ERROR}}
+{\footnotesize\ttfamily \#define S\+L\+\_\+\+E\+O\+P\+\_\+\+E\+R\+R\+OR~(-\/8)}
+
+end of packet reached before end of message data \mbox{\Hypertarget{spi__lib_8h_abbaaa94bdefb9d884bb6b3d3986dc4e8}\label{spi__lib_8h_abbaaa94bdefb9d884bb6b3d3986dc4e8}} 
+\index{spi\+\_\+lib.\+h@{spi\+\_\+lib.\+h}!S\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+C\+RC@{S\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+C\+RC}}
+\index{S\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+C\+RC@{S\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+C\+RC}!spi\+\_\+lib.\+h@{spi\+\_\+lib.\+h}}
+\subsubsection{\texorpdfstring{S\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+C\+RC}{SL\_INVALID\_CRC}}
+{\footnotesize\ttfamily \#define S\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+C\+RC~(-\/5)}
+
+C\+RC integrity check on packet failed \mbox{\Hypertarget{spi__lib_8h_a855f5402a98805845d72e8f75360fb02}\label{spi__lib_8h_a855f5402a98805845d72e8f75360fb02}} 
+\index{spi\+\_\+lib.\+h@{spi\+\_\+lib.\+h}!S\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+ID@{S\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+ID}}
+\index{S\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+ID@{S\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+ID}!spi\+\_\+lib.\+h@{spi\+\_\+lib.\+h}}
+\subsubsection{\texorpdfstring{S\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+ID}{SL\_INVALID\_ID}}
+{\footnotesize\ttfamily \#define S\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+ID~(-\/2)}
+
+message id is out of range \mbox{\Hypertarget{spi__lib_8h_a127e207b70048bf369a9aeaac77fd7ba}\label{spi__lib_8h_a127e207b70048bf369a9aeaac77fd7ba}} 
+\index{spi\+\_\+lib.\+h@{spi\+\_\+lib.\+h}!S\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+AD@{S\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+AD}}
+\index{S\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+AD@{S\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+AD}!spi\+\_\+lib.\+h@{spi\+\_\+lib.\+h}}
+\subsubsection{\texorpdfstring{S\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+AD}{SL\_INVALID\_PAD}}
+{\footnotesize\ttfamily \#define S\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+AD~(-\/4)}
+
+invalid pad bytes found in packet \mbox{\Hypertarget{spi__lib_8h_ad5bdd3eb7aff96791e9a9c538e7b1a6d}\label{spi__lib_8h_ad5bdd3eb7aff96791e9a9c538e7b1a6d}} 
+\index{spi\+\_\+lib.\+h@{spi\+\_\+lib.\+h}!S\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+SN@{S\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+SN}}
+\index{S\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+SN@{S\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+SN}!spi\+\_\+lib.\+h@{spi\+\_\+lib.\+h}}
+\subsubsection{\texorpdfstring{S\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+SN}{SL\_INVALID\_SN}}
+{\footnotesize\ttfamily \#define S\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+SN~(-\/6)}
+
+packet contains unexpected sequence number \mbox{\Hypertarget{spi__lib_8h_a690f36896ae89ef3b07ffaa5c0648fae}\label{spi__lib_8h_a690f36896ae89ef3b07ffaa5c0648fae}} 
+\index{spi\+\_\+lib.\+h@{spi\+\_\+lib.\+h}!S\+L\+\_\+\+M\+S\+G\+\_\+\+T\+O\+O\+\_\+\+L\+O\+NG@{S\+L\+\_\+\+M\+S\+G\+\_\+\+T\+O\+O\+\_\+\+L\+O\+NG}}
+\index{S\+L\+\_\+\+M\+S\+G\+\_\+\+T\+O\+O\+\_\+\+L\+O\+NG@{S\+L\+\_\+\+M\+S\+G\+\_\+\+T\+O\+O\+\_\+\+L\+O\+NG}!spi\+\_\+lib.\+h@{spi\+\_\+lib.\+h}}
+\subsubsection{\texorpdfstring{S\+L\+\_\+\+M\+S\+G\+\_\+\+T\+O\+O\+\_\+\+L\+O\+NG}{SL\_MSG\_TOO\_LONG}}
+{\footnotesize\ttfamily \#define S\+L\+\_\+\+M\+S\+G\+\_\+\+T\+O\+O\+\_\+\+L\+O\+NG~(-\/3)}
+
+invalid message length (too long) \mbox{\Hypertarget{spi__lib_8h_a2bb3e8a3c5ad22873c1a422fffb755e0}\label{spi__lib_8h_a2bb3e8a3c5ad22873c1a422fffb755e0}} 
+\index{spi\+\_\+lib.\+h@{spi\+\_\+lib.\+h}!S\+L\+\_\+\+N\+O\+\_\+\+M\+O\+R\+E\+\_\+\+M\+S\+GS@{S\+L\+\_\+\+N\+O\+\_\+\+M\+O\+R\+E\+\_\+\+M\+S\+GS}}
+\index{S\+L\+\_\+\+N\+O\+\_\+\+M\+O\+R\+E\+\_\+\+M\+S\+GS@{S\+L\+\_\+\+N\+O\+\_\+\+M\+O\+R\+E\+\_\+\+M\+S\+GS}!spi\+\_\+lib.\+h@{spi\+\_\+lib.\+h}}
+\subsubsection{\texorpdfstring{S\+L\+\_\+\+N\+O\+\_\+\+M\+O\+R\+E\+\_\+\+M\+S\+GS}{SL\_NO\_MORE\_MSGS}}
+{\footnotesize\ttfamily \#define S\+L\+\_\+\+N\+O\+\_\+\+M\+O\+R\+E\+\_\+\+M\+S\+GS~(-\/7)}
+
+no more messages to unload from packet \mbox{\Hypertarget{spi__lib_8h_a5c164e2247f9725b7a202d364dd397c9}\label{spi__lib_8h_a5c164e2247f9725b7a202d364dd397c9}} 
+\index{spi\+\_\+lib.\+h@{spi\+\_\+lib.\+h}!S\+L\+\_\+\+S\+E\+Q\+\_\+\+E\+R\+R\+OR@{S\+L\+\_\+\+S\+E\+Q\+\_\+\+E\+R\+R\+OR}}
+\index{S\+L\+\_\+\+S\+E\+Q\+\_\+\+E\+R\+R\+OR@{S\+L\+\_\+\+S\+E\+Q\+\_\+\+E\+R\+R\+OR}!spi\+\_\+lib.\+h@{spi\+\_\+lib.\+h}}
+\subsubsection{\texorpdfstring{S\+L\+\_\+\+S\+E\+Q\+\_\+\+E\+R\+R\+OR}{SL\_SEQ\_ERROR}}
+{\footnotesize\ttfamily \#define S\+L\+\_\+\+S\+E\+Q\+\_\+\+E\+R\+R\+OR~(-\/1)}
+
+calling sequence error; the function called should N\+OT have been called at this time (see documentation describing proper call sequence). \mbox{\Hypertarget{spi__lib_8h_aaabf34fcc78849ea886328d3bda60933}\label{spi__lib_8h_aaabf34fcc78849ea886328d3bda60933}} 
+\index{spi\+\_\+lib.\+h@{spi\+\_\+lib.\+h}!S\+L\+\_\+\+S\+U\+C\+C\+E\+SS@{S\+L\+\_\+\+S\+U\+C\+C\+E\+SS}}
+\index{S\+L\+\_\+\+S\+U\+C\+C\+E\+SS@{S\+L\+\_\+\+S\+U\+C\+C\+E\+SS}!spi\+\_\+lib.\+h@{spi\+\_\+lib.\+h}}
+\subsubsection{\texorpdfstring{S\+L\+\_\+\+S\+U\+C\+C\+E\+SS}{SL\_SUCCESS}}
+{\footnotesize\ttfamily \#define S\+L\+\_\+\+S\+U\+C\+C\+E\+SS~(1)}
+
+The following \char`\"{}return codes\char`\"{} are returned by S\+PI library functions. The typical meaning of the codes is as follows however the meaning may be different for specific functions (see function descriptions for more info).Operations performed by function completely successfully \mbox{\Hypertarget{spi__lib_8h_a5b0fe06b9ca85dff9abba11fd647b0ff}\label{spi__lib_8h_a5b0fe06b9ca85dff9abba11fd647b0ff}} 
+\index{spi\+\_\+lib.\+h@{spi\+\_\+lib.\+h}!S\+L\+\_\+\+S\+U\+C\+C\+E\+S\+S\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+SG@{S\+L\+\_\+\+S\+U\+C\+C\+E\+S\+S\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+SG}}
+\index{S\+L\+\_\+\+S\+U\+C\+C\+E\+S\+S\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+SG@{S\+L\+\_\+\+S\+U\+C\+C\+E\+S\+S\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+SG}!spi\+\_\+lib.\+h@{spi\+\_\+lib.\+h}}
+\subsubsection{\texorpdfstring{S\+L\+\_\+\+S\+U\+C\+C\+E\+S\+S\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+SG}{SL\_SUCCESS\_STATUS\_MSG}}
+{\footnotesize\ttfamily \#define S\+L\+\_\+\+S\+U\+C\+C\+E\+S\+S\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+SG~(0)}
+
+Status message successfully unloaded \mbox{\Hypertarget{spi__lib_8h_a7ef1898a64d8d585943e2d41017c0804}\label{spi__lib_8h_a7ef1898a64d8d585943e2d41017c0804}} 
+\index{spi\+\_\+lib.\+h@{spi\+\_\+lib.\+h}!S\+L\+\_\+\+T\+P\+L\+\_\+\+X\+F\+E\+R\+\_\+\+L\+I\+M\+IT@{S\+L\+\_\+\+T\+P\+L\+\_\+\+X\+F\+E\+R\+\_\+\+L\+I\+M\+IT}}
+\index{S\+L\+\_\+\+T\+P\+L\+\_\+\+X\+F\+E\+R\+\_\+\+L\+I\+M\+IT@{S\+L\+\_\+\+T\+P\+L\+\_\+\+X\+F\+E\+R\+\_\+\+L\+I\+M\+IT}!spi\+\_\+lib.\+h@{spi\+\_\+lib.\+h}}
+\subsubsection{\texorpdfstring{S\+L\+\_\+\+T\+P\+L\+\_\+\+X\+F\+E\+R\+\_\+\+L\+I\+M\+IT}{SL\_TPL\_XFER\_LIMIT}}
+{\footnotesize\ttfamily \#define S\+L\+\_\+\+T\+P\+L\+\_\+\+X\+F\+E\+R\+\_\+\+L\+I\+M\+IT~(-\/9)}
+
+the maximum number of T\+PL tx messages allowed already in progress. \mbox{\Hypertarget{spi__lib_8h_a93a4c15d3f9e2000085f92afdbde0faf}\label{spi__lib_8h_a93a4c15d3f9e2000085f92afdbde0faf}} 
+\index{spi\+\_\+lib.\+h@{spi\+\_\+lib.\+h}!V\+P\+\_\+\+N\+O\+DE@{V\+P\+\_\+\+N\+O\+DE}}
+\index{V\+P\+\_\+\+N\+O\+DE@{V\+P\+\_\+\+N\+O\+DE}!spi\+\_\+lib.\+h@{spi\+\_\+lib.\+h}}
+\subsubsection{\texorpdfstring{V\+P\+\_\+\+N\+O\+DE}{VP\_NODE}}
+{\footnotesize\ttfamily \#define V\+P\+\_\+\+N\+O\+DE~(0x2011)}
+
+Identification macros -\/ Used to identify the target system.\+Used for identifying the VP node. 

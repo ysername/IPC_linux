@@ -1,0 +1,223 @@
+\hypertarget{gp__utils_8h}{}\section{gp\+\_\+utils.\+h File Reference}
+\label{gp__utils_8h}\index{gp\+\_\+utils.\+h@{gp\+\_\+utils.\+h}}
+
+
+Header file containing the public interfaces and data for common software component utility functions.  
+
+
+{\ttfamily \#include \char`\"{}gp\+\_\+types.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$sys/time.\+h$>$}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{gp__utils_8h_a97846954ed1cedf2a4189aa7fdd700c6}{Gh\+Check}}(errcode)~\+\_\+\+Yz\+Check(errcode, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+)
+\item 
+\#define \mbox{\hyperlink{gp__utils_8h_a9312329adf11b72c22bd1fccd48a37e9}{Yz\+Check}}(errcode)~\+\_\+\+Yz\+Check(errcode, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+)
+\item 
+\mbox{\Hypertarget{gp__utils_8h_a8b0439d726b06eabcb2bd171d8f6b8f9}\label{gp__utils_8h_a8b0439d726b06eabcb2bd171d8f6b8f9}} 
+\#define {\bfseries gp\+\_\+\+Read16bit}(p\+\_\+value,  p\+\_\+buf)~gp\+\_\+\+Read16bitE(p\+\_\+value, p\+\_\+buf, 0);
+\item 
+\mbox{\Hypertarget{gp__utils_8h_adaed29c05ad3f52bf9bd15c41bbf5b8a}\label{gp__utils_8h_adaed29c05ad3f52bf9bd15c41bbf5b8a}} 
+\#define {\bfseries gp\+\_\+\+Read16bit\+LE}(p\+\_\+value,  p\+\_\+buf)~gp\+\_\+\+Read16bitE(p\+\_\+value, p\+\_\+buf, 0);
+\item 
+\mbox{\Hypertarget{gp__utils_8h_a91750bf1006183d6836bf9af6c7cadaf}\label{gp__utils_8h_a91750bf1006183d6836bf9af6c7cadaf}} 
+\#define {\bfseries gp\+\_\+\+Store16bit}(value,  p\+\_\+buf)~gp\+\_\+\+Store16bitE(value, p\+\_\+buf, 0);
+\item 
+\mbox{\Hypertarget{gp__utils_8h_a80f1f29ce7b2b3f9a56b6d1550d975d4}\label{gp__utils_8h_a80f1f29ce7b2b3f9a56b6d1550d975d4}} 
+\#define {\bfseries gp\+\_\+\+Store16bit\+LE}(value,  p\+\_\+buf)~gp\+\_\+\+Store16bitE(value, p\+\_\+buf, 0);
+\item 
+\mbox{\Hypertarget{gp__utils_8h_abccebf5b1339b5b73bf0e59d0e202175}\label{gp__utils_8h_abccebf5b1339b5b73bf0e59d0e202175}} 
+\#define {\bfseries gp\+\_\+\+Read32bit}(p\+\_\+value,  p\+\_\+buf)~gp\+\_\+\+Read32bitE(p\+\_\+value, p\+\_\+buf, 0);
+\item 
+\mbox{\Hypertarget{gp__utils_8h_a4763953141714f9f14aa902ae90b96b0}\label{gp__utils_8h_a4763953141714f9f14aa902ae90b96b0}} 
+\#define {\bfseries gp\+\_\+\+Read32bit\+LE}(p\+\_\+value,  p\+\_\+buf)~gp\+\_\+\+Read32bitE(p\+\_\+value, p\+\_\+buf, 0);
+\item 
+\mbox{\Hypertarget{gp__utils_8h_a121c2bce8a886720d1533dbd3abf999c}\label{gp__utils_8h_a121c2bce8a886720d1533dbd3abf999c}} 
+\#define {\bfseries gp\+\_\+\+Store32bit}(value,  p\+\_\+buf)~gp\+\_\+\+Store32bitE(value, p\+\_\+buf, 0);
+\item 
+\mbox{\Hypertarget{gp__utils_8h_a445ef95de50205bf261fa62ab9ec05a4}\label{gp__utils_8h_a445ef95de50205bf261fa62ab9ec05a4}} 
+\#define {\bfseries gp\+\_\+\+Store32bit\+LE}(value,  p\+\_\+buf)~gp\+\_\+\+Store32bit(value, p\+\_\+buf, 0);
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{gp__utils_8h_ac276e33ef767b50e932a21293d3bd18e}{Dbg\+Verbosity\+\_\+t}} \{ \newline
+\mbox{\hyperlink{gp__utils_8h_ac276e33ef767b50e932a21293d3bd18ea3e9058686c9c76ef5865b3af8ad90f30}{V\+R\+B\+\_\+\+N\+O\+NE}} = 0, 
+\mbox{\hyperlink{gp__utils_8h_ac276e33ef767b50e932a21293d3bd18ea553b83d19d675782a40d953b690aaf83}{V\+R\+B\+\_\+\+R\+U\+N\+T\+I\+ME}}, 
+\mbox{\hyperlink{gp__utils_8h_ac276e33ef767b50e932a21293d3bd18eac842e5fcd9be549b3dd4ea140ea909fb}{V\+R\+B\+\_\+\+D\+E\+B\+U\+G1}}, 
+\mbox{\hyperlink{gp__utils_8h_ac276e33ef767b50e932a21293d3bd18ea0cfe44d6e64c7b635c76db2d37068c13}{V\+R\+B\+\_\+\+D\+E\+B\+U\+G2}}, 
+\newline
+\mbox{\hyperlink{gp__utils_8h_ac276e33ef767b50e932a21293d3bd18ea39e76c70b6a92b46f39d3f4b0f89a791}{V\+R\+B\+\_\+\+M\+AX}}, 
+{\bfseries V\+R\+B\+\_\+\+L\+E\+V\+E\+LS}
+ \}
+\item 
+enum \mbox{\hyperlink{gp__utils_8h_aa62294e7b72dcda27baa9d0cf9bef5f4}{G\+P\+\_\+\+R\+W\+\_\+\+E\+N\+D\+I\+A\+N\+\_\+T}} \{ \mbox{\hyperlink{gp__utils_8h_aa62294e7b72dcda27baa9d0cf9bef5f4a1c54a7b29176b75b258a0f51ece199c3}{G\+P\+\_\+\+R\+W\+\_\+\+LE}} = 0, 
+\mbox{\hyperlink{gp__utils_8h_aa62294e7b72dcda27baa9d0cf9bef5f4ae50096710cac111c6fe51e5de63a3daa}{G\+P\+\_\+\+R\+W\+\_\+\+BE}}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{gp__utils_8h_a143dee85d2097bf32fa54cfe6ef98c5e}\label{gp__utils_8h_a143dee85d2097bf32fa54cfe6ef98c5e}} 
+int32\+\_\+t {\bfseries \+\_\+\+Gh\+Check} (int32\+\_\+t e, char $\ast$err\+\_\+string, int errln)
+\item 
+\mbox{\Hypertarget{gp__utils_8h_a07b87ac4c354c8ce310ae3909bafbab5}\label{gp__utils_8h_a07b87ac4c354c8ce310ae3909bafbab5}} 
+int32\+\_\+t {\bfseries \+\_\+\+Yz\+Check} (int32\+\_\+t code, char $\ast$err\+\_\+string, int errln)
+\item 
+\mbox{\Hypertarget{gp__utils_8h_a912f853206843cb518e9dc3d0da4a397}\label{gp__utils_8h_a912f853206843cb518e9dc3d0da4a397}} 
+int {\bfseries gp\+\_\+\+Store16bitE} (uint16\+\_\+t value, uint8\+\_\+t $\ast$p\+\_\+buf, int endian)
+\item 
+\mbox{\Hypertarget{gp__utils_8h_ac6b3d062ec78692500a126a93af0cbca}\label{gp__utils_8h_ac6b3d062ec78692500a126a93af0cbca}} 
+int {\bfseries gp\+\_\+\+Store16bit\+BE} (uint16\+\_\+t value, uint8\+\_\+t $\ast$p\+\_\+buf)
+\item 
+\mbox{\Hypertarget{gp__utils_8h_a8b05626aa30fe3c5a44f475e8115d993}\label{gp__utils_8h_a8b05626aa30fe3c5a44f475e8115d993}} 
+int {\bfseries gp\+\_\+\+Store16bit\+Signed} (int16\+\_\+t value, uint8\+\_\+t $\ast$p\+\_\+buf)
+\item 
+\mbox{\Hypertarget{gp__utils_8h_a6ee032e9f97c4d6815025d6adfb73c3d}\label{gp__utils_8h_a6ee032e9f97c4d6815025d6adfb73c3d}} 
+int {\bfseries gp\+\_\+\+Store32bitE} (uint32\+\_\+t value, uint8\+\_\+t $\ast$p\+\_\+buf, int endian)
+\item 
+\mbox{\Hypertarget{gp__utils_8h_ad1d59d16f529a5aeb9fe30d21368d32e}\label{gp__utils_8h_ad1d59d16f529a5aeb9fe30d21368d32e}} 
+int {\bfseries gp\+\_\+\+Store32bit\+BE} (uint32\+\_\+t value, uint8\+\_\+t $\ast$p\+\_\+buf)
+\item 
+\mbox{\Hypertarget{gp__utils_8h_ac1c1237d97d7d0e84454521d09a92639}\label{gp__utils_8h_ac1c1237d97d7d0e84454521d09a92639}} 
+int {\bfseries gp\+\_\+\+Store32bit\+Signed} (int32\+\_\+t value, uint8\+\_\+t $\ast$p\+\_\+buf)
+\item 
+\mbox{\Hypertarget{gp__utils_8h_a3f9eca16dbdf44b0bb72153c76ebede6}\label{gp__utils_8h_a3f9eca16dbdf44b0bb72153c76ebede6}} 
+int {\bfseries gp\+\_\+\+Store\+Float} (float value, uint8\+\_\+t $\ast$p\+\_\+buf)
+\item 
+\mbox{\Hypertarget{gp__utils_8h_a8e5f50dc0cfaa8491cc51357363faa6f}\label{gp__utils_8h_a8e5f50dc0cfaa8491cc51357363faa6f}} 
+int {\bfseries gp\+\_\+\+Store64bit} (uint64\+\_\+t value, uint8\+\_\+t $\ast$p\+\_\+buf)
+\item 
+\mbox{\Hypertarget{gp__utils_8h_a2e41aba150a2c31c2109f7e9406821d2}\label{gp__utils_8h_a2e41aba150a2c31c2109f7e9406821d2}} 
+int {\bfseries gp\+\_\+\+Store64bit\+Signed} (int64\+\_\+t value, uint8\+\_\+t $\ast$p\+\_\+buf)
+\item 
+\mbox{\Hypertarget{gp__utils_8h_ac7a7bfaa713a693a8342ac4c47a432a5}\label{gp__utils_8h_ac7a7bfaa713a693a8342ac4c47a432a5}} 
+int {\bfseries gp\+\_\+\+Store\+Double} (double value, uint8\+\_\+t $\ast$p\+\_\+buf)
+\item 
+\mbox{\Hypertarget{gp__utils_8h_a54df8a740b4104270124f35f299f65d4}\label{gp__utils_8h_a54df8a740b4104270124f35f299f65d4}} 
+int {\bfseries gp\+\_\+\+Read16bitE} (uint16\+\_\+t $\ast$p\+\_\+value, uint8\+\_\+t $\ast$p\+\_\+buf, int endian)
+\item 
+\mbox{\Hypertarget{gp__utils_8h_a120e481c0c80b01acb6d3297785e812d}\label{gp__utils_8h_a120e481c0c80b01acb6d3297785e812d}} 
+int {\bfseries gp\+\_\+\+Read16bit\+BE} (uint16\+\_\+t $\ast$p\+\_\+value, uint8\+\_\+t $\ast$p\+\_\+buf)
+\item 
+\mbox{\Hypertarget{gp__utils_8h_a89ba0de54899685859d0ad0d5d6934fe}\label{gp__utils_8h_a89ba0de54899685859d0ad0d5d6934fe}} 
+int {\bfseries gp\+\_\+\+Read16bit\+Signed} (int16\+\_\+t $\ast$p\+\_\+value, uint8\+\_\+t $\ast$p\+\_\+buf)
+\item 
+\mbox{\Hypertarget{gp__utils_8h_ad8e3841fe4b2be2aa8bea6b9a10a35a0}\label{gp__utils_8h_ad8e3841fe4b2be2aa8bea6b9a10a35a0}} 
+int {\bfseries gp\+\_\+\+Read32bitE} (uint32\+\_\+t $\ast$p\+\_\+value, uint8\+\_\+t $\ast$p\+\_\+buf, int endian)
+\item 
+\mbox{\Hypertarget{gp__utils_8h_ab815e1f942faef7c5dca24450499bd7b}\label{gp__utils_8h_ab815e1f942faef7c5dca24450499bd7b}} 
+int {\bfseries gp\+\_\+\+Read32bit\+BE} (uint32\+\_\+t $\ast$p\+\_\+value, uint8\+\_\+t $\ast$p\+\_\+buf)
+\item 
+\mbox{\Hypertarget{gp__utils_8h_abdda2a0854c05c52589b44fb9b7c903e}\label{gp__utils_8h_abdda2a0854c05c52589b44fb9b7c903e}} 
+int {\bfseries gp\+\_\+\+Read32bit\+Signed} (int32\+\_\+t $\ast$p\+\_\+value, uint8\+\_\+t $\ast$p\+\_\+buf)
+\item 
+\mbox{\Hypertarget{gp__utils_8h_a45fb61bf7d114de800117cc6c01a9ca2}\label{gp__utils_8h_a45fb61bf7d114de800117cc6c01a9ca2}} 
+int {\bfseries gp\+\_\+\+Read\+Float} (uint32\+\_\+t $\ast$p\+\_\+value, uint8\+\_\+t $\ast$p\+\_\+buf)
+\item 
+\mbox{\Hypertarget{gp__utils_8h_ae72c12399168e5b7953372a8978bee2a}\label{gp__utils_8h_ae72c12399168e5b7953372a8978bee2a}} 
+int {\bfseries gp\+\_\+\+Read64bit} (uint64\+\_\+t $\ast$p\+\_\+value, uint8\+\_\+t $\ast$p\+\_\+buf)
+\item 
+\mbox{\Hypertarget{gp__utils_8h_a29271b3cd007360875ceaeca98d48510}\label{gp__utils_8h_a29271b3cd007360875ceaeca98d48510}} 
+int {\bfseries gp\+\_\+\+Read64bit\+Signed} (int64\+\_\+t $\ast$p\+\_\+value, uint8\+\_\+t $\ast$p\+\_\+buf)
+\item 
+\mbox{\Hypertarget{gp__utils_8h_a859e90c6e1611c82b539b6c2b4c0b59a}\label{gp__utils_8h_a859e90c6e1611c82b539b6c2b4c0b59a}} 
+int {\bfseries gp\+\_\+\+Read\+Double} (uint64\+\_\+t $\ast$p\+\_\+value, uint8\+\_\+t $\ast$p\+\_\+buf)
+\item 
+\mbox{\Hypertarget{gp__utils_8h_a1f0bbe00c009df4cfe66911247de982a}\label{gp__utils_8h_a1f0bbe00c009df4cfe66911247de982a}} 
+void {\bfseries gp\+\_\+\+Printf} (\mbox{\hyperlink{gp__utils_8h_ac276e33ef767b50e932a21293d3bd18e}{Dbg\+Verbosity\+\_\+t}} vrb, const char $\ast$format,...)
+\item 
+\mbox{\Hypertarget{gp__utils_8h_ab08b964de4a950c900751f67678d6a0d}\label{gp__utils_8h_ab08b964de4a950c900751f67678d6a0d}} 
+void {\bfseries gp\+\_\+\+Open\+Log\+Buf} (char $\ast$$\ast$p\+Buf, int size)
+\item 
+\mbox{\Hypertarget{gp__utils_8h_af9c4bf297fb67d7d0dfa9dca15132969}\label{gp__utils_8h_af9c4bf297fb67d7d0dfa9dca15132969}} 
+void {\bfseries gp\+\_\+\+Get\+Log\+Buf} (char $\ast$$\ast$p\+Buf, int $\ast$p\+Size)
+\item 
+\mbox{\Hypertarget{gp__utils_8h_a480411c4e602dd5dccc28fa35a695bde}\label{gp__utils_8h_a480411c4e602dd5dccc28fa35a695bde}} 
+void {\bfseries gp\+\_\+\+Cnvrt2\+Wstr} (char $\ast$p\+\_\+wstr, char $\ast$p\+\_\+str)
+\item 
+\mbox{\Hypertarget{gp__utils_8h_a4637af6f79bac4043e1064f0837d0ddc}\label{gp__utils_8h_a4637af6f79bac4043e1064f0837d0ddc}} 
+size\+\_\+t {\bfseries strlcpy} (char $\ast$dst, const char $\ast$src, size\+\_\+t size)
+\item 
+\mbox{\Hypertarget{gp__utils_8h_aea13d00633042a5e48900cf9226e846c}\label{gp__utils_8h_aea13d00633042a5e48900cf9226e846c}} 
+void {\bfseries gp\+\_\+\+Timer\+Sub} (struct timeval $\ast$stop, struct timeval $\ast$start, struct timeval $\ast$result)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Header file containing the public interfaces and data for common software component utility functions. 
+
+\begin{DoxyCopyright}{Copyright}
+2016
+\end{DoxyCopyright}
+\begin{DoxyAuthor}{Author}
+D. Kageff
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+1.\+17 
+\end{DoxyParagraph}
+\$\+Log \$ 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{gp__utils_8h_a97846954ed1cedf2a4189aa7fdd700c6}\label{gp__utils_8h_a97846954ed1cedf2a4189aa7fdd700c6}} 
+\index{gp\+\_\+utils.\+h@{gp\+\_\+utils.\+h}!Gh\+Check@{Gh\+Check}}
+\index{Gh\+Check@{Gh\+Check}!gp\+\_\+utils.\+h@{gp\+\_\+utils.\+h}}
+\subsubsection{\texorpdfstring{Gh\+Check}{GhCheck}}
+{\footnotesize\ttfamily \#define Gh\+Check(\begin{DoxyParamCaption}\item[{}]{errcode }\end{DoxyParamCaption})~\+\_\+\+Yz\+Check(errcode, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+)}
+
+Wrapper macro function that supplies filename and line number to \+\_\+\+Gh\+Check() \mbox{\Hypertarget{gp__utils_8h_a9312329adf11b72c22bd1fccd48a37e9}\label{gp__utils_8h_a9312329adf11b72c22bd1fccd48a37e9}} 
+\index{gp\+\_\+utils.\+h@{gp\+\_\+utils.\+h}!Yz\+Check@{Yz\+Check}}
+\index{Yz\+Check@{Yz\+Check}!gp\+\_\+utils.\+h@{gp\+\_\+utils.\+h}}
+\subsubsection{\texorpdfstring{Yz\+Check}{YzCheck}}
+{\footnotesize\ttfamily \#define Yz\+Check(\begin{DoxyParamCaption}\item[{}]{errcode }\end{DoxyParamCaption})~\+\_\+\+Yz\+Check(errcode, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+)}
+
+Wrapper macro function that supplies filename and line number to \+\_\+\+Yz\+Check() 
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{gp__utils_8h_ac276e33ef767b50e932a21293d3bd18e}\label{gp__utils_8h_ac276e33ef767b50e932a21293d3bd18e}} 
+\index{gp\+\_\+utils.\+h@{gp\+\_\+utils.\+h}!Dbg\+Verbosity\+\_\+t@{Dbg\+Verbosity\+\_\+t}}
+\index{Dbg\+Verbosity\+\_\+t@{Dbg\+Verbosity\+\_\+t}!gp\+\_\+utils.\+h@{gp\+\_\+utils.\+h}}
+\subsubsection{\texorpdfstring{Dbg\+Verbosity\+\_\+t}{DbgVerbosity\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{gp__utils_8h_ac276e33ef767b50e932a21293d3bd18e}{Dbg\+Verbosity\+\_\+t}}}
+
+Defined debug print verbosity levels \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+R\+B\+\_\+\+N\+O\+NE@{V\+R\+B\+\_\+\+N\+O\+NE}!gp\+\_\+utils.\+h@{gp\+\_\+utils.\+h}}\index{gp\+\_\+utils.\+h@{gp\+\_\+utils.\+h}!V\+R\+B\+\_\+\+N\+O\+NE@{V\+R\+B\+\_\+\+N\+O\+NE}}}\mbox{\Hypertarget{gp__utils_8h_ac276e33ef767b50e932a21293d3bd18ea3e9058686c9c76ef5865b3af8ad90f30}\label{gp__utils_8h_ac276e33ef767b50e932a21293d3bd18ea3e9058686c9c76ef5865b3af8ad90f30}} 
+V\+R\+B\+\_\+\+N\+O\+NE&Don\textquotesingle{}t print anything \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+R\+B\+\_\+\+R\+U\+N\+T\+I\+ME@{V\+R\+B\+\_\+\+R\+U\+N\+T\+I\+ME}!gp\+\_\+utils.\+h@{gp\+\_\+utils.\+h}}\index{gp\+\_\+utils.\+h@{gp\+\_\+utils.\+h}!V\+R\+B\+\_\+\+R\+U\+N\+T\+I\+ME@{V\+R\+B\+\_\+\+R\+U\+N\+T\+I\+ME}}}\mbox{\Hypertarget{gp__utils_8h_ac276e33ef767b50e932a21293d3bd18ea553b83d19d675782a40d953b690aaf83}\label{gp__utils_8h_ac276e33ef767b50e932a21293d3bd18ea553b83d19d675782a40d953b690aaf83}} 
+V\+R\+B\+\_\+\+R\+U\+N\+T\+I\+ME&Standard run time verbosity \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+R\+B\+\_\+\+D\+E\+B\+U\+G1@{V\+R\+B\+\_\+\+D\+E\+B\+U\+G1}!gp\+\_\+utils.\+h@{gp\+\_\+utils.\+h}}\index{gp\+\_\+utils.\+h@{gp\+\_\+utils.\+h}!V\+R\+B\+\_\+\+D\+E\+B\+U\+G1@{V\+R\+B\+\_\+\+D\+E\+B\+U\+G1}}}\mbox{\Hypertarget{gp__utils_8h_ac276e33ef767b50e932a21293d3bd18eac842e5fcd9be549b3dd4ea140ea909fb}\label{gp__utils_8h_ac276e33ef767b50e932a21293d3bd18eac842e5fcd9be549b3dd4ea140ea909fb}} 
+V\+R\+B\+\_\+\+D\+E\+B\+U\+G1&Minimal debug verbosity \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+R\+B\+\_\+\+D\+E\+B\+U\+G2@{V\+R\+B\+\_\+\+D\+E\+B\+U\+G2}!gp\+\_\+utils.\+h@{gp\+\_\+utils.\+h}}\index{gp\+\_\+utils.\+h@{gp\+\_\+utils.\+h}!V\+R\+B\+\_\+\+D\+E\+B\+U\+G2@{V\+R\+B\+\_\+\+D\+E\+B\+U\+G2}}}\mbox{\Hypertarget{gp__utils_8h_ac276e33ef767b50e932a21293d3bd18ea0cfe44d6e64c7b635c76db2d37068c13}\label{gp__utils_8h_ac276e33ef767b50e932a21293d3bd18ea0cfe44d6e64c7b635c76db2d37068c13}} 
+V\+R\+B\+\_\+\+D\+E\+B\+U\+G2&Debug verbosity level 2 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+R\+B\+\_\+\+M\+AX@{V\+R\+B\+\_\+\+M\+AX}!gp\+\_\+utils.\+h@{gp\+\_\+utils.\+h}}\index{gp\+\_\+utils.\+h@{gp\+\_\+utils.\+h}!V\+R\+B\+\_\+\+M\+AX@{V\+R\+B\+\_\+\+M\+AX}}}\mbox{\Hypertarget{gp__utils_8h_ac276e33ef767b50e932a21293d3bd18ea39e76c70b6a92b46f39d3f4b0f89a791}\label{gp__utils_8h_ac276e33ef767b50e932a21293d3bd18ea39e76c70b6a92b46f39d3f4b0f89a791}} 
+V\+R\+B\+\_\+\+M\+AX&Maximum verbosity \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{gp__utils_8h_aa62294e7b72dcda27baa9d0cf9bef5f4}\label{gp__utils_8h_aa62294e7b72dcda27baa9d0cf9bef5f4}} 
+\index{gp\+\_\+utils.\+h@{gp\+\_\+utils.\+h}!G\+P\+\_\+\+R\+W\+\_\+\+E\+N\+D\+I\+A\+N\+\_\+T@{G\+P\+\_\+\+R\+W\+\_\+\+E\+N\+D\+I\+A\+N\+\_\+T}}
+\index{G\+P\+\_\+\+R\+W\+\_\+\+E\+N\+D\+I\+A\+N\+\_\+T@{G\+P\+\_\+\+R\+W\+\_\+\+E\+N\+D\+I\+A\+N\+\_\+T}!gp\+\_\+utils.\+h@{gp\+\_\+utils.\+h}}
+\subsubsection{\texorpdfstring{G\+P\+\_\+\+R\+W\+\_\+\+E\+N\+D\+I\+A\+N\+\_\+T}{GP\_RW\_ENDIAN\_T}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{gp__utils_8h_aa62294e7b72dcda27baa9d0cf9bef5f4}{G\+P\+\_\+\+R\+W\+\_\+\+E\+N\+D\+I\+A\+N\+\_\+T}}}
+
+GP read/write functions endian flag \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G\+P\+\_\+\+R\+W\+\_\+\+LE@{G\+P\+\_\+\+R\+W\+\_\+\+LE}!gp\+\_\+utils.\+h@{gp\+\_\+utils.\+h}}\index{gp\+\_\+utils.\+h@{gp\+\_\+utils.\+h}!G\+P\+\_\+\+R\+W\+\_\+\+LE@{G\+P\+\_\+\+R\+W\+\_\+\+LE}}}\mbox{\Hypertarget{gp__utils_8h_aa62294e7b72dcda27baa9d0cf9bef5f4a1c54a7b29176b75b258a0f51ece199c3}\label{gp__utils_8h_aa62294e7b72dcda27baa9d0cf9bef5f4a1c54a7b29176b75b258a0f51ece199c3}} 
+G\+P\+\_\+\+R\+W\+\_\+\+LE&Read/write Little Endian format \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G\+P\+\_\+\+R\+W\+\_\+\+BE@{G\+P\+\_\+\+R\+W\+\_\+\+BE}!gp\+\_\+utils.\+h@{gp\+\_\+utils.\+h}}\index{gp\+\_\+utils.\+h@{gp\+\_\+utils.\+h}!G\+P\+\_\+\+R\+W\+\_\+\+BE@{G\+P\+\_\+\+R\+W\+\_\+\+BE}}}\mbox{\Hypertarget{gp__utils_8h_aa62294e7b72dcda27baa9d0cf9bef5f4ae50096710cac111c6fe51e5de63a3daa}\label{gp__utils_8h_aa62294e7b72dcda27baa9d0cf9bef5f4ae50096710cac111c6fe51e5de63a3daa}} 
+G\+P\+\_\+\+R\+W\+\_\+\+BE&Read/write Big Endian format \\
+\hline
+
+\end{DoxyEnumFields}

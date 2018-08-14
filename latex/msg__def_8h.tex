@@ -1,0 +1,304 @@
+\hypertarget{msg__def_8h}{}\section{msg\+\_\+def.\+h File Reference}
+\label{msg__def_8h}\index{msg\+\_\+def.\+h@{msg\+\_\+def.\+h}}
+
+
+Header file containing the public interfaces and definitions for the ~\newline
+ FF H\+UD I\+PC messages.  
+
+
+{\ttfamily \#include \char`\"{}cmd\+\_\+conn\+\_\+\+L.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{msg__def_8h_af9877767f734190a66ec73e03252e1ce}\label{msg__def_8h_af9877767f734190a66ec73e03252e1ce}} 
+\#define {\bfseries P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+L\+OW}~(1)
+\item 
+\mbox{\Hypertarget{msg__def_8h_a676d1a39b0be995ee18e6e45ff96ba4c}\label{msg__def_8h_a676d1a39b0be995ee18e6e45ff96ba4c}} 
+\#define {\bfseries P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+M\+E\+D\+I\+UM}~(127)
+\item 
+\mbox{\Hypertarget{msg__def_8h_aaca04d3893d808496a90f8f0d0b8fcaa}\label{msg__def_8h_aaca04d3893d808496a90f8f0d0b8fcaa}} 
+\#define {\bfseries P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+H\+I\+GH}~(255)
+\item 
+\mbox{\Hypertarget{msg__def_8h_a385cad8814a23c10547f52b902471fa9}\label{msg__def_8h_a385cad8814a23c10547f52b902471fa9}} 
+\#define {\bfseries M\+S\+G\+\_\+\+I\+D\+\_\+\+SZ}~(2)
+\item 
+\#define \mbox{\hyperlink{msg__def_8h_aaa921e50d6a91656640f8deb11751847}{O\+P\+C\+M\+D\+\_\+\+H\+D\+R\+\_\+\+SZ}}~2
+\item 
+\#define \mbox{\hyperlink{msg__def_8h_a162fd617c38891a2c1df7a942ae1931b}{O\+F\+F\+S\+E\+T\+\_\+\+N\+U\+M\+\_\+\+I\+T\+E\+MS}}~1
+\item 
+\mbox{\Hypertarget{msg__def_8h_a76c5c7f106745ae07a0ab2e25bb856d6}\label{msg__def_8h_a76c5c7f106745ae07a0ab2e25bb856d6}} 
+\#define {\bfseries O\+P\+C\+M\+D\+\_\+\+D\+P\+\_\+\+I\+D\+\_\+\+SZ}~2
+\item 
+\#define \mbox{\hyperlink{msg__def_8h_aacd4097a0424f83b5b51486fff4ede2e}{O\+P\+C\+M\+D\+\_\+\+D\+P\+\_\+\+I\+T\+E\+M\+\_\+\+SZ}}~6
+\item 
+\#define \mbox{\hyperlink{msg__def_8h_ab80ee6a5bf2f51db174ee6f7bf37dd6f}{M\+S\+G\+\_\+\+H\+B\+T\+R\+E\+Q\+\_\+\+SZ}}~2
+\item 
+\mbox{\Hypertarget{msg__def_8h_ad8ef2bddcec18d295c0c620bd394d88d}\label{msg__def_8h_ad8ef2bddcec18d295c0c620bd394d88d}} 
+\#define {\bfseries M\+S\+G\+\_\+\+H\+B\+T\+R\+E\+Q\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+O\+F\+F\+S\+ET}~0
+\item 
+\mbox{\Hypertarget{msg__def_8h_ada16441c1e5c6b4ec2eae55000122f9c}\label{msg__def_8h_ada16441c1e5c6b4ec2eae55000122f9c}} 
+\#define {\bfseries M\+S\+G\+\_\+\+H\+B\+T\+R\+E\+Q\+\_\+\+M\+O\+D\+E\+\_\+\+I\+DX}~(M\+S\+G\+\_\+\+I\+D\+\_\+\+SZ)
+\item 
+\mbox{\Hypertarget{msg__def_8h_a4a074fe365a50c7241799b3f490c5075}\label{msg__def_8h_a4a074fe365a50c7241799b3f490c5075}} 
+\#define {\bfseries M\+S\+G\+\_\+\+H\+B\+T\+R\+E\+Q\+\_\+\+M\+O\+D\+E\+\_\+\+SZ}~1
+\item 
+\mbox{\Hypertarget{msg__def_8h_aab1202eb00d456e113ebf61e950de3db}\label{msg__def_8h_aab1202eb00d456e113ebf61e950de3db}} 
+\#define {\bfseries M\+S\+G\+\_\+\+H\+B\+T\+R\+E\+Q\+\_\+\+M\+O\+D\+E\+\_\+0}~0
+\item 
+\mbox{\Hypertarget{msg__def_8h_af0f3f6c7c73d415ee4262e37ac5dc41a}\label{msg__def_8h_af0f3f6c7c73d415ee4262e37ac5dc41a}} 
+\#define {\bfseries M\+S\+G\+\_\+\+H\+B\+T\+R\+E\+Q\+\_\+\+M\+O\+D\+E\+\_\+1}~1
+\item 
+\mbox{\Hypertarget{msg__def_8h_a3d17e28ce8276e6992c47bd4b3845926}\label{msg__def_8h_a3d17e28ce8276e6992c47bd4b3845926}} 
+\#define {\bfseries M\+S\+G\+\_\+\+H\+B\+T\+R\+E\+Q\+\_\+\+M\+O\+D\+E\+\_\+2}~2
+\item 
+\#define \mbox{\hyperlink{msg__def_8h_a8edf3f90ecb3674176729af2151e8a02}{M\+S\+G\+\_\+\+H\+B\+T\+R\+E\+S\+\_\+\+SZ}}~2
+\item 
+\mbox{\Hypertarget{msg__def_8h_ae164770f871802ed92dc01be64cea59b}\label{msg__def_8h_ae164770f871802ed92dc01be64cea59b}} 
+\#define {\bfseries M\+S\+G\+\_\+\+H\+B\+T\+R\+E\+S\+\_\+\+M\+O\+D\+E\+\_\+\+O\+F\+F\+S\+ET}~0
+\item 
+\mbox{\Hypertarget{msg__def_8h_aac766eaa0d02f15134fb6cd5d56e0434}\label{msg__def_8h_aac766eaa0d02f15134fb6cd5d56e0434}} 
+\#define {\bfseries M\+S\+G\+\_\+\+H\+B\+T\+R\+E\+S\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+I\+DX}~(M\+S\+G\+\_\+\+I\+D\+\_\+\+SZ)
+\item 
+\mbox{\Hypertarget{msg__def_8h_af5cb849976a7a1bea24e572b8a00180a}\label{msg__def_8h_af5cb849976a7a1bea24e572b8a00180a}} 
+\#define {\bfseries M\+S\+G\+\_\+\+H\+B\+T\+R\+E\+S\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+SZ}~1
+\item 
+\mbox{\Hypertarget{msg__def_8h_a3aa2fe78adf5305d353d11a131d7ccfe}\label{msg__def_8h_a3aa2fe78adf5305d353d11a131d7ccfe}} 
+\#define {\bfseries M\+S\+G\+\_\+\+H\+B\+T\+R\+E\+S\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+0}~0
+\item 
+\mbox{\Hypertarget{msg__def_8h_ac0cec110b6fdd477440f5f710d60cbbf}\label{msg__def_8h_ac0cec110b6fdd477440f5f710d60cbbf}} 
+\#define {\bfseries M\+S\+G\+\_\+\+H\+B\+T\+R\+E\+S\+\_\+\+M\+O\+D\+E\+\_\+\+I\+DX}~(M\+S\+G\+\_\+\+H\+B\+T\+R\+E\+S\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+I\+DX + M\+S\+G\+\_\+\+H\+B\+T\+R\+E\+S\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+SZ)
+\item 
+\mbox{\Hypertarget{msg__def_8h_a7996ae5b4c76efaaa1b1e28b8e7daece}\label{msg__def_8h_a7996ae5b4c76efaaa1b1e28b8e7daece}} 
+\#define {\bfseries M\+S\+G\+\_\+\+H\+B\+T\+R\+E\+S\+\_\+\+M\+O\+D\+E\+\_\+\+SZ}~1
+\item 
+\mbox{\Hypertarget{msg__def_8h_ad67f4b3f561f210c45e173eb940c48d2}\label{msg__def_8h_ad67f4b3f561f210c45e173eb940c48d2}} 
+\#define {\bfseries M\+S\+G\+\_\+\+H\+B\+T\+R\+E\+S\+\_\+\+M\+O\+D\+E\+\_\+0}~0
+\item 
+\mbox{\Hypertarget{msg__def_8h_a964043345738cb50e26cce325c1bb786}\label{msg__def_8h_a964043345738cb50e26cce325c1bb786}} 
+\#define {\bfseries M\+S\+G\+\_\+\+H\+B\+T\+R\+E\+S\+\_\+\+M\+O\+D\+E\+\_\+1}~1
+\item 
+\mbox{\Hypertarget{msg__def_8h_a80cc573f49796e60aa263d1a9f6966b7}\label{msg__def_8h_a80cc573f49796e60aa263d1a9f6966b7}} 
+\#define {\bfseries M\+S\+G\+\_\+\+H\+B\+T\+R\+E\+S\+\_\+\+M\+O\+D\+E\+\_\+2}~2
+\item 
+\#define \mbox{\hyperlink{msg__def_8h_a9bcdd33b9a74f737b17a0d6884e38a4b}{M\+S\+G\+\_\+\+S\+T\+A\+T\+\_\+\+OP}}~(0)
+\item 
+\mbox{\Hypertarget{msg__def_8h_a1b1ae9e29ac83ea1496f960de2d7d559}\label{msg__def_8h_a1b1ae9e29ac83ea1496f960de2d7d559}} 
+\#define {\bfseries M\+S\+G\+\_\+\+S\+T\+A\+T\+\_\+\+ID}~(1)
+\item 
+\mbox{\Hypertarget{msg__def_8h_ad8ddf707e217454213bc07df248b3182}\label{msg__def_8h_ad8ddf707e217454213bc07df248b3182}} 
+\#define {\bfseries M\+S\+G\+\_\+\+S\+T\+A\+T\+\_\+\+C\+O\+DE}~(2)
+\item 
+\mbox{\Hypertarget{msg__def_8h_a5d9777b8b5300c3f672c093acebe9897}\label{msg__def_8h_a5d9777b8b5300c3f672c093acebe9897}} 
+\#define {\bfseries M\+S\+G\+\_\+\+S\+T\+A\+T\+\_\+\+D\+A\+T\+L\+EN}~(M\+S\+G\+\_\+\+S\+T\+A\+T\+\_\+\+C\+O\+DE+1)
+\item 
+\mbox{\Hypertarget{msg__def_8h_a2869c303773ff0fbbd7a495b8a5b8838}\label{msg__def_8h_a2869c303773ff0fbbd7a495b8a5b8838}} 
+\#define {\bfseries M\+S\+G\+\_\+\+S\+T\+A\+T\+\_\+\+SZ}~(2 + M\+S\+G\+\_\+\+S\+T\+A\+T\+\_\+\+D\+A\+T\+L\+EN)
+\item 
+\#define \mbox{\hyperlink{msg__def_8h_acb4180cbd21b8744a1c8e0af7ca9a81d}{S\+P\+I\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+SZ}}~4
+\item 
+\mbox{\Hypertarget{msg__def_8h_aad9b6d137c18174065745d69a0e7d8f4}\label{msg__def_8h_aad9b6d137c18174065745d69a0e7d8f4}} 
+\#define {\bfseries M\+S\+G\+\_\+\+S\+P\+I\+T\+X\+R\+E\+Q\+\_\+\+M\+I\+N\+\_\+\+SZ}~(\mbox{\hyperlink{msg__def_8h_acb4180cbd21b8744a1c8e0af7ca9a81d}{S\+P\+I\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+SZ}} + 1)
+\item 
+\#define \mbox{\hyperlink{msg__def_8h_a5182a29e1a7fc37776efda4f6428ea6e}{I\+P\+C\+\_\+\+S\+P\+I\+\_\+\+ID}}~0
+\item 
+\#define \mbox{\hyperlink{msg__def_8h_a43e932147defbe28363a4c979a12a73f}{I\+P\+C\+\_\+\+S\+P\+I\+\_\+\+L\+EN}}~(\mbox{\hyperlink{msg__def_8h_a5182a29e1a7fc37776efda4f6428ea6e}{I\+P\+C\+\_\+\+S\+P\+I\+\_\+\+ID}} + 2)
+\item 
+\#define \mbox{\hyperlink{msg__def_8h_afa0dc93bc1ef03f20217054d0a4ff229}{I\+P\+C\+\_\+\+S\+P\+I\+\_\+\+D\+A\+TA}}~(\mbox{\hyperlink{msg__def_8h_a43e932147defbe28363a4c979a12a73f}{I\+P\+C\+\_\+\+S\+P\+I\+\_\+\+L\+EN}} + 2)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{msg__def_8h_a2e752d9b9ea5bd02164bdc1bf5966835}\label{msg__def_8h_a2e752d9b9ea5bd02164bdc1bf5966835}} 
+typedef enum Msg\+Id {\bfseries Msg\+Id}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{msg__def_8h_a41755d176c2bef8a9a7606339ebd830b}\label{msg__def_8h_a41755d176c2bef8a9a7606339ebd830b}} 
+enum {\bfseries Msg\+Id} \{ \newline
+{\bfseries Msg\+Id\+Min} = 0, 
+{\bfseries Hbt\+Req} = Msg\+Id\+Min, 
+{\bfseries Hbt\+Im\+As\+Int\+Tsk}, 
+{\bfseries Hbt\+Pm\+As\+Int\+Tsk}, 
+\newline
+{\bfseries Hbt\+Em\+As\+Int\+Tsk}, 
+{\bfseries Hbt\+Dm\+As\+Int\+Tsk}, 
+{\bfseries Hbt\+Im\+As\+Req\+Tsk}, 
+{\bfseries Hbt\+Im\+As\+Wrk\+Tsk2}, 
+\newline
+{\bfseries Hbt\+Hm\+Int\+Tsk}, 
+{\bfseries Hbt\+Hm\+Dpl\+Tsk}, 
+{\bfseries Spi\+Tx\+Req}, 
+{\bfseries Get\+Elem\+Req}, 
+\newline
+{\bfseries Get\+Elem\+Res}, 
+{\bfseries Set\+Elem\+Req}, 
+{\bfseries Pool\+Copy\+Req}, 
+{\bfseries Pool\+Copy\+Res}, 
+\newline
+{\bfseries B\+Can\+Sig\+Data\+Msg}, 
+{\bfseries C\+Can\+Sig\+Data\+Msg}, 
+{\bfseries Op\+Cmd\+Msg}, 
+{\bfseries System\+Status\+Msg}, 
+\newline
+{\bfseries Video\+Ready}, 
+{\bfseries Mirror\+Status\+Msg}, 
+{\bfseries Vp\+Sw\+Version\+Msg}, 
+{\bfseries Uds\+Request\+Msg}, 
+\newline
+{\bfseries Uds\+Response\+Msg}, 
+{\bfseries Sleep\+Request\+Msg}, 
+{\bfseries App\+Status\+Msg}, 
+{\bfseries Msg\+Id\+Max} = App\+Status\+Msg, 
+\newline
+{\bfseries Msg\+Id\+Invalid}
+ \}
+\item 
+enum \mbox{\hyperlink{msg__def_8h_ae30026e86c3a3462967f22c31476359e}{Op\+Cmd\+Msg\+Types\+\_\+t}} \{ \mbox{\hyperlink{msg__def_8h_ae30026e86c3a3462967f22c31476359ea847ec913adb9b47b84eadc775f7145a7}{Cmd\+Msg\+Version\+Info}}, 
+\mbox{\hyperlink{msg__def_8h_ae30026e86c3a3462967f22c31476359ead5c2260da6d785c6b6975802020d6ad4}{Cmd\+Msg\+Set\+Op\+Mode}}, 
+\mbox{\hyperlink{msg__def_8h_ae30026e86c3a3462967f22c31476359eaa7b089dda473264a1439c022cef9289e}{Cmd\+Msg\+Set\+Init\+Data}}, 
+{\bfseries Cmd\+Msg\+Max\+Ids}
+ \}
+\item 
+enum \mbox{\hyperlink{msg__def_8h_a1964a4437570abeb1ec57e000b9c4d8e}{Set\+Opmode\+Types\+\_\+t}} \{ \newline
+\mbox{\hyperlink{msg__def_8h_a1964a4437570abeb1ec57e000b9c4d8ea248eebd1999e85717392273b95869a7a}{O\+P\+M\+O\+D\+E\+\_\+\+N\+O\+R\+M\+AL}} = 0, 
+\mbox{\hyperlink{msg__def_8h_a1964a4437570abeb1ec57e000b9c4d8ea855a2b3cabae91b8a784efb33216d3be}{O\+P\+M\+O\+D\+E\+\_\+\+D\+E\+MO}}, 
+\mbox{\hyperlink{msg__def_8h_a1964a4437570abeb1ec57e000b9c4d8eacc45f54bcbde8f5ae1ea10f49690fbc7}{O\+P\+M\+O\+D\+E\+\_\+\+T\+S\+T\+P\+A\+TT}}, 
+{\bfseries O\+P\+M\+O\+D\+E\+\_\+\+H\+M\+I\+D\+EV}, 
+\newline
+{\bfseries M\+A\+X\+\_\+\+O\+P\+M\+O\+D\+ES}
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Header file containing the public interfaces and definitions for the ~\newline
+ FF H\+UD I\+PC messages. 
+
+\begin{DoxyCopyright}{Copyright}
+(c) Copyright 2016, Yazaki North America, All Rights Reserved
+\end{DoxyCopyright}
+Unpublished, Yazaki North America Inc. All rights reserved. This document is protected by the copyright law of the United States and foreign countries. The work embodied in this document is confidential and constitutes a trade secret of Yazaki North America, Inc. Any copying of this document and any use or disclosure of this document or the work embodied in it without the written authority of Yazaki North America, Inc., will constitute copyright and trade secret infringement and will violate the rights of Yazaki North America, Inc.
+
+\begin{DoxyAuthor}{Author}
+E. Gunarta, D. Kageff
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+1.\+14 
+\end{DoxyParagraph}
+
+
+Modification history\+: \begin{DoxyParagraph}{Log}
+\mbox{\hyperlink{msg__def_8h}{msg\+\_\+def.\+h}} 
+\end{DoxyParagraph}
+Revision 1.\+14 2017/07/20 13\+:52\+:13C\+DT Daniel Kageff (10011932) 1) Added I\+PC message field offset definitiions 2) Edited comments. Revision 1.\+13 2017/03/30 11\+:16\+:04E\+DT Eudora Gunarta (10031829) Changes for adding uds response and sleep request messages. Revision 1.\+12 2017/03/17 16\+:02\+:06E\+DT Eudora Gunarta (10031829) Changes related to adding V\+P\+\_\+\+Sw\+Version\+Info S\+PI message handling. Revision 1.\+11 2017/03/15 14\+:10\+:35E\+DT Eudora Gunarta (10031829) Changed ID of a message. Revision 1.\+10 2017/03/15 10\+:07\+:37E\+DT Eudora Gunarta (10031829) Changed ID name of some messages. Revision 1.\+9 2017/02/06 16\+:40\+:46E\+ST Eudora Gunarta (10031829) Heartbeat fixes/improvements\+: Added H\+MI datapool task hearbeat response. Revision 1.\+8 2016/12/12 17\+:06\+:49E\+ST Daniel Kageff (10011932) Added \textquotesingle{}set initialization data\textquotesingle{} operation command type definitions. Revision 1.\+7 2016/11/30 15\+:00\+:39E\+ST Eudora Gunarta (10031829) Updates for dynamic prewarp. Revision 1.\+6 2016/11/09 10\+:00\+:04E\+ST Eudora Gunarta (10031829) Added message for video ready signal. Revision 1.\+5 2016/10/24 12\+:20\+:52E\+DT Eudora Gunarta (10031829) Added VP hearbeat msg (System\+Status\+Msg) to msg list. Revision 1.\+4 2016/10/24 10\+:29\+:16E\+DT Daniel Kageff (10011932) Added message definitions Revision 1.\+3 2016/09/28 14\+:32\+:29E\+DT Eudora Gunarta (10031829) Replaced Can\+Msg with B\+Can\+Sig\+Data\+Msg and C\+Can\+Sig\+Data\+Msg, deleted Eth\+Msg. Revision 1.\+2 2016/09/15 14\+:58\+:45E\+DT Eudora Gunarta (10031829) Updatad list of messages. Revision 1.\+1 2016/07/07 14\+:58\+:05E\+DT Daniel Kageff (10011932) Initial revision Member added to project /\+Projects/\+Faraday Future/2018\+\_\+\+F\+F\+H\+U\+D/\+Software Development/\+Eng/\+G\+P/\+Common/project.\+pj 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{msg__def_8h_afa0dc93bc1ef03f20217054d0a4ff229}\label{msg__def_8h_afa0dc93bc1ef03f20217054d0a4ff229}} 
+\index{msg\+\_\+def.\+h@{msg\+\_\+def.\+h}!I\+P\+C\+\_\+\+S\+P\+I\+\_\+\+D\+A\+TA@{I\+P\+C\+\_\+\+S\+P\+I\+\_\+\+D\+A\+TA}}
+\index{I\+P\+C\+\_\+\+S\+P\+I\+\_\+\+D\+A\+TA@{I\+P\+C\+\_\+\+S\+P\+I\+\_\+\+D\+A\+TA}!msg\+\_\+def.\+h@{msg\+\_\+def.\+h}}
+\subsubsection{\texorpdfstring{I\+P\+C\+\_\+\+S\+P\+I\+\_\+\+D\+A\+TA}{IPC\_SPI\_DATA}}
+{\footnotesize\ttfamily \#define I\+P\+C\+\_\+\+S\+P\+I\+\_\+\+D\+A\+TA~(\mbox{\hyperlink{msg__def_8h_a43e932147defbe28363a4c979a12a73f}{I\+P\+C\+\_\+\+S\+P\+I\+\_\+\+L\+EN}} + 2)}
+
+Offset to start of S\+PI message payload data \mbox{\Hypertarget{msg__def_8h_a5182a29e1a7fc37776efda4f6428ea6e}\label{msg__def_8h_a5182a29e1a7fc37776efda4f6428ea6e}} 
+\index{msg\+\_\+def.\+h@{msg\+\_\+def.\+h}!I\+P\+C\+\_\+\+S\+P\+I\+\_\+\+ID@{I\+P\+C\+\_\+\+S\+P\+I\+\_\+\+ID}}
+\index{I\+P\+C\+\_\+\+S\+P\+I\+\_\+\+ID@{I\+P\+C\+\_\+\+S\+P\+I\+\_\+\+ID}!msg\+\_\+def.\+h@{msg\+\_\+def.\+h}}
+\subsubsection{\texorpdfstring{I\+P\+C\+\_\+\+S\+P\+I\+\_\+\+ID}{IPC\_SPI\_ID}}
+{\footnotesize\ttfamily \#define I\+P\+C\+\_\+\+S\+P\+I\+\_\+\+ID~0}
+
+Common definitions for a unpacked message from the I\+PC message payload. These offsets are relative to the end of the I\+PC message ID field. Offset to S\+PI message ID field \mbox{\Hypertarget{msg__def_8h_a43e932147defbe28363a4c979a12a73f}\label{msg__def_8h_a43e932147defbe28363a4c979a12a73f}} 
+\index{msg\+\_\+def.\+h@{msg\+\_\+def.\+h}!I\+P\+C\+\_\+\+S\+P\+I\+\_\+\+L\+EN@{I\+P\+C\+\_\+\+S\+P\+I\+\_\+\+L\+EN}}
+\index{I\+P\+C\+\_\+\+S\+P\+I\+\_\+\+L\+EN@{I\+P\+C\+\_\+\+S\+P\+I\+\_\+\+L\+EN}!msg\+\_\+def.\+h@{msg\+\_\+def.\+h}}
+\subsubsection{\texorpdfstring{I\+P\+C\+\_\+\+S\+P\+I\+\_\+\+L\+EN}{IPC\_SPI\_LEN}}
+{\footnotesize\ttfamily \#define I\+P\+C\+\_\+\+S\+P\+I\+\_\+\+L\+EN~(\mbox{\hyperlink{msg__def_8h_a5182a29e1a7fc37776efda4f6428ea6e}{I\+P\+C\+\_\+\+S\+P\+I\+\_\+\+ID}} + 2)}
+
+Offset to S\+PI message length field \mbox{\Hypertarget{msg__def_8h_ab80ee6a5bf2f51db174ee6f7bf37dd6f}\label{msg__def_8h_ab80ee6a5bf2f51db174ee6f7bf37dd6f}} 
+\index{msg\+\_\+def.\+h@{msg\+\_\+def.\+h}!M\+S\+G\+\_\+\+H\+B\+T\+R\+E\+Q\+\_\+\+SZ@{M\+S\+G\+\_\+\+H\+B\+T\+R\+E\+Q\+\_\+\+SZ}}
+\index{M\+S\+G\+\_\+\+H\+B\+T\+R\+E\+Q\+\_\+\+SZ@{M\+S\+G\+\_\+\+H\+B\+T\+R\+E\+Q\+\_\+\+SZ}!msg\+\_\+def.\+h@{msg\+\_\+def.\+h}}
+\subsubsection{\texorpdfstring{M\+S\+G\+\_\+\+H\+B\+T\+R\+E\+Q\+\_\+\+SZ}{MSG\_HBTREQ\_SZ}}
+{\footnotesize\ttfamily \#define M\+S\+G\+\_\+\+H\+B\+T\+R\+E\+Q\+\_\+\+SZ~2}
+
+Hbt\+Req message definitions \mbox{\Hypertarget{msg__def_8h_a8edf3f90ecb3674176729af2151e8a02}\label{msg__def_8h_a8edf3f90ecb3674176729af2151e8a02}} 
+\index{msg\+\_\+def.\+h@{msg\+\_\+def.\+h}!M\+S\+G\+\_\+\+H\+B\+T\+R\+E\+S\+\_\+\+SZ@{M\+S\+G\+\_\+\+H\+B\+T\+R\+E\+S\+\_\+\+SZ}}
+\index{M\+S\+G\+\_\+\+H\+B\+T\+R\+E\+S\+\_\+\+SZ@{M\+S\+G\+\_\+\+H\+B\+T\+R\+E\+S\+\_\+\+SZ}!msg\+\_\+def.\+h@{msg\+\_\+def.\+h}}
+\subsubsection{\texorpdfstring{M\+S\+G\+\_\+\+H\+B\+T\+R\+E\+S\+\_\+\+SZ}{MSG\_HBTRES\_SZ}}
+{\footnotesize\ttfamily \#define M\+S\+G\+\_\+\+H\+B\+T\+R\+E\+S\+\_\+\+SZ~2}
+
+Common definitions for hearbeat response messages \mbox{\Hypertarget{msg__def_8h_a9bcdd33b9a74f737b17a0d6884e38a4b}\label{msg__def_8h_a9bcdd33b9a74f737b17a0d6884e38a4b}} 
+\index{msg\+\_\+def.\+h@{msg\+\_\+def.\+h}!M\+S\+G\+\_\+\+S\+T\+A\+T\+\_\+\+OP@{M\+S\+G\+\_\+\+S\+T\+A\+T\+\_\+\+OP}}
+\index{M\+S\+G\+\_\+\+S\+T\+A\+T\+\_\+\+OP@{M\+S\+G\+\_\+\+S\+T\+A\+T\+\_\+\+OP}!msg\+\_\+def.\+h@{msg\+\_\+def.\+h}}
+\subsubsection{\texorpdfstring{M\+S\+G\+\_\+\+S\+T\+A\+T\+\_\+\+OP}{MSG\_STAT\_OP}}
+{\footnotesize\ttfamily \#define M\+S\+G\+\_\+\+S\+T\+A\+T\+\_\+\+OP~(0)}
+
+App\+Status\+Msg definitions \mbox{\Hypertarget{msg__def_8h_a162fd617c38891a2c1df7a942ae1931b}\label{msg__def_8h_a162fd617c38891a2c1df7a942ae1931b}} 
+\index{msg\+\_\+def.\+h@{msg\+\_\+def.\+h}!O\+F\+F\+S\+E\+T\+\_\+\+N\+U\+M\+\_\+\+I\+T\+E\+MS@{O\+F\+F\+S\+E\+T\+\_\+\+N\+U\+M\+\_\+\+I\+T\+E\+MS}}
+\index{O\+F\+F\+S\+E\+T\+\_\+\+N\+U\+M\+\_\+\+I\+T\+E\+MS@{O\+F\+F\+S\+E\+T\+\_\+\+N\+U\+M\+\_\+\+I\+T\+E\+MS}!msg\+\_\+def.\+h@{msg\+\_\+def.\+h}}
+\subsubsection{\texorpdfstring{O\+F\+F\+S\+E\+T\+\_\+\+N\+U\+M\+\_\+\+I\+T\+E\+MS}{OFFSET\_NUM\_ITEMS}}
+{\footnotesize\ttfamily \#define O\+F\+F\+S\+E\+T\+\_\+\+N\+U\+M\+\_\+\+I\+T\+E\+MS~1}
+
+Buffer offset to the number of datapool items \mbox{\Hypertarget{msg__def_8h_aacd4097a0424f83b5b51486fff4ede2e}\label{msg__def_8h_aacd4097a0424f83b5b51486fff4ede2e}} 
+\index{msg\+\_\+def.\+h@{msg\+\_\+def.\+h}!O\+P\+C\+M\+D\+\_\+\+D\+P\+\_\+\+I\+T\+E\+M\+\_\+\+SZ@{O\+P\+C\+M\+D\+\_\+\+D\+P\+\_\+\+I\+T\+E\+M\+\_\+\+SZ}}
+\index{O\+P\+C\+M\+D\+\_\+\+D\+P\+\_\+\+I\+T\+E\+M\+\_\+\+SZ@{O\+P\+C\+M\+D\+\_\+\+D\+P\+\_\+\+I\+T\+E\+M\+\_\+\+SZ}!msg\+\_\+def.\+h@{msg\+\_\+def.\+h}}
+\subsubsection{\texorpdfstring{O\+P\+C\+M\+D\+\_\+\+D\+P\+\_\+\+I\+T\+E\+M\+\_\+\+SZ}{OPCMD\_DP\_ITEM\_SZ}}
+{\footnotesize\ttfamily \#define O\+P\+C\+M\+D\+\_\+\+D\+P\+\_\+\+I\+T\+E\+M\+\_\+\+SZ~6}
+
+Datapool init item size in bytes \mbox{\Hypertarget{msg__def_8h_aaa921e50d6a91656640f8deb11751847}\label{msg__def_8h_aaa921e50d6a91656640f8deb11751847}} 
+\index{msg\+\_\+def.\+h@{msg\+\_\+def.\+h}!O\+P\+C\+M\+D\+\_\+\+H\+D\+R\+\_\+\+SZ@{O\+P\+C\+M\+D\+\_\+\+H\+D\+R\+\_\+\+SZ}}
+\index{O\+P\+C\+M\+D\+\_\+\+H\+D\+R\+\_\+\+SZ@{O\+P\+C\+M\+D\+\_\+\+H\+D\+R\+\_\+\+SZ}!msg\+\_\+def.\+h@{msg\+\_\+def.\+h}}
+\subsubsection{\texorpdfstring{O\+P\+C\+M\+D\+\_\+\+H\+D\+R\+\_\+\+SZ}{OPCMD\_HDR\_SZ}}
+{\footnotesize\ttfamily \#define O\+P\+C\+M\+D\+\_\+\+H\+D\+R\+\_\+\+SZ~2}
+
+Op cmd header size in bytes \mbox{\Hypertarget{msg__def_8h_acb4180cbd21b8744a1c8e0af7ca9a81d}\label{msg__def_8h_acb4180cbd21b8744a1c8e0af7ca9a81d}} 
+\index{msg\+\_\+def.\+h@{msg\+\_\+def.\+h}!S\+P\+I\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+SZ@{S\+P\+I\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+SZ}}
+\index{S\+P\+I\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+SZ@{S\+P\+I\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+SZ}!msg\+\_\+def.\+h@{msg\+\_\+def.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+I\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+SZ}{SPI\_HEADER\_SZ}}
+{\footnotesize\ttfamily \#define S\+P\+I\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+SZ~4}
+
+Spi\+Tx\+Req message definitions Size in bytes of a S\+PI message header 
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{msg__def_8h_ae30026e86c3a3462967f22c31476359e}\label{msg__def_8h_ae30026e86c3a3462967f22c31476359e}} 
+\index{msg\+\_\+def.\+h@{msg\+\_\+def.\+h}!Op\+Cmd\+Msg\+Types\+\_\+t@{Op\+Cmd\+Msg\+Types\+\_\+t}}
+\index{Op\+Cmd\+Msg\+Types\+\_\+t@{Op\+Cmd\+Msg\+Types\+\_\+t}!msg\+\_\+def.\+h@{msg\+\_\+def.\+h}}
+\subsubsection{\texorpdfstring{Op\+Cmd\+Msg\+Types\+\_\+t}{OpCmdMsgTypes\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{msg__def_8h_ae30026e86c3a3462967f22c31476359e}{Op\+Cmd\+Msg\+Types\+\_\+t}}}
+
+Op\+Cmd\+Msg subcommand types enum \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Cmd\+Msg\+Version\+Info@{Cmd\+Msg\+Version\+Info}!msg\+\_\+def.\+h@{msg\+\_\+def.\+h}}\index{msg\+\_\+def.\+h@{msg\+\_\+def.\+h}!Cmd\+Msg\+Version\+Info@{Cmd\+Msg\+Version\+Info}}}\mbox{\Hypertarget{msg__def_8h_ae30026e86c3a3462967f22c31476359ea847ec913adb9b47b84eadc775f7145a7}\label{msg__def_8h_ae30026e86c3a3462967f22c31476359ea847ec913adb9b47b84eadc775f7145a7}} 
+Cmd\+Msg\+Version\+Info&Get/return version and configuration information \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Cmd\+Msg\+Set\+Op\+Mode@{Cmd\+Msg\+Set\+Op\+Mode}!msg\+\_\+def.\+h@{msg\+\_\+def.\+h}}\index{msg\+\_\+def.\+h@{msg\+\_\+def.\+h}!Cmd\+Msg\+Set\+Op\+Mode@{Cmd\+Msg\+Set\+Op\+Mode}}}\mbox{\Hypertarget{msg__def_8h_ae30026e86c3a3462967f22c31476359ead5c2260da6d785c6b6975802020d6ad4}\label{msg__def_8h_ae30026e86c3a3462967f22c31476359ead5c2260da6d785c6b6975802020d6ad4}} 
+Cmd\+Msg\+Set\+Op\+Mode&Set operating mode \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Cmd\+Msg\+Set\+Init\+Data@{Cmd\+Msg\+Set\+Init\+Data}!msg\+\_\+def.\+h@{msg\+\_\+def.\+h}}\index{msg\+\_\+def.\+h@{msg\+\_\+def.\+h}!Cmd\+Msg\+Set\+Init\+Data@{Cmd\+Msg\+Set\+Init\+Data}}}\mbox{\Hypertarget{msg__def_8h_ae30026e86c3a3462967f22c31476359eaa7b089dda473264a1439c022cef9289e}\label{msg__def_8h_ae30026e86c3a3462967f22c31476359eaa7b089dda473264a1439c022cef9289e}} 
+Cmd\+Msg\+Set\+Init\+Data&Set initial datapool item values. Format\+: $<$datapool\+\_\+id$>$
+
+,... \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{msg__def_8h_a1964a4437570abeb1ec57e000b9c4d8e}\label{msg__def_8h_a1964a4437570abeb1ec57e000b9c4d8e}} 
+\index{msg\+\_\+def.\+h@{msg\+\_\+def.\+h}!Set\+Opmode\+Types\+\_\+t@{Set\+Opmode\+Types\+\_\+t}}
+\index{Set\+Opmode\+Types\+\_\+t@{Set\+Opmode\+Types\+\_\+t}!msg\+\_\+def.\+h@{msg\+\_\+def.\+h}}
+\subsubsection{\texorpdfstring{Set\+Opmode\+Types\+\_\+t}{SetOpmodeTypes\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{msg__def_8h_a1964a4437570abeb1ec57e000b9c4d8e}{Set\+Opmode\+Types\+\_\+t}}}
+
+Op\+Cmd\+Msg subcommand message definitions \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\+P\+M\+O\+D\+E\+\_\+\+N\+O\+R\+M\+AL@{O\+P\+M\+O\+D\+E\+\_\+\+N\+O\+R\+M\+AL}!msg\+\_\+def.\+h@{msg\+\_\+def.\+h}}\index{msg\+\_\+def.\+h@{msg\+\_\+def.\+h}!O\+P\+M\+O\+D\+E\+\_\+\+N\+O\+R\+M\+AL@{O\+P\+M\+O\+D\+E\+\_\+\+N\+O\+R\+M\+AL}}}\mbox{\Hypertarget{msg__def_8h_a1964a4437570abeb1ec57e000b9c4d8ea248eebd1999e85717392273b95869a7a}\label{msg__def_8h_a1964a4437570abeb1ec57e000b9c4d8ea248eebd1999e85717392273b95869a7a}} 
+O\+P\+M\+O\+D\+E\+\_\+\+N\+O\+R\+M\+AL&Normal operation mode \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\+P\+M\+O\+D\+E\+\_\+\+D\+E\+MO@{O\+P\+M\+O\+D\+E\+\_\+\+D\+E\+MO}!msg\+\_\+def.\+h@{msg\+\_\+def.\+h}}\index{msg\+\_\+def.\+h@{msg\+\_\+def.\+h}!O\+P\+M\+O\+D\+E\+\_\+\+D\+E\+MO@{O\+P\+M\+O\+D\+E\+\_\+\+D\+E\+MO}}}\mbox{\Hypertarget{msg__def_8h_a1964a4437570abeb1ec57e000b9c4d8ea855a2b3cabae91b8a784efb33216d3be}\label{msg__def_8h_a1964a4437570abeb1ec57e000b9c4d8ea855a2b3cabae91b8a784efb33216d3be}} 
+O\+P\+M\+O\+D\+E\+\_\+\+D\+E\+MO&Demo operation mode. One argument, $<$type$>$ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\+P\+M\+O\+D\+E\+\_\+\+T\+S\+T\+P\+A\+TT@{O\+P\+M\+O\+D\+E\+\_\+\+T\+S\+T\+P\+A\+TT}!msg\+\_\+def.\+h@{msg\+\_\+def.\+h}}\index{msg\+\_\+def.\+h@{msg\+\_\+def.\+h}!O\+P\+M\+O\+D\+E\+\_\+\+T\+S\+T\+P\+A\+TT@{O\+P\+M\+O\+D\+E\+\_\+\+T\+S\+T\+P\+A\+TT}}}\mbox{\Hypertarget{msg__def_8h_a1964a4437570abeb1ec57e000b9c4d8eacc45f54bcbde8f5ae1ea10f49690fbc7}\label{msg__def_8h_a1964a4437570abeb1ec57e000b9c4d8eacc45f54bcbde8f5ae1ea10f49690fbc7}} 
+O\+P\+M\+O\+D\+E\+\_\+\+T\+S\+T\+P\+A\+TT&Display test pattern. One arg, $<$test\+\_\+pattern\+\_\+id$>$ \\
+\hline
+
+\end{DoxyEnumFields}

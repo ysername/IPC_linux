@@ -1,0 +1,71 @@
+\hypertarget{md5_8h}{}\section{md5.\+h File Reference}
+\label{md5_8h}\index{md5.\+h@{md5.\+h}}
+
+
+Header file for implementation of M\+D5 ~\newline
+ R\+SA Data Security, Inc. M\+D5 Message Digest Algorithm ~\newline
+ Created\+: 2/17/90 R\+LR ~\newline
+ Revised\+: 12/27/90 S\+RD,AJ,B\+SK,JT Reference C version ~\newline
+ Revised (for M\+D5)\+: R\+LR 4/27/91 ~\newline
+ -- G modified to have y\&$\sim$z instead of y\&z ~\newline
+ -- FF, GG, HH modified to add in last register done ~\newline
+ -- Access pattern\+: round 2 works mod 5, round 3 works mod 3 ~\newline
+ -- distinct additive constant for each step ~\newline
+ -- round 4 added, working mod 7 ~\newline
+ ~\newline
+  
+
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structMD5__CTX}{M\+D5\+\_\+\+C\+TX}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{md5_8h_a5ee358122f0729210bc21d31d41754ec}\label{md5_8h_a5ee358122f0729210bc21d31d41754ec}} 
+void {\bfseries M\+D5\+Init} (\mbox{\hyperlink{structMD5__CTX}{M\+D5\+\_\+\+C\+TX}} $\ast$md\+Context)
+\item 
+\mbox{\Hypertarget{md5_8h_aed9627313e22d4fa6d73a1a6d0b5c5cb}\label{md5_8h_aed9627313e22d4fa6d73a1a6d0b5c5cb}} 
+void {\bfseries M\+D5\+Update} (\mbox{\hyperlink{structMD5__CTX}{M\+D5\+\_\+\+C\+TX}} $\ast$md\+Context, unsigned char $\ast$in\+Buf, unsigned int in\+Len)
+\item 
+\mbox{\Hypertarget{md5_8h_af6532ecc75ec96b98cffee81b635caa9}\label{md5_8h_af6532ecc75ec96b98cffee81b635caa9}} 
+void {\bfseries M\+D5\+Final} (\mbox{\hyperlink{structMD5__CTX}{M\+D5\+\_\+\+C\+TX}} $\ast$md\+Context)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Header file for implementation of M\+D5 ~\newline
+ R\+SA Data Security, Inc. M\+D5 Message Digest Algorithm ~\newline
+ Created\+: 2/17/90 R\+LR ~\newline
+ Revised\+: 12/27/90 S\+RD,AJ,B\+SK,JT Reference C version ~\newline
+ Revised (for M\+D5)\+: R\+LR 4/27/91 ~\newline
+ -- G modified to have y\&$\sim$z instead of y\&z ~\newline
+ -- FF, GG, HH modified to add in last register done ~\newline
+ -- Access pattern\+: round 2 works mod 5, round 3 works mod 3 ~\newline
+ -- distinct additive constant for each step ~\newline
+ -- round 4 added, working mod 7 ~\newline
+ ~\newline
+ 
+
+\begin{DoxyCopyright}{Copyright}
+(C) 1990, R\+SA Data Security, Inc. All rights reserved.
+\end{DoxyCopyright}
+~\newline
+License to copy and use this software is granted provided that ~\newline
+it is identified as the \char`\"{}\+R\+S\+A Data Security, Inc. M\+D5 Message     
+$<$br$>$\+Digest Algorithm\char`\"{} in all material mentioning or referencing this software or this function. ~\newline
+ ~\newline
+License is also granted to make and use derivative works ~\newline
+provided that such works are identified as \char`\"{}derived from the R\+S\+A 
+\+Data Security, Inc. M\+D5 Message Digest Algorithm\char`\"{} in all ~\newline
+material mentioning or referencing the derived work. ~\newline
+ ~\newline
+R\+SA Data Security, Inc. makes no representations concerning ~\newline
+either the merchantability of this software or the suitability ~\newline
+of this software for any particular purpose. It is provided \char`\"{}as 
+is\char`\"{} without express or implied warranty of any kind. ~\newline
+ ~\newline
+These notices must be retained in any copies of any part of this documentation and/or software. ~\newline
+ 

@@ -27,15 +27,6 @@ typedef void (*function_cb_t)(void *);
 
 #define MAX_MSG_BUFFER 256 
 
-typedef enum {
-    RSIZE4 = 0,
-    RSIZE8,
-    RSIZE16,
-    RSIZE32,
-    RSIZE64,
-    RSIZE128,
-    RSIZE256
-}requested_size_t;
 
 /*! Standard GP application initialization/shutdown types */
 typedef enum {

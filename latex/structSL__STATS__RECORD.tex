@@ -1,0 +1,108 @@
+\hypertarget{structSL__STATS__RECORD}{}\section{S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD Struct Reference}
+\label{structSL__STATS__RECORD}\index{S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD@{S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD}}
+
+
+{\ttfamily \#include $<$spi\+\_\+lib.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+U32 \mbox{\hyperlink{structSL__STATS__RECORD_ab5b0f72f7f1214260c7ea69875ab8c8e}{crc\+\_\+errors}}
+\item 
+U32 \mbox{\hyperlink{structSL__STATS__RECORD_a8e927b2659be74646c72ea3a86e8f0a6}{msg\+\_\+id\+\_\+errors}}
+\item 
+U32 \mbox{\hyperlink{structSL__STATS__RECORD_a3cbb616dbd6a162a89aead77f01f6d1c}{sn\+\_\+errors}}
+\item 
+U32 \mbox{\hyperlink{structSL__STATS__RECORD_aba81768cf5da8670ad6e2a6999b20a9a}{E\+O\+P\+\_\+errors}}
+\item 
+U32 \mbox{\hyperlink{structSL__STATS__RECORD_a01aa3907d25aac6de4578d06c774ce0b}{pkts\+\_\+discarded}}
+\item 
+U32 \mbox{\hyperlink{structSL__STATS__RECORD_a2d42749386f47b2fb31689fcf9935b71}{pkts\+\_\+consumed}}
+\item 
+U32 \mbox{\hyperlink{structSL__STATS__RECORD_a35ab3731fa491795516105f48065f1e2}{nack\+\_\+rx\+\_\+nz}}
+\item 
+U32 \mbox{\hyperlink{structSL__STATS__RECORD_a055b16b1180d49272cf2f0a141da8e43}{pkt\+\_\+tx\+\_\+cnt}}
+\item 
+U32 \mbox{\hyperlink{structSL__STATS__RECORD_a1c91dbfd47be872f128552b9888c8657}{pkt\+\_\+tx\+\_\+retries}}
+\item 
+U32 \mbox{\hyperlink{structSL__STATS__RECORD_af8d0d711604fee9933e701e10b6ecd63}{msgs\+\_\+loaded}}
+\item 
+U32 \mbox{\hyperlink{structSL__STATS__RECORD_a3cd797dbd975c8d5ed87d0faaa68da59}{msgs\+\_\+unloaded}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{structSL__STATS__RECORD}{S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD}} -\/ This structure contains the statistics maintained by the S\+PI library. By design each statistic field increments when the associated condition occurs. Each field will be initialized to zero by the C run-\/time library and is therefore N\+OT set to zero by S\+L\+\_\+\+Initialize (by design) so that each field maintains the cumulative value. 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structSL__STATS__RECORD_ab5b0f72f7f1214260c7ea69875ab8c8e}\label{structSL__STATS__RECORD_ab5b0f72f7f1214260c7ea69875ab8c8e}} 
+\index{S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD@{S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD}!crc\+\_\+errors@{crc\+\_\+errors}}
+\index{crc\+\_\+errors@{crc\+\_\+errors}!S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD@{S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD}}
+\subsubsection{\texorpdfstring{crc\+\_\+errors}{crc\_errors}}
+{\footnotesize\ttfamily U32 S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+R\+D\+::crc\+\_\+errors}
+
+Times invalid C\+RC found during packet Rx \mbox{\Hypertarget{structSL__STATS__RECORD_aba81768cf5da8670ad6e2a6999b20a9a}\label{structSL__STATS__RECORD_aba81768cf5da8670ad6e2a6999b20a9a}} 
+\index{S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD@{S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD}!E\+O\+P\+\_\+errors@{E\+O\+P\+\_\+errors}}
+\index{E\+O\+P\+\_\+errors@{E\+O\+P\+\_\+errors}!S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD@{S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD}}
+\subsubsection{\texorpdfstring{E\+O\+P\+\_\+errors}{EOP\_errors}}
+{\footnotesize\ttfamily U32 S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+R\+D\+::\+E\+O\+P\+\_\+errors}
+
+Times end of packet error occurred during packet Rx \mbox{\Hypertarget{structSL__STATS__RECORD_a8e927b2659be74646c72ea3a86e8f0a6}\label{structSL__STATS__RECORD_a8e927b2659be74646c72ea3a86e8f0a6}} 
+\index{S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD@{S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD}!msg\+\_\+id\+\_\+errors@{msg\+\_\+id\+\_\+errors}}
+\index{msg\+\_\+id\+\_\+errors@{msg\+\_\+id\+\_\+errors}!S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD@{S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD}}
+\subsubsection{\texorpdfstring{msg\+\_\+id\+\_\+errors}{msg\_id\_errors}}
+{\footnotesize\ttfamily U32 S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+R\+D\+::msg\+\_\+id\+\_\+errors}
+
+Times invalid msg id found during packet Rx \mbox{\Hypertarget{structSL__STATS__RECORD_af8d0d711604fee9933e701e10b6ecd63}\label{structSL__STATS__RECORD_af8d0d711604fee9933e701e10b6ecd63}} 
+\index{S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD@{S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD}!msgs\+\_\+loaded@{msgs\+\_\+loaded}}
+\index{msgs\+\_\+loaded@{msgs\+\_\+loaded}!S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD@{S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD}}
+\subsubsection{\texorpdfstring{msgs\+\_\+loaded}{msgs\_loaded}}
+{\footnotesize\ttfamily U32 S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+R\+D\+::msgs\+\_\+loaded}
+
+Number of messages loaded for Tx \mbox{\Hypertarget{structSL__STATS__RECORD_a3cd797dbd975c8d5ed87d0faaa68da59}\label{structSL__STATS__RECORD_a3cd797dbd975c8d5ed87d0faaa68da59}} 
+\index{S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD@{S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD}!msgs\+\_\+unloaded@{msgs\+\_\+unloaded}}
+\index{msgs\+\_\+unloaded@{msgs\+\_\+unloaded}!S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD@{S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD}}
+\subsubsection{\texorpdfstring{msgs\+\_\+unloaded}{msgs\_unloaded}}
+{\footnotesize\ttfamily U32 S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+R\+D\+::msgs\+\_\+unloaded}
+
+Number of messages unloaded during Rx \mbox{\Hypertarget{structSL__STATS__RECORD_a35ab3731fa491795516105f48065f1e2}\label{structSL__STATS__RECORD_a35ab3731fa491795516105f48065f1e2}} 
+\index{S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD@{S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD}!nack\+\_\+rx\+\_\+nz@{nack\+\_\+rx\+\_\+nz}}
+\index{nack\+\_\+rx\+\_\+nz@{nack\+\_\+rx\+\_\+nz}!S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD@{S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD}}
+\subsubsection{\texorpdfstring{nack\+\_\+rx\+\_\+nz}{nack\_rx\_nz}}
+{\footnotesize\ttfamily U32 S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+R\+D\+::nack\+\_\+rx\+\_\+nz}
+
+Times non-\/zero N\+A\+CK found during packet Rx \mbox{\Hypertarget{structSL__STATS__RECORD_a055b16b1180d49272cf2f0a141da8e43}\label{structSL__STATS__RECORD_a055b16b1180d49272cf2f0a141da8e43}} 
+\index{S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD@{S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD}!pkt\+\_\+tx\+\_\+cnt@{pkt\+\_\+tx\+\_\+cnt}}
+\index{pkt\+\_\+tx\+\_\+cnt@{pkt\+\_\+tx\+\_\+cnt}!S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD@{S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD}}
+\subsubsection{\texorpdfstring{pkt\+\_\+tx\+\_\+cnt}{pkt\_tx\_cnt}}
+{\footnotesize\ttfamily U32 S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+R\+D\+::pkt\+\_\+tx\+\_\+cnt}
+
+Number of packet transmits \mbox{\Hypertarget{structSL__STATS__RECORD_a1c91dbfd47be872f128552b9888c8657}\label{structSL__STATS__RECORD_a1c91dbfd47be872f128552b9888c8657}} 
+\index{S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD@{S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD}!pkt\+\_\+tx\+\_\+retries@{pkt\+\_\+tx\+\_\+retries}}
+\index{pkt\+\_\+tx\+\_\+retries@{pkt\+\_\+tx\+\_\+retries}!S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD@{S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD}}
+\subsubsection{\texorpdfstring{pkt\+\_\+tx\+\_\+retries}{pkt\_tx\_retries}}
+{\footnotesize\ttfamily U32 S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+R\+D\+::pkt\+\_\+tx\+\_\+retries}
+
+Number of packet re-\/transmits \mbox{\Hypertarget{structSL__STATS__RECORD_a2d42749386f47b2fb31689fcf9935b71}\label{structSL__STATS__RECORD_a2d42749386f47b2fb31689fcf9935b71}} 
+\index{S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD@{S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD}!pkts\+\_\+consumed@{pkts\+\_\+consumed}}
+\index{pkts\+\_\+consumed@{pkts\+\_\+consumed}!S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD@{S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD}}
+\subsubsection{\texorpdfstring{pkts\+\_\+consumed}{pkts\_consumed}}
+{\footnotesize\ttfamily U32 S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+R\+D\+::pkts\+\_\+consumed}
+
+Number of packets consumed (Rx\textquotesingle{}d w/o error) \mbox{\Hypertarget{structSL__STATS__RECORD_a01aa3907d25aac6de4578d06c774ce0b}\label{structSL__STATS__RECORD_a01aa3907d25aac6de4578d06c774ce0b}} 
+\index{S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD@{S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD}!pkts\+\_\+discarded@{pkts\+\_\+discarded}}
+\index{pkts\+\_\+discarded@{pkts\+\_\+discarded}!S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD@{S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD}}
+\subsubsection{\texorpdfstring{pkts\+\_\+discarded}{pkts\_discarded}}
+{\footnotesize\ttfamily U32 S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+R\+D\+::pkts\+\_\+discarded}
+
+Number of packets discarded due to Rx error \mbox{\Hypertarget{structSL__STATS__RECORD_a3cbb616dbd6a162a89aead77f01f6d1c}\label{structSL__STATS__RECORD_a3cbb616dbd6a162a89aead77f01f6d1c}} 
+\index{S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD@{S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD}!sn\+\_\+errors@{sn\+\_\+errors}}
+\index{sn\+\_\+errors@{sn\+\_\+errors}!S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD@{S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+RD}}
+\subsubsection{\texorpdfstring{sn\+\_\+errors}{sn\_errors}}
+{\footnotesize\ttfamily U32 S\+L\+\_\+\+S\+T\+A\+T\+S\+\_\+\+R\+E\+C\+O\+R\+D\+::sn\+\_\+errors}
+
+Times invalid SN found during packet Rx 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{spi__lib_8h}{spi\+\_\+lib.\+h}}\end{DoxyCompactItemize}
